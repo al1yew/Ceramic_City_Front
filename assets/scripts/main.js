@@ -43,8 +43,8 @@ export const useThemeContext = () => useContext(ThemeContext);
 
 */
 
-$(function() {
-    $('.darkmodebtn').on('click', function() {
-        $('body').toggleClass('darkmode')
-    })
-})
+$(function () {
+    $(".darkmodebtn").on("click", function () {
+        $("body").toggleClass("darkmode");
+    });
+});
