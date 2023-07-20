@@ -28,10 +28,6 @@ p {
     padding: 0;
 }
 
-body {
-    scroll-behavior: smooth;
-}
-
 //#region custom cols
 
 @media (min-width:576px) and (max-width: 768px) {
@@ -772,6 +768,7 @@ body {
 }
 
 @keyframes preloader-bounce {
+
     0%,
     100% {
         transform: scale(0);
@@ -803,8 +800,8 @@ body {
 
 //#region fonts
 // @font-face {
-//     font-family: NeuePowerLight;
-//     src: url(../fonts/Neue_Power/NeuePower-Light.ttf);
+//     font-family: NeuePower;
+//     src: url(../fonts/Neue_Power/NeuePower-.ttf);
 // }
 
 // @font-face {
@@ -859,12 +856,39 @@ input::-webkit-inner-spin-button {
 
 //#endregion scrollbar
 
-// :root {
-//     --white: #FFFFFF;
-//     --yellow: #EDF109;
-//     --neueregular: NeuePowerRegular;
-//     --neuemedium: NeuePowerMedium;
-//     --neuelight: NeuePowerLight;
-//     --neueultra: NeuePowerUltra;
-//     --neuebold: NeuePowerBold;
-// }
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #000000;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #000000;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+
+    --neueregular: NeuePowerRegular;
+    --neuemedium: NeuePowerMedium;
+    --neue: NeuePower;
+    --neueultra: NeuePowerUltra;
+    --neuebold: NeuePowerBold;
+}
+
+body {
+    scroll-behavior: smooth;
+    transition: var(--darkModeTransition);
+    background: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+.darkmode {
+    --textColor: #FFFFFF;
+    --backgroundColor: #332D1C;
+
+    --otherTextColor: #000000;
+    --otherBackgroundColor: #FFFFFF;
+}
