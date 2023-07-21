@@ -6,10 +6,11 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
+    transition: var(--darkModeTransition);
 
     &:hover {
-        color: black;
+        color: var(--textColor);
     }
 }
 
@@ -728,7 +729,7 @@ p {
     top: 0;
     right: 0;
     bottom: 0;
-    background: #FFFFFF;
+    background-color: var(--backgroundColor);
     z-index: 100000000;
 }
 
@@ -799,30 +800,20 @@ p {
 //#endregion imports
 
 //#region fonts
-// @font-face {
-//     font-family: NeuePower;
-//     src: url(../fonts/Neue_Power/NeuePower-.ttf);
-// }
+@font-face {
+    font-family: ralewaymedium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
 
-// @font-face {
-//     font-family: NeuePowerMedium;
-//     src: url(../fonts/Neue_Power/NeuePower-Medium.ttf);
-// }
+@font-face {
+    font-family: ralewaybold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
 
-// @font-face {
-//     font-family: NeuePowerRegular;
-//     src: url(../fonts/Neue_Power/NeuePower-Regular.ttf);
-// }
-
-// @font-face {
-//     font-family: NeuePowerUltra;
-//     src: url(../fonts/Neue_Power/NeuePower-Ultra.ttf);
-// }
-
-// @font-face {
-//     font-family: NeuePowerBold;
-//     src: url(../fonts/Neue_Power/NeuePower-Bold.ttf);
-// }
+@font-face {
+    font-family: ralewaylight;
+    src: url(../fonts/Raleway-Light.ttf);
+}
 
 //#endregion fonts
 
@@ -870,12 +861,11 @@ input::-webkit-inner-spin-button {
 
     --otherTextColor: #FFFFFF;
     --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
 
-    --neueregular: NeuePowerRegular;
-    --neuemedium: NeuePowerMedium;
-    --neue: NeuePower;
-    --neueultra: NeuePowerUltra;
-    --neuebold: NeuePowerBold;
+    --borderradius: 7px;
 }
 
 body {
@@ -888,7 +878,6 @@ body {
 .darkmode {
     --textColor: #FFFFFF;
     --backgroundColor: #332D1C;
-
     --otherTextColor: #000000;
     --otherBackgroundColor: #FFFFFF;
 }

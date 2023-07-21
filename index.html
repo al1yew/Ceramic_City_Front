@@ -8,10 +8,7 @@
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
 
-        <link
-            rel="stylesheet"
-            href="./assets/styles/plugins/bootstrap-5.0.2-dist/css/bootstrap.css"
-        />
+        <link rel="stylesheet" href="./assets/styles/bootstrap.css" />
 
         <link
             rel="stylesheet"
@@ -33,6 +30,13 @@
         <title>Ceramic City</title>
     </head>
     <body>
+        <div class="preloader">
+            <div class="preloader__row">
+                <div class="preloader__item"></div>
+                <div class="preloader__item"></div>
+            </div>
+        </div>
+
         <header class="header">
             <div class="container">
                 <div class="row all">
@@ -42,24 +46,78 @@
                         </span>
                         <span> Menu </span>
                     </div>
-                    <div class="middle">
+                    <a href="index.html" class="middle">
                         <img
-                            src="./assets/images/logo.jpg"
+                            src="./assets/images/logo.png"
                             alt="ceramic city"
                         />
-                    </div>
+                    </a>
                     <div class="right">
-                        <span class="search">
-                            <ion-icon name="search-outline"></ion-icon>
-                            <div class="searchmenu">search div</div>
-                        </span>
-                        <span class="wishlist">
+                        <div class="search">
+                            <span class="searchicon">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                            <div class="searchmenu">
+                                <div class="menucontent">
+                                    <form class="top" method="post" action="">
+                                        <button
+                                            type="submit"
+                                            class="searchbutton"
+                                        >
+                                            <ion-icon
+                                                name="search-outline"
+                                            ></ion-icon>
+                                        </button>
+                                        <input
+                                            type="text"
+                                            class="searchinput"
+                                            name="search"
+                                            placeholder="Axtar..."
+                                        />
+                                    </form>
+                                    <ul class="searchitems">
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                        <li>
+                                            <a href="">item</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="wishlist.html" class="wishlist">
                             <ion-icon name="heart-outline"></ion-icon>
-                        </span>
-                        <span class="colormode">
-                            <ion-icon name="sunny-outline"></ion-icon>
-                            <ion-icon name="moon-outline"></ion-icon>
-                        </span>
+                        </a>
+                        <div class="colormode">
+                            <span class="sun modechanger">
+                                <ion-icon name="sunny-outline"></ion-icon>
+                            </span>
+                            <span class="moon modechanger">
+                                <ion-icon name="moon-outline"></ion-icon>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +127,6 @@
             <section class="mainfirst">
                 <h1>SALAMUSHKI</h1>
                 <h1>ne pugayemsa, vse nastraivayemo hahah</h1>
-                <button type="button" class="darkmodebtn">switch mode</button>
             </section>
         </main>
 

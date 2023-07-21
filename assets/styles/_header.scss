@@ -1,0 +1,218 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #000000;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #000000;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundColor);
+    transition: var(--darkModeTransition);
+    color: var(--textColor);
+    z-index: 1000;
+    border-bottom: 1px solid black;
+
+    .all {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto 150px auto;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            font-family: var(--ralewaymedium);
+            cursor: pointer;
+            font-size: 18px;
+
+            .hamburgermenu {
+                width: max-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+
+                ion-icon {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .middle {
+            margin: 0;
+            padding: 10px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            margin: 0;
+            padding: 0;
+            font-family: var(--ralewaymedium);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 12px;
+
+            .search {
+
+                .searchicon {
+                    width: max-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    ion-icon {
+                        font-size: 28px;
+                    }
+                }
+
+                .searchmenu {
+                    z-index: 1001;
+                    border: 1px solid black;
+                    border-bottom-left-radius: var(--borderradius);
+                    border-bottom-right-radius: var(--borderradius);
+                    height: 250px;
+                    width: 250px;
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    right: 0%;
+                    top: 100%;
+                    display: none;
+
+                    .menucontent {
+                        background-color: var(--backgroundColor);
+                        color: var(--textColor);
+                        transition: var(--darkModeTransition);
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        border-bottom-left-radius: var(--borderradius);
+                        border-bottom-right-radius: var(--borderradius);
+
+                        form {
+                            width: 100%;
+                            margin: 0;
+                            padding: 10px;
+                            border-bottom: 1px solid black;
+                            display: grid;
+                            grid-template-columns: auto 200px;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            input {
+                                border: none;
+                                outline: none;
+                                background-color: var(--backgroundColor);
+                                transition: var(--darkModeTransition);
+                                color: var(--textColor);
+                                font-size: 18px;
+
+                                &::placeholder {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            button {
+                                border: none;
+                                outline: none;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                background-color: var(--backgroundColor);
+                                color: var(--textColor);
+                                transition: var(--darkModeTransition);
+
+                                ion-icon {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+
+                        .searchitems {
+                            width: 100%;
+                            margin: 0;
+                            padding: 10px;
+                            overflow-y: scroll;
+                            list-style: none;
+                            height: 80%;
+
+                            li {
+                                cursor: pointer;
+                                width: 100%;
+
+                                a {
+                                    display: block;
+                                    width: 100%;
+
+                                    &:hover {
+                                        color: var(--yellow);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .wishlist {
+                width: max-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ion-icon {
+                    font-size: 30px;
+                }
+            }
+
+            .colormode {
+                span {
+                    width: max-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    ion-icon {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

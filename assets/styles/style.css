@@ -6,10 +6,11 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
 }
 a:hover {
-  color: black;
+  color: var(--textColor);
 }
 
 div {
@@ -585,7 +586,7 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #FFFFFF;
+  background-color: var(--backgroundColor);
   z-index: 100000000;
 }
 
@@ -640,6 +641,212 @@ p {
   display: none;
 }
 
+:root {
+  --white: #FFFFFF;
+  --yellow: #E2BA38;
+  --black: #000000;
+  --brown: #332D1C;
+  --brownopacity: #E2BA3880;
+  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --textColor: #000000;
+  --backgroundColor: #FFFFFF;
+  --otherTextColor: #FFFFFF;
+  --otherBackgroundColor: #332D1C;
+  --ralewaymedium: ralewaymedium;
+  --ralewaybold: ralewaybold;
+  --ralewaylight: ralewaylight;
+  --borderradius: 7px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+  color: var(--textColor);
+  z-index: 1000;
+  border-bottom: 1px solid black;
+}
+.header .all {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto 150px auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.header .all .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  font-family: var(--ralewaymedium);
+  cursor: pointer;
+  font-size: 18px;
+}
+.header .all .left .hamburgermenu {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header .all .left .hamburgermenu ion-icon {
+  font-size: 30px;
+}
+.header .all .middle {
+  margin: 0;
+  padding: 10px 0;
+}
+.header .all .middle img {
+  width: 100%;
+}
+.header .all .right {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ralewaymedium);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.header .all .right .search .searchicon {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header .all .right .search .searchicon ion-icon {
+  font-size: 28px;
+}
+.header .all .right .search .searchmenu {
+  z-index: 1001;
+  border: 1px solid black;
+  border-bottom-left-radius: var(--borderradius);
+  border-bottom-right-radius: var(--borderradius);
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0%;
+  top: 100%;
+  display: none;
+}
+.header .all .right .search .searchmenu .menucontent {
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  border-bottom-left-radius: var(--borderradius);
+  border-bottom-right-radius: var(--borderradius);
+}
+.header .all .right .search .searchmenu .menucontent form {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: auto 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .all .right .search .searchmenu .menucontent form input {
+  border: none;
+  outline: none;
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+  color: var(--textColor);
+  font-size: 18px;
+}
+.header .all .right .search .searchmenu .menucontent form input::-moz-placeholder {
+  font-size: 16px;
+}
+.header .all .right .search .searchmenu .menucontent form input::placeholder {
+  font-size: 16px;
+}
+.header .all .right .search .searchmenu .menucontent form button {
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.header .all .right .search .searchmenu .menucontent form button ion-icon {
+  font-size: 22px;
+}
+.header .all .right .search .searchmenu .menucontent .searchitems {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  overflow-y: scroll;
+  list-style: none;
+  height: 80%;
+}
+.header .all .right .search .searchmenu .menucontent .searchitems li {
+  cursor: pointer;
+  width: 100%;
+}
+.header .all .right .search .searchmenu .menucontent .searchitems li a {
+  display: block;
+  width: 100%;
+}
+.header .all .right .search .searchmenu .menucontent .searchitems li a:hover {
+  color: var(--yellow);
+}
+.header .all .right .wishlist {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .all .right .wishlist ion-icon {
+  font-size: 30px;
+}
+.header .all .right .colormode span {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header .all .right .colormode span ion-icon {
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: ralewaymedium;
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: ralewaybold;
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: ralewaylight;
+  src: url(../fonts/Raleway-Light.ttf);
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -673,11 +880,10 @@ input::-webkit-inner-spin-button {
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
-  --neueregular: NeuePowerRegular;
-  --neuemedium: NeuePowerMedium;
-  --neue: NeuePower;
-  --neueultra: NeuePowerUltra;
-  --neuebold: NeuePowerBold;
+  --ralewaymedium: ralewaymedium;
+  --ralewaybold: ralewaybold;
+  --ralewaylight: ralewaylight;
+  --borderradius: 7px;
 }
 
 body {
