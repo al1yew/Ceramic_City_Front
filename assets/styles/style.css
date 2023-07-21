@@ -687,7 +687,7 @@ p {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  font-family: var(--ralewaymedium);
+  font-family: var(--ralewaylight);
   cursor: pointer;
   font-size: 18px;
 }
@@ -809,6 +809,7 @@ p {
 .header .all .right .search .searchmenu .menucontent .searchitems li a {
   display: block;
   width: 100%;
+  font-size: 18px;
 }
 .header .all .right .search .searchmenu .menucontent .searchitems li a:hover {
   color: var(--yellow);
@@ -835,6 +836,94 @@ p {
   font-size: 30px;
 }
 
+@media (max-width: 576px) {
+  .header .all {
+    grid-template-columns: 33% 100px 33%;
+  }
+  .header .all .left {
+    font-size: 15px;
+    justify-content: flex-start;
+  }
+  .header .all .left .hamburgermenu {
+    margin-right: 7px;
+  }
+  .header .all .left .hamburgermenu ion-icon {
+    font-size: 22px;
+  }
+  .header .all .middle {
+    padding: 5px 0;
+  }
+  .header .all .right {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    justify-content: flex-end;
+  }
+  .header .all .right .search .searchicon ion-icon {
+    font-size: 24px;
+  }
+  .header .all .right .search .searchmenu {
+    height: 250px;
+    width: 100%;
+  }
+  .header .all .right .search .searchmenu .menucontent form {
+    grid-template-columns: auto 90%;
+  }
+  .header .all .right .search .searchmenu .menucontent form input {
+    font-size: 15px;
+  }
+  .header .all .right .search .searchmenu .menucontent form input::-moz-placeholder {
+    font-size: 15px;
+  }
+  .header .all .right .search .searchmenu .menucontent form input::placeholder {
+    font-size: 15px;
+  }
+  .header .all .right .search .searchmenu .menucontent form button ion-icon {
+    font-size: 20px;
+  }
+  .header .all .right .search .searchmenu .menucontent .searchitems li a {
+    font-size: 15px;
+  }
+  .header .all .right .wishlist ion-icon {
+    font-size: 24px;
+  }
+  .header .all .right .colormode span ion-icon {
+    font-size: 24px;
+  }
+}
+:root {
+  --white: #FFFFFF;
+  --yellow: #E2BA38;
+  --black: #000000;
+  --brown: #332D1C;
+  --brownopacity: #E2BA3880;
+  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --textColor: #000000;
+  --backgroundColor: #FFFFFF;
+  --otherTextColor: #FFFFFF;
+  --otherBackgroundColor: #332D1C;
+  --ralewaymedium: ralewaymedium;
+  --ralewaybold: ralewaybold;
+  --ralewaylight: ralewaylight;
+  --borderradius: 7px;
+}
+
+.mainfirst {
+  margin-top: 71px;
+}
+.mainfirst .all {
+  margin: 0;
+  padding: 0;
+}
+.mainfirst .all h1 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  .mainfirst {
+    margin-top: 44px;
+  }
+}
 @font-face {
   font-family: ralewaymedium;
   src: url(../fonts/Raleway-Medium.ttf);

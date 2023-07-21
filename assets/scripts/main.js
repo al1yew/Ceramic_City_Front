@@ -47,6 +47,7 @@ $(function () {
             $(".searchmenu").fadeIn(150);
             $(".searchicon ion-icon").attr("name", "close-outline");
             $(".searchicon").addClass("closesearchheader");
+            $(".searchinput").focus();
         } else if (!isParentClass || $(".searchinput").val() == "") {
             $(".searchmenu").fadeOut(150);
             $(".searchinput").val("");
@@ -54,17 +55,25 @@ $(function () {
             $(".searchicon ion-icon").attr("name", "search-outline");
             $(".searchicon").removeClass("closesearchheader");
         }
-
-        console.log("salam");
     });
 
-    $(document).on("click", ".closesearchheader", function () {
-        console.log("salam");
-        $(".closesearchheader ion-icon").attr("name", "search-outline");
+    $(document).on("click", ".closesearchheader", function (e) {
+        e.stopPropagation();
+        $(".searchicon ion-icon").attr("name", "search-outline");
         $(".searchinput").val("");
         $(".searchmenu").fadeOut(150);
         $(this).removeClass("closesearchheader");
     });
+
+    // $(document).on("keyup", ".searchinput", function (e) {
+    //     if ($(this).val().length <= 0) {
+    //         $(".searchmenu").fadeOut(150);
+    //         $(".searchicon ion-icon").attr("name", "search-outline");
+    //     }
+    // });
+
+    //koroche search interaktivnost nujno produmat, mojet search
+    //gosterilsin, a searchitems gosterillmesin poka nicheqo ne napisano
 
     //#endregion headersearch
 });

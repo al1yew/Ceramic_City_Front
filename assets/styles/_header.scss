@@ -48,7 +48,7 @@
             justify-content: space-between;
             padding: 0;
             margin: 0;
-            font-family: var(--ralewaymedium);
+            font-family: var(--ralewaylight);
             cursor: pointer;
             font-size: 18px;
 
@@ -178,6 +178,7 @@
                                 a {
                                     display: block;
                                     width: 100%;
+                                    font-size: 18px;
 
                                     &:hover {
                                         color: var(--yellow);
@@ -210,6 +211,95 @@
 
                     ion-icon {
                         font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+
+        .all {
+            grid-template-columns: 33% 100px 33%;
+
+            .left {
+                font-size: 15px;
+                justify-content: flex-start;
+
+                .hamburgermenu {
+                    margin-right: 7px;
+
+                    ion-icon {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .middle {
+                padding: 5px 0;
+            }
+
+            .right {
+                column-gap: 12px;
+                justify-content: flex-end;
+
+                .search {
+
+                    .searchicon {
+                        ion-icon {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .searchmenu {
+                        height: 250px;
+                        width: 100%;
+
+                        .menucontent {
+
+                            form {
+                                grid-template-columns: auto 90%;
+
+                                input {
+                                    font-size: 15px;
+
+                                    &::placeholder {
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                button {
+                                    ion-icon {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            .searchitems {
+
+                                li {
+                                    a {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wishlist {
+                    ion-icon {
+                        font-size: 24px;
+                    }
+                }
+
+                .colormode {
+                    span {
+                        ion-icon {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
