@@ -306,3 +306,177 @@
         }
     }
 }
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .header {
+
+        .all {
+            grid-template-columns: 33% 115px 33%;
+
+            .left {
+                font-size: 15px;
+                justify-content: flex-start;
+
+                .hamburgermenu {
+                    margin-right: 7px;
+
+                    ion-icon {
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            .middle {
+                padding: 5px 0;
+            }
+
+            .right {
+                column-gap: 12px;
+                justify-content: flex-end;
+
+                .search {
+
+                    .searchicon {
+                        ion-icon {
+                            font-size: 25px;
+                        }
+                    }
+
+                    .searchmenu {
+                        height: 250px;
+                        width: 50%;
+
+                        .menucontent {
+
+                            form {
+                                grid-template-columns: auto 90%;
+
+                                input {
+                                    font-size: 15px;
+
+                                    &::placeholder {
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                button {
+                                    ion-icon {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            .searchitems {
+
+                                li {
+                                    a {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wishlist {
+                    ion-icon {
+                        font-size: 25px;
+                    }
+                }
+
+                .colormode {
+                    span {
+                        ion-icon {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .header {
+
+        .all {
+            grid-template-columns: 33% 140px 33%;
+
+            .left {
+                font-size: 17px;
+                justify-content: flex-start;
+
+                .hamburgermenu {
+                    margin-right: 7px;
+
+                    ion-icon {
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            .middle {
+                padding: 10px 0;
+            }
+
+            .right {
+                column-gap: 15px;
+                justify-content: flex-end;
+
+                .search {
+
+                    .searchicon {
+                        ion-icon {
+                            font-size: 26px;
+                        }
+                    }
+
+                    .searchmenu {
+                        .menucontent {
+                            form {
+                                grid-template-columns: auto 90%;
+
+                                input {
+                                    font-size: 15px;
+
+                                    &::placeholder {
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                button {
+                                    ion-icon {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            .searchitems {
+
+                                li {
+                                    a {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wishlist {
+                    ion-icon {
+                        font-size: 25px;
+                    }
+                }
+
+                .colormode {
+                    span {
+                        ion-icon {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
