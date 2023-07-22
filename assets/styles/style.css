@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1012,20 +1013,122 @@ p {
 }
 
 .mainfirst {
-  margin-top: 71px;
+  margin-top: 72px;
+  padding: 0;
 }
-.mainfirst .all {
+.mainfirst .compslider {
+  display: block;
+}
+.mainfirst .telslider {
+  display: none;
+}
+.mainfirst .mainfirstslider {
   margin: 0;
   padding: 0;
 }
-.mainfirst .all h1 {
+.mainfirst .mainfirstslider .slick-dots {
+  width: -moz-max-content;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  padding: 6px 10px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainfirst .mainfirstslider .slick-dots .slick-active button:before {
+  color: var(--yellow);
+}
+.mainfirst .mainfirstslider .slick-dots li button:before {
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-size: 8px;
+  line-height: 22px;
+  color: black;
+  opacity: 1;
+}
+.mainfirst .mainfirstslider .slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainfirst .mainfirstslider .slide {
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+.mainfirst .mainfirstslider .slide img {
+  width: 100%;
 }
 
 @media (max-width: 576px) {
   .mainfirst {
     margin-top: 44px;
+  }
+  .mainfirst .compslider {
+    display: none;
+  }
+  .mainfirst .telslider {
+    display: block;
+  }
+  .mainfirst .mainfirstslider .slick-dots {
+    padding: 3px 5px;
+  }
+  .mainfirst .mainfirstslider .slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+    font-size: 5px;
+    margin-left: 3px;
+    line-height: 21px;
+  }
+  .mainfirst .mainfirstslider .slick-dots li {
+    margin: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mainfirst {
+    margin-top: 50px;
+  }
+  .mainfirst .compslider {
+    display: none;
+  }
+  .mainfirst .telslider {
+    display: block;
+  }
+  .mainfirst .mainfirstslider .slick-dots {
+    bottom: 20px;
+    padding: 2px;
+  }
+  .mainfirst .mainfirstslider .slick-dots li button:before {
+    content: "•";
+    width: 15px;
+    height: 15px;
+    font-size: 5px;
+    line-height: 20px;
+    margin-left: 3px;
+  }
+  .mainfirst .mainfirstslider .slick-dots li button {
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+  }
+  .mainfirst .mainfirstslider .slick-dots li {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .mainfirst {
+    margin-top: 69px;
+  }
+  .mainfirst .compslider {
+    display: block;
+  }
+  .mainfirst .telslider {
+    display: none;
   }
 }
 @font-face {

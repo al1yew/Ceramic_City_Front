@@ -76,4 +76,19 @@ $(function () {
     //gosterilsin, a searchitems gosterillmesin poka nicheqo ne napisano
 
     //#endregion headersearch
+
+    //#region main page banner slide
+
+    $(".mainfirstslider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        fade: true,
+        arrows: false,
+    });
+
+    //#endregion main page banner slide
 });
