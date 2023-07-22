@@ -42,6 +42,7 @@
         align-items: center;
         width: 100%;
         position: relative;
+        transition: 0.2s;
 
         .left {
             display: flex;
@@ -217,6 +218,11 @@
             }
         }
     }
+
+    .thinheader {
+        transition: 0.2s;
+        grid-template-columns: auto 130px auto;
+    }
 }
 
 @media (max-width: 576px) {
@@ -304,6 +310,10 @@
                     }
                 }
             }
+        }
+
+        .thinheader {
+            grid-template-columns: 33% 85px 33%;
         }
     }
 }
@@ -394,6 +404,10 @@
                 }
             }
         }
+
+        .thinheader {
+            grid-template-columns: 33% 100px 33%;
+        }
     }
 }
 
@@ -478,6 +492,10 @@
                     }
                 }
             }
+        }
+
+        .thinheader {
+            grid-template-columns: 33% 120px 33%;
         }
     }
 }

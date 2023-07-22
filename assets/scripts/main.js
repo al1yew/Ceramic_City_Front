@@ -91,4 +91,16 @@ $(function () {
     });
 
     //#endregion main page banner slide
+
+    //#region header scroll
+
+    $(document).on("scroll", function () {
+        if ($(window).scrollTop() > $(window).height() / 2) {
+            $(".header .all").addClass('thinheader')
+        } else {
+            $(".header .all").removeClass('thinheader')
+        }
+    });
+
+    //#endregion header scroll
 });
