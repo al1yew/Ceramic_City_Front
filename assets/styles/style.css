@@ -1438,12 +1438,14 @@ p {
 .mainthird .all .mainthirdslider .product {
   margin: 0;
   padding: 0 8px;
+  position: relative;
 }
 .mainthird .all .mainthirdslider .product .imgkeeper {
   width: 100%;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  display: block;
 }
 .mainthird .all .mainthirdslider .product .imgkeeper img {
   width: 100%;
@@ -1459,22 +1461,22 @@ p {
   left: 5%;
   font-family: var(--ralewaymedium);
 }
-.mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
+.mainthird .all .mainthirdslider .product .addtowishlist {
   padding: 8px;
   border-radius: 100%;
   background-color: var(--white);
   position: absolute;
-  top: 3%;
-  right: 3%;
+  top: 2%;
+  right: 6%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.2s;
 }
-.mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist:hover {
+.mainthird .all .mainthirdslider .product .addtowishlist:hover {
   transform: scale(1.05);
 }
-.mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist ion-icon {
+.mainthird .all .mainthirdslider .product .addtowishlist ion-icon {
   font-size: 20px;
   color: var(--yellow);
 }
@@ -1555,15 +1557,15 @@ p {
     top: 4%;
     left: 4%;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
+  .mainthird .all .mainthirdslider .product .addtowishlist {
     padding: 7px;
     top: 2%;
-    right: 2%;
+    right: 7%;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist:hover {
+  .mainthird .all .mainthirdslider .product .addtowishlist:hover {
     transform: unset;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist ion-icon {
+  .mainthird .all .mainthirdslider .product .addtowishlist ion-icon {
     font-size: 16px;
   }
   .mainthird .all .mainthirdslider .product .content {
@@ -1611,15 +1613,15 @@ p {
     top: 4%;
     left: 4%;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
-    padding: 7px;
+  .mainthird .all .mainthirdslider .product .addtowishlist {
+    padding: 6px;
     top: 2%;
-    right: 2%;
+    right: 7%;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist:hover {
+  .mainthird .all .mainthirdslider .product .addtowishlist:hover {
     transform: unset;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist ion-icon {
+  .mainthird .all .mainthirdslider .product .addtowishlist ion-icon {
     font-size: 16px;
   }
   .mainthird .all .mainthirdslider .product .content {
@@ -1658,8 +1660,9 @@ p {
     padding: 0px 13px;
     font-size: 11px;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
+  .mainthird .all .mainthirdslider .product .addtowishlist {
     padding: 6px;
+    right: 7%;
   }
   .mainthird .all .mainthirdslider .product .content {
     padding: 0;
@@ -1687,7 +1690,7 @@ p {
     padding: 0px 13px;
     font-size: 11px;
   }
-  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
+  .mainthird .all .mainthirdslider .product .addtowishlist {
     padding: 8px;
   }
   .mainthird .all .mainthirdslider .product .content {

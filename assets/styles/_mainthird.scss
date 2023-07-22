@@ -78,12 +78,14 @@
             .product {
                 margin: 0;
                 padding: 0 8px;
+                position: relative;
 
                 .imgkeeper {
                     width: 100%;
                     position: relative;
                     border-radius: 10px;
                     overflow: hidden;
+                    display: block;
 
                     img {
                         width: 100%;
@@ -100,27 +102,27 @@
                         left: 5%;
                         font-family: var(--ralewaymedium);
                     }
+                }
 
-                    .addtowishlist {
-                        padding: 8px;
-                        border-radius: 100%;
-                        background-color: var(--white);
-                        position: absolute;
-                        top: 3%;
-                        right: 3%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        transition: 0.2s;
+                .addtowishlist {
+                    padding: 8px;
+                    border-radius: 100%;
+                    background-color: var(--white);
+                    position: absolute;
+                    top: 2%;
+                    right: 6%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.2s;
 
-                        &:hover {
-                            transform: scale(1.05);
-                        }
+                    &:hover {
+                        transform: scale(1.05);
+                    }
 
-                        ion-icon {
-                            font-size: 20px;
-                            color: var(--yellow);
-                        }
+                    ion-icon {
+                        font-size: 20px;
+                        color: var(--yellow);
                     }
                 }
 
@@ -221,19 +223,19 @@
                             top: 4%;
                             left: 4%;
                         }
+                    }
 
-                        .addtowishlist {
-                            padding: 7px;
-                            top: 2%;
-                            right: 2%;
+                    .addtowishlist {
+                        padding: 7px;
+                        top: 2%;
+                        right: 7%;
 
-                            &:hover {
-                                transform: unset;
-                            }
+                        &:hover {
+                            transform: unset;
+                        }
 
-                            ion-icon {
-                                font-size: 16px;
-                            }
+                        ion-icon {
+                            font-size: 16px;
                         }
                     }
 
@@ -302,19 +304,19 @@
                             top: 4%;
                             left: 4%;
                         }
+                    }
 
-                        .addtowishlist {
-                            padding: 7px;
-                            top: 2%;
-                            right: 2%;
+                    .addtowishlist {
+                        padding: 6px;
+                        top: 2%;
+                        right: 7%;
 
-                            &:hover {
-                                transform: unset;
-                            }
+                        &:hover {
+                            transform: unset;
+                        }
 
-                            ion-icon {
-                                font-size: 16px;
-                            }
+                        ion-icon {
+                            font-size: 16px;
                         }
                     }
 
@@ -374,10 +376,11 @@
                             padding: 0px 13px;
                             font-size: 11px;
                         }
+                    }
 
-                        .addtowishlist {
-                            padding: 6px;
-                        }
+                    .addtowishlist {
+                        padding: 6px;
+                        right: 7%;
                     }
 
                     .content {
@@ -423,10 +426,10 @@
                             padding: 0px 13px;
                             font-size: 11px;
                         }
+                    }
 
-                        .addtowishlist {
-                            padding: 8px;
-                        }
+                    .addtowishlist {
+                        padding: 8px;
                     }
 
                     .content {
