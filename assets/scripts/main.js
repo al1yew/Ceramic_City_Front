@@ -77,6 +77,18 @@ $(function () {
 
     //#endregion headersearch
 
+    //#region header scroll
+
+    $(document).on("scroll", function () {
+        if ($(window).scrollTop() > $(window).height() / 2) {
+            $(".header .all").addClass("thinheader");
+        } else {
+            $(".header .all").removeClass("thinheader");
+        }
+    });
+
+    //#endregion header scroll
+
     //#region main page banner slide
 
     $(".mainfirstslider").slick({
@@ -92,15 +104,37 @@ $(function () {
 
     //#endregion main page banner slide
 
-    //#region header scroll
+    //#region
 
-    $(document).on("scroll", function () {
-        if ($(window).scrollTop() > $(window).height() / 2) {
-            $(".header .all").addClass('thinheader')
-        } else {
-            $(".header .all").removeClass('thinheader')
-        }
+    $(".mainthirdslider").slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: $(".mainthirdprev"),
+        nextArrow: $(".mainthirdnext"),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+        ],
     });
 
-    //#endregion header scroll
+    //#endregion
 });

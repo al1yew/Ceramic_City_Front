@@ -94,6 +94,7 @@
                     font-family: var(--ralewaymedium);
                     font-size: 15px;
                     text-align: center;
+                    transition: var(--darkModeTransition);
                     color: var(--textColor);
                 }
             }

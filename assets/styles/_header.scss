@@ -197,6 +197,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: var(--darkModeTransition);
 
                 ion-icon {
                     font-size: 30px;

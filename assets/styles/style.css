@@ -823,6 +823,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--darkModeTransition);
 }
 .header .all .right .wishlist ion-icon {
   font-size: 30px;
@@ -1316,6 +1317,7 @@ p {
   font-family: var(--ralewaymedium);
   font-size: 15px;
   text-align: center;
+  transition: var(--darkModeTransition);
   color: var(--textColor);
 }
 
@@ -1359,6 +1361,231 @@ p {
 @media (min-width: 768px) and (max-width: 992px) {
   .mainsecond .all .categories .category .imgkeeper .name {
     font-size: 19px;
+  }
+}
+:root {
+  --white: #FFFFFF;
+  --yellow: #E2BA38;
+  --black: #000000;
+  --brown: #332D1C;
+  --brownopacity: #E2BA3880;
+  --red: #FF3D00;
+  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --textColor: #000000;
+  --backgroundColor: #FFFFFF;
+  --otherTextColor: #FFFFFF;
+  --otherBackgroundColor: #332D1C;
+  --ralewaymedium: ralewaymedium;
+  --ralewaybold: ralewaybold;
+  --ralewaylight: ralewaylight;
+  --borderradius: 7px;
+}
+
+.mainthird {
+  margin-top: 30px;
+}
+.mainthird .all {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.mainthird .all h3 {
+  color: var(--yellow);
+  font-family: var(--ralewaybold);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mainthird .all .mainthirdprev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  z-index: 50;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+}
+.mainthird .all .mainthirdnext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50px;
+  z-index: 50;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+}
+.mainthird .all .gotoshop {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 5px 70px;
+  color: var(--white);
+  background-color: var(--yellow);
+  border-radius: 7px;
+  font-size: 16px;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: var(--ralewaymedium);
+}
+.mainthird .all .mainthirdslider {
+  margin: 0;
+  padding: 0;
+}
+.mainthird .all .mainthirdslider .product {
+  margin: 0;
+  padding: 0 10px;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper img {
+  width: 100%;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper .sale {
+  padding: 2px 15px;
+  color: var(--black);
+  font-size: 12px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-family: var(--ralewaymedium);
+}
+.mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
+  padding: 8px;
+  border-radius: 100%;
+  background-color: var(--white);
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist:hover {
+  transform: scale(1.05);
+}
+.mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist ion-icon {
+  font-size: 20px;
+  color: var(--yellow);
+}
+.mainthird .all .mainthirdslider .product .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+.mainthird .all .mainthirdslider .product .content .name {
+  font-size: 15px;
+  font-family: var(--ralewaymedium);
+  width: 100%;
+  margin-top: 8px;
+  transition: var(--darkModeTransition);
+  color: var(--textColor);
+}
+.mainthird .all .mainthirdslider .product .content .price {
+  text-decoration: line-through;
+  font-family: var(--ralewaymedium);
+  width: 40%;
+  font-size: 16px;
+  text-align: start;
+}
+.mainthird .all .mainthirdslider .product .content .price i {
+  margin-left: 4px;
+}
+.mainthird .all .mainthirdslider .product .content .discountprice {
+  width: 40%;
+  text-align: end;
+  font-size: 18px;
+  color: var(--red);
+  font-family: var(--ralewaybold);
+}
+.mainthird .all .mainthirdslider .product .content .colors {
+  width: 100%;
+  margin-top: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mainthird .all .mainthirdslider .product .content .colors .color {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+@media (max-width: 576px) {
+  .mainthird {
+    margin-top: 20px;
+  }
+  .mainthird .all .mainthirdprev {
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: 15%;
+    bottom: -8px;
+  }
+  .mainthird .all .mainthirdnext {
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: 0%;
+    bottom: -8px;
+  }
+  .mainthird .all .gotoshop {
+    margin: 0;
+    margin-top: 25px;
+    padding: 5px 30px;
+    font-size: 14px;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper .sale {
+    padding: 0px 10px;
+    font-size: 10px;
+    top: 4%;
+    left: 4%;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist {
+    padding: 7px;
+    top: 2%;
+    right: 2%;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist:hover {
+    transform: unset;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper .addtowishlist ion-icon {
+    font-size: 16px;
+  }
+  .mainthird .all .mainthirdslider .product .content {
+    padding: 0;
+  }
+  .mainthird .all .mainthirdslider .product .content .name {
+    font-size: 15px;
+  }
+  .mainthird .all .mainthirdslider .product .content .price {
+    width: 40%;
+    font-size: 14px;
+  }
+  .mainthird .all .mainthirdslider .product .content .discountprice {
+    width: 50%;
+    font-size: 16px;
+  }
+  .mainthird .all .mainthirdslider .product .content .colors {
+    margin-top: 7px;
+  }
+  .mainthird .all .mainthirdslider .product .content .colors .color {
+    width: 15px;
+    height: 15px;
   }
 }
 @font-face {
