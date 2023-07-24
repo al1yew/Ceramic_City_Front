@@ -1928,6 +1928,7 @@ p {
   width: -moz-max-content;
   width: max-content;
   padding: 10px;
+  padding-bottom: 0;
 }
 .mainfifth .contentkeeper .right .mainfifthnext {
   position: absolute;
@@ -1938,6 +1939,7 @@ p {
   width: -moz-max-content;
   width: max-content;
   padding: 10px;
+  padding-bottom: 0;
 }
 .mainfifth .contentkeeper .right h4 {
   color: var(--yellow);
@@ -1991,6 +1993,9 @@ p {
     font-size: 14px;
     margin-bottom: 15px;
   }
+  .mainfifth .contentkeeper .right .fourthp {
+    display: none;
+  }
   .mainfifth .contentkeeper .right a {
     position: absolute;
     bottom: 0%;
@@ -1998,6 +2003,87 @@ p {
     transform: translateX(-50%);
     padding: 7px 70px;
     font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mainfifth {
+    margin-top: 50px;
+  }
+  .mainfifth .contentkeeper .left {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .mainfifth .contentkeeper .right {
+    padding: 0;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+  .mainfifth .contentkeeper .right .mainfifthprev {
+    display: none !important;
+  }
+  .mainfifth .contentkeeper .right .mainfifthnext {
+    display: none !important;
+  }
+  .mainfifth .contentkeeper .right h4 {
+    margin-bottom: 20px;
+  }
+  .mainfifth .contentkeeper .right p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .mainfifth .contentkeeper .right .fourthp {
+    display: none;
+  }
+  .mainfifth .contentkeeper .right a {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px 70px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .mainfifth {
+    margin-top: 60px;
+  }
+  .mainfifth .contentkeeper .left {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .mainfifth .contentkeeper .right {
+    padding: 0 15px;
+    padding-right: 0;
+  }
+  .mainfifth .contentkeeper .right .mainfifthprev {
+    left: 8px;
+  }
+  .mainfifth .contentkeeper .right .mainfifthnext {
+    left: 70px;
+  }
+  .mainfifth .contentkeeper .right h4 {
+    margin-bottom: 20px;
+  }
+  .mainfifth .contentkeeper .right p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .mainfifth .contentkeeper .right .fourthp {
+    display: none;
+  }
+  .mainfifth .contentkeeper .right a {
+    right: 15px;
+    padding: 7px 60px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mainfifth .contentkeeper .right h4 {
+    margin-bottom: 22px;
+  }
+  .mainfifth .contentkeeper .right p {
+    font-size: 15px;
+    margin-bottom: 18px;
   }
 }
 @font-face {

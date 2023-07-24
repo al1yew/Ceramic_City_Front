@@ -70,6 +70,7 @@
                 cursor: pointer;
                 width: max-content;
                 padding: 10px;
+                padding-bottom: 0;
             }
 
             .mainfifthnext {
@@ -80,6 +81,7 @@
                 cursor: pointer;
                 width: max-content;
                 padding: 10px;
+                padding-bottom: 0;
             }
 
             h4 {
@@ -145,6 +147,10 @@
                     margin-bottom: 15px;
                 }
 
+                .fourthp {
+                    display: none;
+                }
+
                 a {
                     position: absolute;
                     bottom: 0%;
@@ -152,6 +158,122 @@
                     transform: translateX(-50%);
                     padding: 7px 70px;
                     font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .mainfifth {
+        margin-top: 50px;
+
+        .contentkeeper {
+
+            .left {
+                overflow: hidden;
+                border-radius: 10px;
+            }
+
+            .right {
+                padding: 0;
+                padding-bottom: 40px;
+                padding-top: 20px;
+
+                .mainfifthprev {
+                    display: none !important;
+                }
+
+                .mainfifthnext {
+                    display: none !important;
+                }
+
+                h4 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 16px;
+                }
+
+                .fourthp {
+                    display: none;
+                }
+
+                a {
+                    position: absolute;
+                    bottom: 0%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 7px 70px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .mainfifth {
+        margin-top: 60px;
+
+        .contentkeeper {
+
+            .left {
+                overflow: hidden;
+                border-radius: 10px;
+            }
+
+            .right {
+                padding: 0 15px;
+                padding-right: 0;
+
+                .mainfifthprev {
+                    left: 8px;
+                }
+
+                .mainfifthnext {
+                    left: 70px;
+                }
+
+                h4 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+
+                .fourthp {
+                    display: none;
+                }
+
+                a {
+                    right: 15px;
+                    padding: 7px 60px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1200px) {
+    .mainfifth {
+
+        .contentkeeper {
+
+            .right {
+
+                h4 {
+                    margin-bottom: 22px;
+                }
+
+                p {
+                    font-size: 15px;
+                    margin-bottom: 18px;
                 }
             }
         }
