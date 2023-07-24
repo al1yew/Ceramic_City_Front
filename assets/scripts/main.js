@@ -173,4 +173,36 @@ $(function () {
     });
 
     //#endregion main page fifth slider
+
+    //#region main page sixth slider
+
+    $(".mainsixthslider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false, //true
+        // autoplaySpeed: 4000,
+        infinite: true,
+        fade: true,
+        arrows: true,
+        prevArrow: $(".mainsixthprev"),
+        nextArrow: $(".mainsixthnext"),
+    });
+
+    //#endregion main page sixth slider
+
+    //#region main page collections span
+
+    $(document).on("click", function (e) {
+        const isParentClass =
+            $(e.target).parents(".hoverfordetails").length > 0;
+
+        if (isParentClass) {
+            $(".allhoverinfo").css("display", "none");
+            $(e.target).find(".allhoverinfo").css("display", "flex");
+        } else {
+            $(".allhoverinfo").css("display", "none");
+        }
+    });
+
+    //#endregion main page collections span
 });

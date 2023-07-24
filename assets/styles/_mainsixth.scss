@@ -1,0 +1,274 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #121219;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+    --red: #FF3D00;
+
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #000000;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.mainsixth {
+    margin-top: 70px;
+
+    .all {
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        h3 {
+            color: var(--yellow);
+            font-family: var(--ralewaybold);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .mainsixthprev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -50px;
+            z-index: 50;
+            cursor: pointer;
+            width: max-content;
+            padding: 10px;
+        }
+
+        .mainsixthnext {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -50px;
+            z-index: 50;
+            cursor: pointer;
+            width: max-content;
+            padding: 10px;
+        }
+
+        .gotocollections {
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 10px 60px;
+            color: var(--white);
+            background-color: var(--yellow);
+            border-radius: 7px;
+            font-size: 16px;
+            width: max-content;
+            font-family: var(--ralewaymedium);
+        }
+
+        .mainsixthslider {
+            margin: 0;
+            padding: 0;
+
+            .slide {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border-radius: 10px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .hoverfordetails {
+                    position: absolute;
+                    border-radius: 100%;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    padding: 30px;
+                    margin: 0;
+
+                    &:hover {
+                        .forpadding {
+                            background-color: rgba(255, 255, 255, 1);
+
+                            .forotherpadding {
+                                background-color: rgba(226, 186, 56, 1);
+
+                                .allhoverinfo {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+
+                    .forpadding {
+                        transition: 0.2s;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        margin: 0;
+                        padding: 0;
+
+                        .forotherpadding {
+                            background-color: rgba(226, 186, 56, 0.5);
+                            border-radius: 100%;
+                            width: 22px;
+                            height: 22px;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0;
+                            padding: 0;
+                            transition: 0.2s;
+
+                            .allhoverinfo {
+                                position: absolute;
+                                background-color: var(--white);
+                                width: 270px;
+                                height: 85px;
+                                padding: 8px;
+                                border-radius: 10px;
+                                transition: 0.2s;
+                                z-index: 56;
+
+                                visibility: hidden;
+                                opacity: 0;
+
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                img {
+                                    height: 100%;
+                                    width: auto;
+                                    border-radius: 10px;
+                                }
+
+                                .right {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    padding-left: 10px;
+                                    height: 100%;
+                                    width: 100%;
+
+                                    .top {
+                                        width: 100%;
+                                        font-size: 14px;
+                                        font-family: var(--ralewaymedium);
+                                        color: var(--black);
+                                    }
+
+                                    .bottom {
+                                        width: 100%;
+                                        font-size: 15px;
+                                        font-family: var(--ralewaybold);
+                                        color: var(--black);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .mainsixth {
+        margin-top: 40px;
+
+        .all {
+            padding-bottom: 50px;
+
+            h3 {
+                margin-bottom: 30px;
+            }
+
+            .mainsixthprev {
+                top: unset;
+                left: unset;
+                bottom: 0%;
+                right: 15%;
+                transform: unset;
+                padding-bottom: 5px;
+            }
+
+            .mainsixthnext {
+                bottom: 0%;
+                top: unset;
+                left: unset;
+                right: 0%;
+                transform: unset;
+                padding-bottom: 5px;
+            }
+
+            .gotocollections {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                margin: 0;
+                padding: 8px 30px;
+                font-size: 14px;
+            }
+
+            .mainsixthslider {
+                .slide {
+                    position: relative;
+
+                    .hoverfordetails {
+                        padding: 10px;
+
+                        .forpadding {
+                            width: 26px;
+                            height: 26px;
+
+                            .forotherpadding {
+                                width: 20px;
+                                height: 20px;
+                                position: unset !important;
+
+                                .allhoverinfo {
+                                    display: none;
+                                    visibility: unset !important;
+                                    opacity: unset !important;
+                                    position: absolute !important;
+                                    width: 70vw !important;
+                                    top: 20% !important;
+                                    left: 0% !important;
+                                    bottom: unset !important;
+                                    right: unset !important;
+
+                                    .right {
+                                        .top {
+                                            font-size: 12px;
+                                        }
+
+                                        .bottom {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

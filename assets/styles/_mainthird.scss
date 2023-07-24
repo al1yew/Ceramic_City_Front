@@ -62,7 +62,7 @@
         .gotoshop {
             margin: 0 auto;
             margin-top: 40px;
-            padding: 7px 60px;
+            padding: 10px 60px;
             color: var(--white);
             background-color: var(--yellow);
             border-radius: 7px;
@@ -120,9 +120,12 @@
                         transform: scale(1.05);
                     }
 
-                    ion-icon {
-                        font-size: 20px;
-                        color: var(--yellow);
+                    svg {
+                        stroke: var(--textColor);
+                        width: 18px;
+                        height: 18px;
+                        transition: var(--darkModeTransition);
+                        stroke: var(--yellow)
                     }
                 }
 
@@ -195,7 +198,8 @@
                 transform: unset;
                 left: unset;
                 right: 15%;
-                bottom: -8px;
+                bottom: 0px;
+                padding-bottom: 5px;
             }
 
             .mainthirdnext {
@@ -203,13 +207,14 @@
                 transform: unset;
                 left: unset;
                 right: 0%;
-                bottom: -8px;
+                bottom: 0px;
+                padding-bottom: 5px;
             }
 
             .gotoshop {
                 margin: 0;
                 margin-top: 25px;
-                padding: 5px 30px;
+                padding: 8px 30px;
                 font-size: 14px;
             }
 
@@ -235,8 +240,9 @@
                             transform: unset;
                         }
 
-                        ion-icon {
-                            font-size: 16px;
+                        svg {
+                            width: 16px;
+                            height: 16px;
                         }
                     }
 
@@ -293,7 +299,7 @@
             .gotoshop {
                 margin: 0 auto;
                 margin-top: 30px;
-                padding: 5px 40px;
+                padding: 8px 40px;
                 font-size: 15px;
             }
 
@@ -317,8 +323,9 @@
                             transform: unset;
                         }
 
-                        ion-icon {
-                            font-size: 16px;
+                        svg {
+                            width: 17px;
+                            height: 17px;
                         }
                     }
 
@@ -368,7 +375,7 @@
             }
 
             .gotoshop {
-                padding: 5px 55px;
+                padding: 8px 55px;
             }
 
             .mainthirdslider {
@@ -418,7 +425,7 @@
             }
 
             .gotoshop {
-                padding: 5px 60x;
+                padding: 8px 60x;
             }
 
             .mainthirdslider {

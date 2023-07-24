@@ -84,6 +84,8 @@
             column-gap: 12px;
 
             .search {
+                display: flex;
+                align-items: flex-end;
 
                 .searchicon {
                     width: max-content;
@@ -95,8 +97,8 @@
 
                     svg {
                         stroke: var(--textColor);
-                        width: 23px;
-                        height: 23px;
+                        width: 22px;
+                        height: 22px;
                         transition: var(--darkModeTransition);
                     }
                 }
@@ -232,6 +234,19 @@
                         transition: var(--darkModeTransition);
                         height: 24px;
                     }
+                }
+
+                .sun {
+                    svg {
+                        stroke: var(--textColor);
+                        width: 25px;
+                        transition: var(--darkModeTransition);
+                        height: 25px;
+                    }
+                }
+
+                .moon {
+                    margin: 0 1px;
                 }
             }
         }
