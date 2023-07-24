@@ -91,12 +91,25 @@ $(function () {
 
     //#region main page banner slide
 
-    $(".mainfirstslider").slick({
+    $(".mainfirst .compslider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         dots: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2500,
+        infinite: true,
+        fade: true,
+        arrows: true,
+        prevArrow: $(".mainfirstprev"),
+        nextArrow: $(".mainfirstnext"),
+    });
+
+    $(".mainfirst .telslider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 2500,
         infinite: true,
         fade: true,
         arrows: false,
@@ -104,7 +117,7 @@ $(function () {
 
     //#endregion main page banner slide
 
-    //#region
+    //#region main page third slider
 
     $(".mainthirdslider").slick({
         dots: false,
@@ -136,5 +149,22 @@ $(function () {
         ],
     });
 
-    //#endregion
+    //#endregion main page third slider
+
+    //#region main page fifth slider
+
+    $(".mainfifth .contentkeeper .left").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        autoplaySpeed: 2500,
+        infinite: true,
+        fade: true,
+        arrows: true,
+        prevArrow: $(".mainfifthprev"),
+        nextArrow: $(".mainfifthnext"),
+    });
+
+    //#endregion main page fifth slider
 });

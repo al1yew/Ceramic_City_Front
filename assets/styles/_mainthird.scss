@@ -21,7 +21,7 @@
 }
 
 .mainthird {
-    margin-top: 30px;
+    margin-top: 70px;
 
     .all {
         margin: 0;
@@ -34,7 +34,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         .mainthirdprev {
@@ -61,8 +61,8 @@
 
         .gotoshop {
             margin: 0 auto;
-            margin-top: 30px;
-            padding: 5px 70px;
+            margin-top: 40px;
+            padding: 7px 60px;
             color: var(--white);
             background-color: var(--yellow);
             border-radius: 7px;
@@ -139,6 +139,7 @@
                         font-family: var(--ralewaymedium);
                         width: 100%;
                         margin-top: 8px;
+                        margin-bottom: 5px;
                         transition: var(--darkModeTransition);
                         color: var(--textColor);
                     }
@@ -185,7 +186,7 @@
 
 @media (max-width: 576px) {
     .mainthird {
-        margin-top: 20px;
+        margin-top: 40px;
 
         .all {
 
@@ -273,6 +274,7 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
     .mainthird {
+        margin-top: 50px;
 
         .all {
 
@@ -354,6 +356,8 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
     .mainthird {
+        margin-top: 60px;
+
         .all {
             .mainthirdprev {
                 left: -40px;

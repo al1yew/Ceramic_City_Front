@@ -1,0 +1,136 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #000000;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+    --red: #FF3D00;
+
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #000000;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.mainfourth {
+    margin-top: 70px;
+    background-color: var(--brownopacity);
+    transition: var(--darkModeTransition);
+
+    .all {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0;
+        padding: 40px 0;
+
+        h3 {
+            color: var(--white);
+            font-family: var(--ralewaybold);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 50px;
+            grid-column: 1/4;
+        }
+
+        .whyus {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+
+            p {
+                text-align: center;
+                width: 100%;
+                font-family: var(--ralewaybold);
+                font-size: 20px;
+                margin: 0;
+                color: var(--textColor);
+                transition: var(--darkModeTransition);
+                padding: 0;
+            }
+
+            div {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .mainfourth {
+        margin-top: 40px;
+
+        .all {
+            padding: 30px 0;
+
+            h3 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .whyus {
+                margin-bottom: 0;
+
+                p {
+                    font-size: 15px;
+                }
+
+                div {
+                    margin-bottom: 15px;
+
+                    svg {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .mainfourth {
+        margin-top: 50px;
+
+        .all {
+
+            h3 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .whyus {
+                margin-bottom: 0;
+
+                p {
+                    font-size: 16px;
+                }
+
+                div {
+                    margin-bottom: 15px;
+
+                    svg {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -31,7 +31,6 @@
     transition: var(--darkModeTransition);
     color: var(--textColor);
     z-index: 1000;
-    border-bottom: 1px solid black;
 
     .all {
         margin: 0;
@@ -90,17 +89,20 @@
                     width: max-content;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-end;
                     cursor: pointer;
+                    padding-top: 3px;
 
-                    ion-icon {
-                        font-size: 28px;
+                    svg {
+                        stroke: var(--textColor);
+                        width: 23px;
+                        height: 23px;
+                        transition: var(--darkModeTransition);
                     }
                 }
 
                 .searchmenu {
                     z-index: 1001;
-                    border: 1px solid black;
                     border-bottom-left-radius: var(--borderradius);
                     border-bottom-right-radius: var(--borderradius);
                     height: 250px;
@@ -159,8 +161,11 @@
                                 color: var(--textColor);
                                 transition: var(--darkModeTransition);
 
-                                ion-icon {
-                                    font-size: 22px;
+                                svg {
+                                    stroke: var(--textColor);
+                                    width: 21px;
+                                    height: 21px;
+                                    transition: var(--darkModeTransition);
                                 }
                             }
                         }
@@ -196,11 +201,14 @@
                 width: max-content;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-end;
                 transition: var(--darkModeTransition);
 
-                ion-icon {
-                    font-size: 30px;
+                svg {
+                    stroke: var(--textColor);
+                    width: 24px;
+                    transition: var(--darkModeTransition);
+                    height: 24px;
                 }
             }
 
@@ -209,11 +217,15 @@
                     width: max-content;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-end;
                     cursor: pointer;
+                    padding-top: 3px;
 
-                    ion-icon {
-                        font-size: 30px;
+                    svg {
+                        stroke: var(--textColor);
+                        width: 24px;
+                        transition: var(--darkModeTransition);
+                        height: 24px;
                     }
                 }
             }
@@ -236,8 +248,13 @@
                 font-size: 15px;
                 justify-content: flex-start;
 
+                .menuname {
+                    padding-top: 3px;
+                }
+
                 .hamburgermenu {
                     margin-right: 7px;
+                    padding-top: 3px;
 
                     ion-icon {
                         font-size: 22px;
@@ -255,12 +272,6 @@
 
                 .search {
 
-                    .searchicon {
-                        ion-icon {
-                            font-size: 24px;
-                        }
-                    }
-
                     .searchmenu {
                         height: 250px;
                         width: 100%;
@@ -275,12 +286,6 @@
 
                                     &::placeholder {
                                         font-size: 15px;
-                                    }
-                                }
-
-                                button {
-                                    ion-icon {
-                                        font-size: 20px;
                                     }
                                 }
                             }
@@ -348,12 +353,6 @@
 
                 .search {
 
-                    .searchicon {
-                        ion-icon {
-                            font-size: 25px;
-                        }
-                    }
-
                     .searchmenu {
                         height: 250px;
                         width: 50%;
@@ -368,12 +367,6 @@
 
                                     &::placeholder {
                                         font-size: 15px;
-                                    }
-                                }
-
-                                button {
-                                    ion-icon {
-                                        font-size: 20px;
                                     }
                                 }
                             }
@@ -441,12 +434,6 @@
 
                 .search {
 
-                    .searchicon {
-                        ion-icon {
-                            font-size: 26px;
-                        }
-                    }
-
                     .searchmenu {
                         .menucontent {
                             form {
@@ -457,12 +444,6 @@
 
                                     &::placeholder {
                                         font-size: 15px;
-                                    }
-                                }
-
-                                button {
-                                    ion-icon {
-                                        font-size: 20px;
                                     }
                                 }
                             }
