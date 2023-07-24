@@ -128,7 +128,7 @@
                         border-bottom-left-radius: var(--borderradius);
                         border-bottom-right-radius: var(--borderradius);
 
-                        form {
+                        .top {
                             width: 100%;
                             margin: 0;
                             padding: 10px;
@@ -151,12 +151,13 @@
                                 }
                             }
 
-                            button {
+                            span {
                                 border: none;
                                 outline: none;
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
+                                cursor: pointer;
                                 background-color: var(--backgroundColor);
                                 color: var(--textColor);
                                 transition: var(--darkModeTransition);
@@ -167,6 +168,10 @@
                                     height: 21px;
                                     transition: var(--darkModeTransition);
                                 }
+                            }
+
+                            .closeicon {
+                                display: none;
                             }
                         }
 
@@ -278,7 +283,7 @@
 
                         .menucontent {
 
-                            form {
+                            .top {
                                 grid-template-columns: auto 90%;
 
                                 input {
@@ -359,7 +364,7 @@
 
                         .menucontent {
 
-                            form {
+                            .top {
                                 grid-template-columns: auto 90%;
 
                                 input {
@@ -436,7 +441,7 @@
 
                     .searchmenu {
                         .menucontent {
-                            form {
+                            .top {
                                 grid-template-columns: auto 90%;
 
                                 input {

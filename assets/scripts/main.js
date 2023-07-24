@@ -65,12 +65,21 @@ $(function () {
         $(this).removeClass("closesearchheader");
     });
 
-    // $(document).on("keyup", ".searchinput", function (e) {
-    //     if ($(this).val().length <= 0) {
-    //         $(".searchmenu").fadeOut(150);
-    //         $(".searchicon ion-icon").attr("name", "search-outline");
-    //     }
-    // });
+    $(document).on("input", ".searchinput", function (e) {
+        $(".closeicon").show();
+        $(".searchbutton").hide();
+
+        if ($(this).val().length == 0) {
+            $(".closeicon").hide();
+            $(".searchbutton").show();
+        }
+    });
+
+    $(document).on("click", ".closeicon", function (e) {
+        $(".searchinput").val("");
+        $(".closeicon").hide();
+        $(".searchbutton").show();
+    });
 
     //koroche search interaktivnost nujno produmat, mojet search
     //gosterilsin, a searchitems gosterillmesin poka nicheqo ne napisano

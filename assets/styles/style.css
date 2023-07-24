@@ -762,7 +762,7 @@ p {
   border-bottom-left-radius: var(--borderradius);
   border-bottom-right-radius: var(--borderradius);
 }
-.header .all .right .search .searchmenu .menucontent form {
+.header .all .right .search .searchmenu .menucontent .top {
   width: 100%;
   margin: 0;
   padding: 10px;
@@ -772,7 +772,7 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.header .all .right .search .searchmenu .menucontent form input {
+.header .all .right .search .searchmenu .menucontent .top input {
   border: none;
   outline: none;
   background-color: var(--backgroundColor);
@@ -780,27 +780,31 @@ p {
   color: var(--textColor);
   font-size: 18px;
 }
-.header .all .right .search .searchmenu .menucontent form input::-moz-placeholder {
+.header .all .right .search .searchmenu .menucontent .top input::-moz-placeholder {
   font-size: 16px;
 }
-.header .all .right .search .searchmenu .menucontent form input::placeholder {
+.header .all .right .search .searchmenu .menucontent .top input::placeholder {
   font-size: 16px;
 }
-.header .all .right .search .searchmenu .menucontent form button {
+.header .all .right .search .searchmenu .menucontent .top span {
   border: none;
   outline: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
   background-color: var(--backgroundColor);
   color: var(--textColor);
   transition: var(--darkModeTransition);
 }
-.header .all .right .search .searchmenu .menucontent form button svg {
+.header .all .right .search .searchmenu .menucontent .top span svg {
   stroke: var(--textColor);
   width: 21px;
   height: 21px;
   transition: var(--darkModeTransition);
+}
+.header .all .right .search .searchmenu .menucontent .top .closeicon {
+  display: none;
 }
 .header .all .right .search .searchmenu .menucontent .searchitems {
   width: 100%;
@@ -886,16 +890,16 @@ p {
     height: 250px;
     width: 100%;
   }
-  .header .all .right .search .searchmenu .menucontent form {
+  .header .all .right .search .searchmenu .menucontent .top {
     grid-template-columns: auto 90%;
   }
-  .header .all .right .search .searchmenu .menucontent form input {
+  .header .all .right .search .searchmenu .menucontent .top input {
     font-size: 15px;
   }
-  .header .all .right .search .searchmenu .menucontent form input::-moz-placeholder {
+  .header .all .right .search .searchmenu .menucontent .top input::-moz-placeholder {
     font-size: 15px;
   }
-  .header .all .right .search .searchmenu .menucontent form input::placeholder {
+  .header .all .right .search .searchmenu .menucontent .top input::placeholder {
     font-size: 15px;
   }
   .header .all .right .search .searchmenu .menucontent .searchitems li a {
@@ -937,16 +941,16 @@ p {
     height: 250px;
     width: 50%;
   }
-  .header .all .right .search .searchmenu .menucontent form {
+  .header .all .right .search .searchmenu .menucontent .top {
     grid-template-columns: auto 90%;
   }
-  .header .all .right .search .searchmenu .menucontent form input {
+  .header .all .right .search .searchmenu .menucontent .top input {
     font-size: 15px;
   }
-  .header .all .right .search .searchmenu .menucontent form input::-moz-placeholder {
+  .header .all .right .search .searchmenu .menucontent .top input::-moz-placeholder {
     font-size: 15px;
   }
-  .header .all .right .search .searchmenu .menucontent form input::placeholder {
+  .header .all .right .search .searchmenu .menucontent .top input::placeholder {
     font-size: 15px;
   }
   .header .all .right .search .searchmenu .menucontent .searchitems li a {
@@ -984,16 +988,16 @@ p {
          column-gap: 15px;
     justify-content: flex-end;
   }
-  .header .all .right .search .searchmenu .menucontent form {
+  .header .all .right .search .searchmenu .menucontent .top {
     grid-template-columns: auto 90%;
   }
-  .header .all .right .search .searchmenu .menucontent form input {
+  .header .all .right .search .searchmenu .menucontent .top input {
     font-size: 15px;
   }
-  .header .all .right .search .searchmenu .menucontent form input::-moz-placeholder {
+  .header .all .right .search .searchmenu .menucontent .top input::-moz-placeholder {
     font-size: 15px;
   }
-  .header .all .right .search .searchmenu .menucontent form input::placeholder {
+  .header .all .right .search .searchmenu .menucontent .top input::placeholder {
     font-size: 15px;
   }
   .header .all .right .search .searchmenu .menucontent .searchitems li a {
