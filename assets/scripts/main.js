@@ -192,17 +192,17 @@ $(function () {
 
     //#region main page collections span
 
-    $(document).on("click", function (e) {
-        const isParentClass =
-            $(e.target).parents(".hoverfordetails").length > 0;
+    // $(document).on("click", function (e) {
+    //     const isParentClass =
+    //         $(e.target).parents(".hoverfordetails").length > 0;
 
-        if (isParentClass) {
-            $(".allhoverinfo").css("display", "none");
-            $(e.target).find(".allhoverinfo").css("display", "flex");
-        } else {
-            $(".allhoverinfo").css("display", "none");
-        }
-    });
+    //     if (isParentClass) {
+    //         $(".allhoverinfo").css("display", "none");
+    //         $(e.target).find(".allhoverinfo").css("display", "flex");
+    //     } else {
+    //         $(".allhoverinfo").css("display", "none");
+    //     }
+    // });
 
     //#endregion main page collections span
 });

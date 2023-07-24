@@ -241,28 +241,9 @@
                             .forotherpadding {
                                 width: 20px;
                                 height: 20px;
-                                position: unset !important;
 
                                 .allhoverinfo {
                                     display: none;
-                                    visibility: unset !important;
-                                    opacity: unset !important;
-                                    position: absolute !important;
-                                    width: 70vw !important;
-                                    top: 20% !important;
-                                    left: 0% !important;
-                                    bottom: unset !important;
-                                    right: unset !important;
-
-                                    .right {
-                                        .top {
-                                            font-size: 12px;
-                                        }
-
-                                        .bottom {
-                                            font-size: 13px;
-                                        }
-                                    }
                                 }
                             }
                         }

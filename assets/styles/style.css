@@ -2325,24 +2325,9 @@ p {
   .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding {
     width: 20px;
     height: 20px;
-    position: unset !important;
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo {
     display: none;
-    visibility: unset !important;
-    opacity: unset !important;
-    position: absolute !important;
-    width: 70vw !important;
-    top: 20% !important;
-    left: 0% !important;
-    bottom: unset !important;
-    right: unset !important;
-  }
-  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo .right .top {
-    font-size: 12px;
-  }
-  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo .right .bottom {
-    font-size: 13px;
   }
 }
 :root {
