@@ -81,9 +81,6 @@ $(function () {
         $(".searchbutton").show();
     });
 
-    //koroche search interaktivnost nujno produmat, mojet search
-    //gosterilsin, a searchitems gosterillmesin poka nicheqo ne napisano
-
     //#endregion headersearch
 
     //#region header scroll
