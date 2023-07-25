@@ -3048,6 +3048,7 @@ p {
   transition: 0.3s;
 }
 .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li {
+  font-family: var(--ralewaylight);
   padding: 10px 0;
   font-size: 15px;
   color: var(--textColor);
