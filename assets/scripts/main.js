@@ -122,6 +122,20 @@ $(function () {
         }
     });
 
+    $(document).on("click", ".sidebarcategory", function (e) {
+        if ($(document).width() < 992) {
+            e.preventDefault();
+            $(".podkategorii").hide();
+            $(this).find(".podkategorii").fadeIn(150);
+        }
+    });
+
+    $(document).on("click", ".sidebarcategoryahref", function (e) {
+        if ($(document).width() < 992) {
+            e.preventDefault();
+        }
+    });
+
     //#endregion header scroll
 
     //#region main page banner slide

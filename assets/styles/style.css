@@ -2975,6 +2975,12 @@ p {
   padding: 0;
   width: 100%;
 }
+.sidebar .all .listsidebar .outlet a {
+  color: var(--red) !important;
+}
+.sidebar .all .listsidebar .outlet a:hover {
+  color: var(--red) !important;
+}
 .sidebar .all .listsidebar .sidebarlistelement {
   margin-bottom: 17px;
   font-size: 17px;
@@ -3056,6 +3062,9 @@ p {
   cursor: pointer;
 }
 .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:first-child {
+  display: none;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(2) {
   padding-top: 0;
 }
 .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li a {
@@ -3067,10 +3076,77 @@ p {
 
 .opensidebar {
   left: 0;
-  margin: 0;
-  padding: 0;
 }
 
+@media (max-width: 576px) {
+  .sidebar {
+    width: 50%;
+  }
+  .sidebar .all {
+    padding-left: 15px;
+    padding-top: 60px;
+  }
+  .sidebar .all .closesidebar {
+    top: 10px;
+    left: 10px;
+  }
+  .sidebar .all .closesidebar svg {
+    width: 30px;
+    height: 30px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:first-child {
+    padding-top: 15px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .sidebarcategoryahref {
+    transition: 0.2s;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .sidebarcategoryahref:hover {
+    color: var(--yellow);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:hover .podkategorii {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:hover .sidebarcategoryahref {
+    color: var(--yellow);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii {
+    padding-left: 15px;
+    padding-top: 50px;
+    width: 50%;
+    left: 50%;
+    opacity: unset;
+    visibility: unset;
+    display: none;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li {
+    padding: 10px 0;
+    font-size: 15px;
+    width: 100%;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(1) {
+    padding-top: 0;
+    display: block;
+    font-family: var(--ralewaymedium);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(1) a {
+    color: var(--yellow);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(2) {
+    padding-top: 10px;
+  }
+  .opensidebar {
+    left: 0;
+  }
+}
 @font-face {
   font-family: ralewaymedium;
   src: url(../fonts/Raleway-Medium.ttf);
