@@ -120,15 +120,13 @@
                     border: 1px solid var(--yellow);
                     outline: none;
                     border-radius: 10px;
-                    padding: 10px;
+                    padding: 8px;
                     font-size: 16px;
                     color: var(--textColor);
-                    background-color: var(--backgroundColor);
-                    transition: var(--darkModeTransition);
+                    background-color: var(--white);
 
                     &::placeholder {
-                        color: var(--textColor);
-                        transition: var(--darkModeTransition);
+                        color: var(--black);
                     }
                 }
 
@@ -136,7 +134,7 @@
                     border: none;
                     outline: none;
                     border-radius: 10px;
-                    padding: 10px;
+                    padding: 8px;
                     text-align: center;
                     font-size: 16px;
                     color: var(--white);
@@ -153,29 +151,12 @@
                 padding: 0;
 
                 a {
-                    margin-left: 20px;
-                }
-
-                .fill {
-                    svg {
-                        fill: var(--textColor);
-                    }
-                }
-
-                .stroke {
-                    svg {
-                        stroke: var(--textColor);
-                    }
+                    margin-left: 40px;
                 }
 
                 svg {
-                    width: 30px;
-                    height: 30px;
-                    transition: var(--darkModeTransition);
-
-                    path {
-                        transition: var(--darkModeTransition);
-                    }
+                    width: 31px;
+                    height: 31px;
                 }
             }
         }

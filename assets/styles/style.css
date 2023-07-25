@@ -2698,26 +2698,22 @@ p {
   border: 1px solid var(--yellow);
   outline: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
   color: var(--textColor);
-  background-color: var(--backgroundColor);
-  transition: var(--darkModeTransition);
+  background-color: var(--white);
 }
 .footer .all .right .subscribe input::-moz-placeholder {
-  color: var(--textColor);
-  -moz-transition: var(--darkModeTransition);
-  transition: var(--darkModeTransition);
+  color: var(--black);
 }
 .footer .all .right .subscribe input::placeholder {
-  color: var(--textColor);
-  transition: var(--darkModeTransition);
+  color: var(--black);
 }
 .footer .all .right .subscribe button {
   border: none;
   outline: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   font-size: 16px;
   color: var(--white);
@@ -2732,21 +2728,11 @@ p {
   padding: 0;
 }
 .footer .all .right .links a {
-  margin-left: 20px;
-}
-.footer .all .right .links .fill svg {
-  fill: var(--textColor);
-}
-.footer .all .right .links .stroke svg {
-  stroke: var(--textColor);
+  margin-left: 40px;
 }
 .footer .all .right .links svg {
-  width: 30px;
-  height: 30px;
-  transition: var(--darkModeTransition);
-}
-.footer .all .right .links svg path {
-  transition: var(--darkModeTransition);
+  width: 31px;
+  height: 31px;
 }
 
 @media (max-width: 576px) {
