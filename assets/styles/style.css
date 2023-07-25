@@ -2952,6 +2952,7 @@ p {
   position: relative;
   font-family: var(--ralewaymedium);
   width: 100%;
+  height: 100%;
 }
 .sidebar .all .closesidebar {
   position: absolute;
@@ -3120,7 +3121,7 @@ p {
   }
   .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii {
     padding-left: 15px;
-    padding-top: 50px;
+    padding-top: 60px;
     width: 50%;
     left: 50%;
     opacity: unset;
