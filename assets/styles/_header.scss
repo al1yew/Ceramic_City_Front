@@ -268,7 +268,7 @@
     .header {
 
         .all {
-            grid-template-columns: 33% 100px 33%;
+            grid-template-columns: 33% 120px 33%;
 
             .left {
                 font-size: 15px;
@@ -293,6 +293,21 @@
                 justify-content: flex-end;
 
                 .search {
+                    .searchicon {
+                        width: max-content;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        cursor: pointer;
+                        padding-top: 3px;
+
+                        svg {
+                            stroke: var(--textColor);
+                            width: 25px;
+                            height: 25px;
+                            transition: var(--darkModeTransition);
+                        }
+                    }
 
                     .searchmenu {
                         height: 250px;
@@ -325,15 +340,21 @@
                 }
 
                 .wishlist {
-                    ion-icon {
-                        font-size: 24px;
+                    svg {
+                        stroke: var(--textColor);
+                        width: 25px;
+                        height: 25px;
+                        transition: var(--darkModeTransition);
                     }
                 }
 
                 .colormode {
                     span {
-                        ion-icon {
-                            font-size: 24px;
+                        svg {
+                            stroke: var(--textColor);
+                            width: 25px;
+                            height: 25px;
+                            transition: var(--darkModeTransition);
                         }
                     }
                 }
@@ -341,7 +362,7 @@
         }
 
         .thinheader {
-            grid-template-columns: 33% 85px 33%;
+            grid-template-columns: 33% 100px 33%;
         }
     }
 }
@@ -350,7 +371,7 @@
     .header {
 
         .all {
-            grid-template-columns: 33% 115px 33%;
+            grid-template-columns: 33% 130px 33%;
 
             .left {
                 font-size: 15px;

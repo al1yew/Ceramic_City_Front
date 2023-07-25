@@ -880,7 +880,7 @@ p {
 
 @media (max-width: 576px) {
   .header .all {
-    grid-template-columns: 33% 100px 33%;
+    grid-template-columns: 33% 120px 33%;
   }
   .header .all .left {
     font-size: 15px;
@@ -901,6 +901,21 @@ p {
          column-gap: 12px;
     justify-content: flex-end;
   }
+  .header .all .right .search .searchicon {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    padding-top: 3px;
+  }
+  .header .all .right .search .searchicon svg {
+    stroke: var(--textColor);
+    width: 25px;
+    height: 25px;
+    transition: var(--darkModeTransition);
+  }
   .header .all .right .search .searchmenu {
     height: 250px;
     width: 100%;
@@ -920,19 +935,25 @@ p {
   .header .all .right .search .searchmenu .menucontent .searchitems li a {
     font-size: 15px;
   }
-  .header .all .right .wishlist ion-icon {
-    font-size: 24px;
+  .header .all .right .wishlist svg {
+    stroke: var(--textColor);
+    width: 25px;
+    height: 25px;
+    transition: var(--darkModeTransition);
   }
-  .header .all .right .colormode span ion-icon {
-    font-size: 24px;
+  .header .all .right .colormode span svg {
+    stroke: var(--textColor);
+    width: 25px;
+    height: 25px;
+    transition: var(--darkModeTransition);
   }
   .header .thinheader {
-    grid-template-columns: 33% 85px 33%;
+    grid-template-columns: 33% 100px 33%;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .header .all {
-    grid-template-columns: 33% 115px 33%;
+    grid-template-columns: 33% 130px 33%;
   }
   .header .all .left {
     font-size: 15px;
