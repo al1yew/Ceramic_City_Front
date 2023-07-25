@@ -799,6 +799,8 @@ p {
 
 @import 'footer';
 
+@import 'sidebar';
+
 //#endregion imports
 
 //#region fonts
@@ -859,7 +861,7 @@ input::-webkit-inner-spin-button {
 
     --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
-    --textColor: #000000;
+    --textColor: #121219;
     --backgroundColor: #FFFFFF;
 
     --otherTextColor: #FFFFFF;

@@ -97,6 +97,32 @@ $(function () {
 
     //#endregion header scroll
 
+    //#region header scroll
+
+    $(document).on("click", ".foropeningsidebar", function () {
+        $(".sidebar").addClass("opensidebar");
+    });
+
+    $(document).on("click", ".closesidebar", function () {
+        $(".sidebar").removeClass("opensidebar");
+    });
+
+    $(document).on("click", ".clicktoopenallcategories", function () {
+        $(".sidebarcategories").find(".allcategories").slideToggle(200);
+    });
+
+    $(document).on("click", function (e) {
+        const isParentClass = $(e.target).parents(".sidebar").length > 0;
+        const isHamburgerMenu =
+            $(e.target).parents(".foropeningsidebar").length > 0;
+
+        if (!isParentClass && !isHamburgerMenu) {
+            $(".sidebar").removeClass("opensidebar");
+        }
+    });
+
+    //#endregion header scroll
+
     //#region main page banner slide
 
     $(".mainfirst .compslider").slick({

@@ -650,7 +650,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --headerBackgroundColor: rgba(255, 255, 255, 0.4);
   --otherTextColor: #FFFFFF;
@@ -1047,7 +1047,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -1301,7 +1301,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -1438,7 +1438,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -1812,7 +1812,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -1924,7 +1924,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -2144,7 +2144,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -2626,7 +2626,7 @@ p {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
@@ -2907,6 +2907,151 @@ p {
     font-size: 15px;
   }
 }
+:root {
+  --white: #FFFFFF;
+  --yellow: #E2BA38;
+  --black: #121219;
+  --brown: #332D1C;
+  --brownopacity: #E2BA3880;
+  --red: #FF3D00;
+  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --textColor: #121219;
+  --backgroundColor: #FFFFFF;
+  --otherTextColor: #FFFFFF;
+  --otherBackgroundColor: #332D1C;
+  --ralewaymedium: ralewaymedium;
+  --ralewaybold: ralewaybold;
+  --ralewaylight: ralewaylight;
+  --borderradius: 7px;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--backgroundColor);
+  transition: 0.3s;
+  color: var(--textColor);
+  position: fixed;
+  top: 0;
+  left: -50%;
+  z-index: 50000;
+  overflow-y: scroll;
+}
+.sidebar .all {
+  margin: 0;
+  padding: 0;
+  padding: 30px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.sidebar .all .closesidebar {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+.sidebar .all .closesidebar svg {
+  width: 35px;
+  height: 35px;
+  stroke: var(--textColor);
+}
+.sidebar .all .closesidebar svg path {
+  fill: var(--textColor);
+}
+.sidebar .all ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar .all ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--textColor);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.sidebar .all ul li a,
+.sidebar .all ul li span {
+  color: var(--textColor);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.sidebar .all ul li a:hover,
+.sidebar .all ul li span:hover {
+  color: var(--yellow);
+}
+.sidebar .all ul li .allcategories {
+  padding-left: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  display: none;
+}
+.sidebar .all ul li .allcategories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+.sidebar .all ul li .allcategories ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--textColor);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.sidebar .all ul li .allcategories ul li a,
+.sidebar .all ul li .allcategories ul li span {
+  color: var(--textColor);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.sidebar .all ul li .allcategories ul li a:hover,
+.sidebar .all ul li .allcategories ul li span:hover {
+  color: var(--yellow);
+}
+
+.opensidebar {
+  left: 0;
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+  }
+  .sidebar .all {
+    padding: 20px;
+    padding-top: 70px;
+  }
+  .sidebar .all .closesidebar {
+    top: 17px;
+  }
+  .sidebar .all .closesidebar svg {
+    width: 30px;
+    height: 30px;
+  }
+  .sidebar .all ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .sidebar .all ul li .allcategories ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .opensidebar {
+    left: 0;
+  }
+}
 @font-face {
   font-family: ralewaymedium;
   src: url(../fonts/Raleway-Medium.ttf);
@@ -2949,7 +3094,7 @@ input::-webkit-inner-spin-button {
   --brownopacity: #E2BA3880;
   --red: #FF3D00;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  --textColor: #000000;
+  --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
