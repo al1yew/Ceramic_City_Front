@@ -2670,6 +2670,10 @@ p {
   transition: var(--darkModeTransition);
   font-family: var(--ralewaymedium);
   font-size: 16px;
+  transition: 0.2s;
+}
+.footer .all .middle a:hover {
+  color: var(--textColor);
 }
 .footer .all .right {
   display: flex;

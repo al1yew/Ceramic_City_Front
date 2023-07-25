@@ -89,6 +89,11 @@
                 transition: var(--darkModeTransition);
                 font-family: var(--ralewaymedium);
                 font-size: 16px;
+                transition: 0.2s;
+
+                &:hover {
+                    color: var(--textColor);
+                }
             }
         }
 
