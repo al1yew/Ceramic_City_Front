@@ -103,7 +103,7 @@
 
             .subscribe {
                 display: grid;
-                grid-template-columns: auto 180px;
+                grid-template-columns: auto 140px;
                 gap: 20px;
                 width: 100%;
                 margin: 0;
@@ -266,7 +266,7 @@
 
                 .subscribe {
                     display: grid;
-                    grid-template-columns: auto 120px;
+                    grid-template-columns: auto 110px;
                     gap: 15px;
                     width: 100%;
                     margin-bottom: 20px;
@@ -317,7 +317,39 @@
                 width: 55%;
 
                 .subscribe {
-                    grid-template-columns: auto 140px;
+                    grid-template-columns: auto 120px;
+                    gap: 15px;
+
+                    input {
+                        font-size: 15px;
+                    }
+
+                    button {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1200px) {
+    .footer {
+        .all {
+
+            .left {
+                width: 27%;
+            }
+
+            .middle {
+                width: 18%;
+            }
+
+            .right {
+                width: 55%;
+
+                .subscribe {
+                    grid-template-columns: auto 130px;
                     gap: 15px;
 
                     input {

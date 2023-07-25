@@ -1135,10 +1135,10 @@ p {
   color: var(--white);
   font-size: 55px;
   line-height: 55px;
-  text-shadow: 4px 4px 6px black;
+  text-shadow: 4px 4px 8px var(--black);
 }
 .mainfirst .mainfirstslider .slide .content a {
-  padding: 10px 60px;
+  padding: 10px 40px;
   font-size: 19px;
   background-color: var(--yellow);
   color: var(--white);
@@ -1472,7 +1472,7 @@ p {
 .mainthird .all .gotoshop {
   margin: 0 auto;
   margin-top: 40px;
-  padding: 10px 60px;
+  padding: 10px 40px;
   color: var(--white);
   background-color: var(--yellow);
   border-radius: 7px;
@@ -1988,7 +1988,7 @@ p {
   position: absolute;
   bottom: 0%;
   right: 20px;
-  padding: 10px 60px;
+  padding: 10px 40px;
   color: var(--white);
   background-color: var(--yellow);
   border-radius: 7px;
@@ -2172,7 +2172,7 @@ p {
 .mainsixth .all .gotocollections {
   margin: 0 auto;
   margin-top: 40px;
-  padding: 10px 60px;
+  padding: 10px 40px;
   color: var(--white);
   background-color: var(--yellow);
   border-radius: 7px;
@@ -2681,7 +2681,7 @@ p {
 }
 .footer .all .right .subscribe {
   display: grid;
-  grid-template-columns: auto 180px;
+  grid-template-columns: auto 140px;
   gap: 20px;
   width: 100%;
   margin: 0;
@@ -2817,7 +2817,7 @@ p {
   }
   .footer .all .right .subscribe {
     display: grid;
-    grid-template-columns: auto 120px;
+    grid-template-columns: auto 110px;
     gap: 15px;
     width: 100%;
     margin-bottom: 20px;
@@ -2855,7 +2855,28 @@ p {
     width: 55%;
   }
   .footer .all .right .subscribe {
-    grid-template-columns: auto 140px;
+    grid-template-columns: auto 120px;
+    gap: 15px;
+  }
+  .footer .all .right .subscribe input {
+    font-size: 15px;
+  }
+  .footer .all .right .subscribe button {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer .all .left {
+    width: 27%;
+  }
+  .footer .all .middle {
+    width: 18%;
+  }
+  .footer .all .right {
+    width: 55%;
+  }
+  .footer .all .right .subscribe {
+    grid-template-columns: auto 130px;
     gap: 15px;
   }
   .footer .all .right .subscribe input {
