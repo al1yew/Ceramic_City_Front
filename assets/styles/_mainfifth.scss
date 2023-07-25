@@ -70,7 +70,7 @@
                 cursor: pointer;
                 width: max-content;
                 padding: 10px;
-                padding-bottom: 0;
+                padding-bottom: 7px;
             }
 
             .mainfifthnext {
@@ -81,7 +81,7 @@
                 cursor: pointer;
                 width: max-content;
                 padding: 10px;
-                padding-bottom: 0;
+                padding-bottom: 7px;
             }
 
             h4 {
@@ -102,7 +102,7 @@
                 position: absolute;
                 bottom: 0%;
                 right: 20px;
-                padding: 7px 70px;
+                padding: 10px 60px;
                 color: var(--white);
                 background-color: var(--yellow);
                 border-radius: 7px;
@@ -147,17 +147,11 @@
                     margin-bottom: 15px;
                 }
 
-                .fourthp {
-                    display: none;
-                }
-
                 a {
                     position: absolute;
                     bottom: 0%;
                     left: 50%;
                     transform: translateX(-50%);
-                    padding: 7px 70px;
-                    font-size: 14px;
                 }
             }
         }
@@ -234,7 +228,7 @@
                 }
 
                 .mainfifthnext {
-                    left: 90px;
+                    left: 75px;
                 }
 
                 h4 {
@@ -252,8 +246,6 @@
 
                 a {
                     right: 15px;
-                    padding: 7px 60px;
-                    font-size: 14px;
                 }
             }
         }

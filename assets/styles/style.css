@@ -1142,7 +1142,7 @@ p {
   font-size: 19px;
   background-color: var(--yellow);
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 7px;
   margin-top: 40px;
 }
 
@@ -1193,9 +1193,7 @@ p {
   .mainfirst .mainfirstslider .slide .content a {
     margin: 0 auto;
     margin-top: 10px;
-    padding: 5px 40px;
-    font-size: 14px;
-    border-radius: 10px;
+    font-size: 15px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1251,9 +1249,6 @@ p {
   .mainfirst .mainfirstslider .slide .content a {
     margin: 0 auto;
     margin-top: 10px;
-    padding: 5px 40px;
-    font-size: 15px;
-    border-radius: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1277,9 +1272,7 @@ p {
     line-height: 47px;
   }
   .mainfirst .mainfirstslider .slide .content a {
-    padding: 6px 40px;
     font-size: 16px;
-    border-radius: 10px;
     margin-top: 20px;
   }
 }
@@ -1598,7 +1591,7 @@ p {
     left: unset;
     right: 15%;
     bottom: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
   .mainthird .all .mainthirdnext {
     top: unset;
@@ -1606,13 +1599,11 @@ p {
     left: unset;
     right: 0%;
     bottom: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
   .mainthird .all .gotoshop {
     margin: 0;
     margin-top: 25px;
-    padding: 8px 30px;
-    font-size: 14px;
   }
   .mainthird .all .mainthirdslider .product .imgkeeper .sale {
     padding: 0px 10px;
@@ -1659,20 +1650,24 @@ p {
     margin-top: 50px;
   }
   .mainthird .all .mainthirdprev {
-    top: 50%;
-    transform: translateY(-50%);
-    left: -36px;
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: 15%;
+    bottom: 0px;
+    padding-bottom: 7px;
   }
   .mainthird .all .mainthirdnext {
-    top: 50%;
-    transform: translateY(-50%);
-    right: -36px;
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: 0%;
+    bottom: 0px;
+    padding-bottom: 7px;
   }
   .mainthird .all .gotoshop {
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 8px 40px;
-    font-size: 15px;
+    margin: 0;
+    margin-top: 25px;
   }
   .mainthird .all .mainthirdslider .product .imgkeeper .sale {
     padding: 0px 10px;
@@ -1719,13 +1714,24 @@ p {
     margin-top: 60px;
   }
   .mainthird .all .mainthirdprev {
-    left: -40px;
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: 15%;
+    bottom: 0px;
+    padding-bottom: 7px;
   }
   .mainthird .all .mainthirdnext {
-    right: -40px;
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: 0%;
+    bottom: 0px;
+    padding-bottom: 7px;
   }
   .mainthird .all .gotoshop {
-    padding: 8px 55px;
+    margin: 0;
+    margin-top: 25px;
   }
   .mainthird .all .mainthirdslider .product .imgkeeper .sale {
     padding: 0px 13px;
@@ -1748,14 +1754,14 @@ p {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
+  .mainthird {
+    overflow: hidden;
+  }
   .mainthird .all .mainthirdprev {
-    left: -45px;
+    left: -40px;
   }
   .mainthird .all .mainthirdnext {
-    right: -45px;
-  }
-  .mainthird .all .gotoshop {
-    padding: 8px 60x;
+    right: -40px;
   }
   .mainthird .all .mainthirdslider .product .imgkeeper .sale {
     padding: 0px 13px;
@@ -1953,7 +1959,7 @@ p {
   width: -moz-max-content;
   width: max-content;
   padding: 10px;
-  padding-bottom: 0;
+  padding-bottom: 7px;
 }
 .mainfifth .contentkeeper .right .mainfifthnext {
   position: absolute;
@@ -1964,7 +1970,7 @@ p {
   width: -moz-max-content;
   width: max-content;
   padding: 10px;
-  padding-bottom: 0;
+  padding-bottom: 7px;
 }
 .mainfifth .contentkeeper .right h4 {
   color: var(--yellow);
@@ -1982,7 +1988,7 @@ p {
   position: absolute;
   bottom: 0%;
   right: 20px;
-  padding: 7px 70px;
+  padding: 10px 60px;
   color: var(--white);
   background-color: var(--yellow);
   border-radius: 7px;
@@ -2018,16 +2024,11 @@ p {
     font-size: 14px;
     margin-bottom: 15px;
   }
-  .mainfifth .contentkeeper .right .fourthp {
-    display: none;
-  }
   .mainfifth .contentkeeper .right a {
     position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 7px 70px;
-    font-size: 14px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -2084,7 +2085,7 @@ p {
     left: 8px;
   }
   .mainfifth .contentkeeper .right .mainfifthnext {
-    left: 90px;
+    left: 75px;
   }
   .mainfifth .contentkeeper .right h4 {
     margin-bottom: 20px;
@@ -2098,8 +2099,6 @@ p {
   }
   .mainfifth .contentkeeper .right a {
     right: 15px;
-    padding: 7px 60px;
-    font-size: 14px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2297,7 +2296,7 @@ p {
     bottom: 0%;
     right: 15%;
     transform: unset;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
   .mainsixth .all .mainsixthnext {
     bottom: 0%;
@@ -2305,15 +2304,13 @@ p {
     left: unset;
     right: 0%;
     transform: unset;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
   .mainsixth .all .gotocollections {
     position: absolute;
     left: 0;
     bottom: 0;
     margin: 0;
-    padding: 8px 30px;
-    font-size: 14px;
   }
   .mainsixth .all .userselection {
     background-color: var(--white);
@@ -2381,6 +2378,214 @@ p {
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo {
     display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mainsixth {
+    margin-top: 50px;
+  }
+  .mainsixth .all {
+    padding-bottom: 50px;
+  }
+  .mainsixth .all .mainsixthprev {
+    top: unset;
+    left: unset;
+    bottom: 0%;
+    right: 15%;
+    transform: unset;
+    padding-bottom: 7px;
+  }
+  .mainsixth .all .mainsixthnext {
+    bottom: 0%;
+    top: unset;
+    left: unset;
+    right: 0%;
+    transform: unset;
+    padding-bottom: 7px;
+  }
+  .mainsixth .all .gotocollections {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .mainsixth .all .userselection {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainsixth .all .userselection img {
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+  }
+  .mainsixth .all .userselection .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .mainsixth .all .userselection .right .top {
+    width: 100%;
+    font-size: 15px;
+    font-family: var(--ralewaymedium);
+    color: var(--black);
+  }
+  .mainsixth .all .userselection .right .bottom {
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--ralewaybold);
+    color: var(--black);
+  }
+  .mainsixth .all .userselection .right .bottom i {
+    display: none;
+  }
+  .mainsixth .all .slidedown {
+    height: 100px;
+    padding: 10px;
+  }
+  .mainsixth .all .slidedown i {
+    display: inline !important;
+  }
+  .mainsixth .all .mainsixthslider .slide {
+    position: relative;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails {
+    padding: 10px;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding {
+    width: 26px;
+    height: 26px;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding {
+    width: 20px;
+    height: 20px;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .mainsixth {
+    margin-top: 50px;
+  }
+  .mainsixth .all {
+    padding-bottom: 50px;
+  }
+  .mainsixth .all .mainsixthprev {
+    top: unset;
+    left: unset;
+    bottom: 0%;
+    right: 15%;
+    transform: unset;
+    padding-bottom: 7px;
+  }
+  .mainsixth .all .mainsixthnext {
+    bottom: 0%;
+    top: unset;
+    left: unset;
+    right: 0%;
+    transform: unset;
+    padding-bottom: 7px;
+  }
+  .mainsixth .all .gotocollections {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .mainsixth .all .userselection {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainsixth .all .userselection img {
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+  }
+  .mainsixth .all .userselection .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .mainsixth .all .userselection .right .top {
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--ralewaymedium);
+    color: var(--black);
+  }
+  .mainsixth .all .userselection .right .bottom {
+    width: 100%;
+    font-size: 17px;
+    font-family: var(--ralewaybold);
+    color: var(--black);
+  }
+  .mainsixth .all .userselection .right .bottom i {
+    display: none;
+  }
+  .mainsixth .all .slidedown {
+    height: 100px;
+    padding: 10px;
+  }
+  .mainsixth .all .slidedown i {
+    display: inline !important;
+  }
+  .mainsixth .all .mainsixthslider .slide {
+    position: relative;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails {
+    padding: 10px;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding {
+    width: 26px;
+    height: 26px;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding {
+    width: 20px;
+    height: 20px;
+  }
+  .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mainsixth {
+    overflow: hidden;
+  }
+  .mainsixth .all .userselection {
+    display: none;
+  }
+  .mainsixth .all .mainsixthprev {
+    left: -42px;
+  }
+  .mainsixth .all .mainsixthnext {
+    right: -42px;
   }
 }
 :root {

@@ -196,7 +196,7 @@ $(function () {
         const isParentClass =
             $(e.target).parents(".hoverfordetails").length > 0;
 
-        if ($(window).width() < 768) {
+        if ($(window).width() < 992) {
             if (isParentClass) {
                 $(".userselection").addClass("slidedown");
 
