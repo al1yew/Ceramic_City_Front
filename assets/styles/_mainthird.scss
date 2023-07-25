@@ -122,6 +122,7 @@
 
                     svg {
                         stroke: var(--textColor);
+                        padding-top: 1px;
                         width: 18px;
                         height: 18px;
                         transition: var(--darkModeTransition);
