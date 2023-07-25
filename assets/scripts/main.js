@@ -88,8 +88,10 @@ $(function () {
     $(document).on("scroll", function () {
         if ($(window).scrollTop() > $(window).height() / 2) {
             $(".header .all").addClass("thinheader");
+            $(".header").addClass("changecolorheader");
         } else {
             $(".header .all").removeClass("thinheader");
+            $(".header").removeClass("changecolorheader");
         }
     });
 

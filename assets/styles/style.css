@@ -652,6 +652,7 @@ p {
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   --textColor: #000000;
   --backgroundColor: #FFFFFF;
+  --headerBackgroundColor: rgba(255, 255, 255, 0.4);
   --otherTextColor: #FFFFFF;
   --otherBackgroundColor: #332D1C;
   --ralewaymedium: ralewaymedium;
@@ -703,6 +704,9 @@ p {
 }
 .header .all .left .hamburgermenu svg {
   fill: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.header .all .left .hamburgermenu svg path {
   transition: var(--darkModeTransition);
 }
 .header .all .left .hamburgermenu svg rect {
@@ -876,6 +880,10 @@ p {
 .header .thinheader {
   transition: 0.2s;
   grid-template-columns: auto 130px auto;
+}
+
+.changecolorheader {
+  background-color: var(--headerBackgroundColor);
 }
 
 @media (max-width: 576px) {
@@ -2965,4 +2973,5 @@ body {
   --otherBackgroundColor: #FFFFFF;
   --brownopacity: #E2BA38;
   --footercolor: #332D1C;
+  --headerBackgroundColor: #332d1c69;
 }/*# sourceMappingURL=style.css.map */

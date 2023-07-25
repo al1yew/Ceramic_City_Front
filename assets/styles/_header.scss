@@ -11,6 +11,8 @@
     --textColor: #000000;
     --backgroundColor: #FFFFFF;
 
+    --headerBackgroundColor: rgba(255, 255, 255, 0.4);
+
     --otherTextColor: #FFFFFF;
     --otherBackgroundColor: #332D1C;
     --ralewaymedium: ralewaymedium;
@@ -63,6 +65,10 @@
                 svg {
                     fill: var(--textColor);
                     transition: var(--darkModeTransition);
+
+                    path {
+                        transition: var(--darkModeTransition);
+                    }
 
                     rect {
                         transition: var(--darkModeTransition);
@@ -262,6 +268,10 @@
         transition: 0.2s;
         grid-template-columns: auto 130px auto;
     }
+}
+
+.changecolorheader {
+    background-color: var(--headerBackgroundColor);
 }
 
 @media (max-width: 576px) {
