@@ -2648,11 +2648,11 @@ p {
 .footer .all .left {
   width: 31%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .footer .all .left img {
-  width: 100%;
+  width: 90%;
 }
 .footer .all .middle {
   padding: 0;
