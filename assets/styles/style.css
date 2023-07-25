@@ -989,12 +989,6 @@ p {
   .header .all .right .search .searchmenu .menucontent .searchitems li a {
     font-size: 15px;
   }
-  .header .all .right .wishlist ion-icon {
-    font-size: 25px;
-  }
-  .header .all .right .colormode span ion-icon {
-    font-size: 25px;
-  }
   .header .thinheader {
     grid-template-columns: 33% 100px 33%;
   }
@@ -1032,12 +1026,6 @@ p {
   }
   .header .all .right .search .searchmenu .menucontent .searchitems li a {
     font-size: 15px;
-  }
-  .header .all .right .wishlist ion-icon {
-    font-size: 25px;
-  }
-  .header .all .right .colormode span ion-icon {
-    font-size: 25px;
   }
   .header .thinheader {
     grid-template-columns: 33% 120px 33%;
