@@ -190,19 +190,32 @@ $(function () {
 
     //#endregion main page sixth slider
 
-    //#region main page collections span
+    //#region main page collections span on phone
 
-    // $(document).on("click", function (e) {
-    //     const isParentClass =
-    //         $(e.target).parents(".hoverfordetails").length > 0;
+    $(document).on("click", function (e) {
+        const isParentClass =
+            $(e.target).parents(".hoverfordetails").length > 0;
 
-    //     if (isParentClass) {
-    //         $(".allhoverinfo").css("display", "none");
-    //         $(e.target).find(".allhoverinfo").css("display", "flex");
-    //     } else {
-    //         $(".allhoverinfo").css("display", "none");
-    //     }
-    // });
+        if ($(window).width() < 768) {
+            if (isParentClass) {
+                $(".userselection").addClass("slidedown");
 
-    //#endregion main page collections span
+                let src = $(e.target).find("img").attr("src");
+                let link = $(e.target).find("a").attr("href");
+                let prodName = $(e.target).find(".top").text().trim();
+                let price = $(e.target).find(".price").text().trim();
+
+                $(".userselection").attr("href", link);
+                $(".userselection").find("img").attr("src", src);
+                $(".userselection").find(".top").text(prodName);
+                $(".userselection").find(".price").text(price);
+            } else {
+                $(".userselection").removeClass("slidedown");
+                $(".userselection").find(".top").text("");
+                $(".userselection").find(".price").text("");
+            }
+        }
+    });
+
+    //#endregion main page collections span on phone
 });

@@ -37,6 +37,10 @@
             margin-bottom: 40px;
         }
 
+        .userselection {
+            display: none;
+        }
+
         .mainsixthprev {
             position: absolute;
             top: 50%;
@@ -225,6 +229,64 @@
                 margin: 0;
                 padding: 8px 30px;
                 font-size: 14px;
+            }
+
+            .userselection {
+                background-color: var(--white);
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto;
+                margin-top: 12px;
+                height: 0px;
+                padding: 0px;
+                border-radius: 10px;
+                transition: 0.2s;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                    border-radius: 10px;
+                }
+
+                .right {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding-left: 10px;
+                    height: 100%;
+                    width: 100%;
+
+                    .top {
+                        width: 100%;
+                        font-size: 14px;
+                        font-family: var(--ralewaymedium);
+                        color: var(--black);
+                    }
+
+                    .bottom {
+                        width: 100%;
+                        font-size: 15px;
+                        font-family: var(--ralewaybold);
+                        color: var(--black);
+
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .slidedown {
+                height: 90px;
+                padding: 10px;
+
+                i {
+                    display: inline !important;
+                }
             }
 
             .mainsixthslider {
