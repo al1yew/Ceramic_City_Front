@@ -136,6 +136,11 @@
                     font-size: 16px;
                     color: var(--white);
                     background-color: var(--yellow);
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: #A57E02;
+                    }
                 }
             }
 

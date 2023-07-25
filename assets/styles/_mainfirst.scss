@@ -127,6 +127,11 @@
                     color: var(--white);
                     border-radius: 7px;
                     margin-top: 40px;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: #A57E02;
+                    }
                 }
             }
         }

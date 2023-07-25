@@ -1149,6 +1149,10 @@ p {
   color: var(--white);
   border-radius: 7px;
   margin-top: 40px;
+  transition: 0.2s;
+}
+.mainfirst .mainfirstslider .slide .content a:hover {
+  background-color: #A57E02;
 }
 
 @media (max-width: 576px) {
@@ -1485,6 +1489,10 @@ p {
   width: -moz-max-content;
   width: max-content;
   font-family: var(--ralewaymedium);
+  transition: 0.2s;
+}
+.mainthird .all .gotoshop:hover {
+  background-color: #A57E02;
 }
 .mainthird .all .mainthirdslider {
   margin: 0;
@@ -2002,6 +2010,10 @@ p {
   width: -moz-max-content;
   width: max-content;
   font-family: var(--ralewaymedium);
+  transition: 0.2s;
+}
+.mainfifth .contentkeeper .right a:hover {
+  background-color: #A57E02;
 }
 
 @media (max-width: 576px) {
@@ -2186,6 +2198,10 @@ p {
   width: -moz-max-content;
   width: max-content;
   font-family: var(--ralewaymedium);
+  transition: 0.2s;
+}
+.mainsixth .all .gotocollections:hover {
+  background-color: #A57E02;
 }
 .mainsixth .all .mainsixthslider {
   margin: 0;
@@ -2718,6 +2734,10 @@ p {
   font-size: 16px;
   color: var(--white);
   background-color: var(--yellow);
+  transition: 0.2s;
+}
+.footer .all .right .subscribe button:hover {
+  background-color: #A57E02;
 }
 .footer .all .right .links {
   display: flex;
