@@ -2927,33 +2927,36 @@ p {
 
 .sidebar {
   height: 100vh;
-  width: 250px;
+  width: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background-color: var(--backgroundColor);
   transition: 0.3s;
   color: var(--textColor);
   position: fixed;
   top: 0;
-  left: -50%;
+  left: -100%;
   z-index: 50000;
-  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
 }
 .sidebar .all {
   margin: 0;
   padding: 0;
-  padding: 30px;
-  padding-top: 60px;
+  padding-left: 20px;
+  padding-top: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   position: relative;
+  font-family: var(--ralewaymedium);
+  width: 100%;
 }
 .sidebar .all .closesidebar {
   position: absolute;
   top: 20px;
-  right: 0;
+  left: 10px;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
@@ -2966,92 +2969,107 @@ p {
 .sidebar .all .closesidebar svg path {
   fill: var(--textColor);
 }
-.sidebar .all ul {
+.sidebar .all .listsidebar {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-.sidebar .all ul li {
-  margin-bottom: 20px;
-  font-size: 18px;
+.sidebar .all .listsidebar .sidebarlistelement {
+  margin-bottom: 17px;
+  font-size: 17px;
+  color: var(--textColor);
+  transition: 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+.sidebar .all .listsidebar .sidebarlistelement a,
+.sidebar .all .listsidebar .sidebarlistelement span {
   color: var(--textColor);
   transition: 0.2s;
   cursor: pointer;
 }
-.sidebar .all ul li a,
-.sidebar .all ul li span {
-  color: var(--textColor);
-  transition: 0.2s;
-  cursor: pointer;
-}
-.sidebar .all ul li a:hover,
-.sidebar .all ul li span:hover {
+.sidebar .all .listsidebar .sidebarlistelement a:hover,
+.sidebar .all .listsidebar .sidebarlistelement span:hover {
   color: var(--yellow);
 }
-.sidebar .all ul li .allcategories {
-  padding-left: 20px;
-  padding-right: 0;
+.sidebar .all .listsidebar .sidebarlistelement .allcategories {
   padding-bottom: 0;
   overflow: hidden;
   display: none;
-}
-.sidebar .all ul li .allcategories ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  margin-top: 10px;
+  width: 100%;
+  padding-left: 15px;
 }
-.sidebar .all ul li .allcategories ul li {
-  margin-bottom: 12px;
-  font-size: 16px;
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory {
+  padding: 5px 0;
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:first-child {
+  padding-top: 15px;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .sidebarcategoryahref {
   color: var(--textColor);
   transition: 0.2s;
   cursor: pointer;
 }
-.sidebar .all ul li .allcategories ul li a,
-.sidebar .all ul li .allcategories ul li span {
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .sidebarcategoryahref:hover {
+  color: var(--yellow);
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:hover .podkategorii {
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:hover .sidebarcategoryahref {
+  color: var(--yellow);
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii {
+  overflow-y: scroll;
+  list-style: none;
+  border-left: 1px solid black;
+  padding-left: 20px;
+  padding-top: 70px;
+  height: 100vh;
+  width: 180px;
+  background-color: var(--backgroundColor);
+  transition: 0.3s;
+  color: var(--textColor);
+  position: fixed;
+  top: 0;
+  left: 200px;
+  z-index: 50000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li {
+  padding: 10px 0;
+  font-size: 15px;
   color: var(--textColor);
   transition: 0.2s;
   cursor: pointer;
 }
-.sidebar .all ul li .allcategories ul li a:hover,
-.sidebar .all ul li .allcategories ul li span:hover {
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:first-child {
+  padding-top: 0;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li a {
+  transition: 0.2s;
+}
+.sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:hover a {
   color: var(--yellow);
 }
 
 .opensidebar {
   left: 0;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 576px) {
-  .sidebar {
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-  }
-  .sidebar .all {
-    padding: 20px;
-    padding-top: 70px;
-  }
-  .sidebar .all .closesidebar {
-    top: 17px;
-  }
-  .sidebar .all .closesidebar svg {
-    width: 30px;
-    height: 30px;
-  }
-  .sidebar .all ul li {
-    margin-bottom: 15px;
-    font-size: 16px;
-  }
-  .sidebar .all ul li .allcategories ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  .opensidebar {
-    left: 0;
-  }
-}
 @font-face {
   font-family: ralewaymedium;
   src: url(../fonts/Raleway-Medium.ttf);

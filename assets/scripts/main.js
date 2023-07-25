@@ -105,6 +105,7 @@ $(function () {
 
     $(document).on("click", ".closesidebar", function () {
         $(".sidebar").removeClass("opensidebar");
+        $(".sidebarcategories").find(".allcategories").hide();
     });
 
     $(document).on("click", ".clicktoopenallcategories", function () {

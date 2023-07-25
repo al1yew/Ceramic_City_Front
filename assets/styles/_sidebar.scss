@@ -22,33 +22,36 @@
 
 .sidebar {
     height: 100vh;
-    width: 250px;
+    width: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     background-color: var(--backgroundColor);
     transition: 0.3s;
     color: var(--textColor);
     position: fixed;
     top: 0;
-    left: -50%;
+    left: -100%;
     z-index: 50000;
-    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
 
     .all {
         margin: 0;
         padding: 0;
-        padding: 30px;
-        padding-top: 60px;
+        padding-left: 20px;
+        padding-top: 70px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         position: relative;
+        font-family: var(--ralewaymedium);
+        width: 100%;
 
         .closesidebar {
             position: absolute;
             top: 20px;
-            right: 0;
+            left: 10px;
             width: max-content;
             cursor: pointer;
 
@@ -63,17 +66,19 @@
             }
         }
 
-        ul {
+        .listsidebar {
             list-style: none;
             margin: 0;
             padding: 0;
+            width: 100%;
 
-            li {
-                margin-bottom: 20px;
-                font-size: 18px;
+            .sidebarlistelement {
+                margin-bottom: 17px;
+                font-size: 17px;
                 color: var(--textColor);
                 transition: 0.2s;
                 cursor: pointer;
+                width: 100%;
 
                 a,
                 span {
@@ -87,33 +92,90 @@
                 }
 
                 .allcategories {
-                    padding-left: 20px;
-                    padding-right: 0;
                     padding-bottom: 0;
                     overflow: hidden;
                     display: none;
+                    list-style: none;
+                    margin: 0;
+                    width: 100%;
+                    padding-left: 15px;
 
-                    ul {
-                        list-style: none;
-                        margin: 0;
-                        padding: 0;
-                        margin-top: 10px;
+                    .sidebarcategory {
+                        padding: 5px 0;
+                        font-size: 15px;
+                        color: var(--textColor);
+                        transition: 0.2s;
+                        cursor: pointer;
+                        width: 100%;
 
-                        li {
-                            margin-bottom: 12px;
-                            font-size: 16px;
+                        &:first-child {
+                            padding-top: 15px;
+                        }
+
+                        .sidebarcategoryahref {
                             color: var(--textColor);
                             transition: 0.2s;
                             cursor: pointer;
 
-                            a,
-                            span {
+                            &:hover {
+                                color: var(--yellow);
+                            }
+                        }
+
+                        &:hover {
+                            .podkategorii {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+
+                            .sidebarcategoryahref {
+                                color: var(--yellow);
+                            }
+                        }
+
+                        .podkategorii {
+                            overflow-y: scroll;
+                            list-style: none;
+                            border-left: 1px solid black;
+                            padding-left: 20px;
+                            padding-top: 70px;
+
+                            height: 100vh;
+                            width: 180px;
+
+                            background-color: var(--backgroundColor);
+                            transition: 0.3s;
+                            color: var(--textColor);
+
+                            position: fixed;
+                            top: 0;
+                            left: 200px;
+
+                            z-index: 50000;
+
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: 0.3s;
+
+                            li {
+                                padding: 10px 0;
+                                font-size: 15px;
                                 color: var(--textColor);
                                 transition: 0.2s;
                                 cursor: pointer;
 
+                                &:first-child {
+                                    padding-top: 0;
+                                }
+
+                                a {
+                                    transition: 0.2s;
+                                }
+
                                 &:hover {
-                                    color: var(--yellow);
+                                    a {
+                                        color: var(--yellow);
+                                    }
                                 }
                             }
                         }
@@ -126,47 +188,8 @@
 
 .opensidebar {
     left: 0;
+    margin: 0;
+    padding: 0;
 }
 
-@media(max-width: 576px) {
-    .sidebar {
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-
-        .all {
-            padding: 20px;
-            padding-top: 70px;
-
-            .closesidebar {
-                top: 17px;
-
-                svg {
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-
-            ul {
-
-                li {
-                    margin-bottom: 15px;
-                    font-size: 16px;
-
-                    .allcategories {
-                        ul {
-                            li {
-                                margin-bottom: 10px;
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .opensidebar {
-        left: 0;
-    }
-}
+@media(max-width: 576px) {}
