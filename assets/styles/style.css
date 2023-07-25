@@ -701,8 +701,13 @@ p {
   align-items: center;
   margin-right: 10px;
 }
-.header .all .left .hamburgermenu ion-icon {
-  font-size: 30px;
+.header .all .left .hamburgermenu svg {
+  fill: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.header .all .left .hamburgermenu svg rect {
+  transition: var(--darkModeTransition);
+  fill: var(--textColor);
 }
 .header .all .middle {
   margin: 0;
@@ -882,14 +887,11 @@ p {
     justify-content: flex-start;
   }
   .header .all .left .menuname {
-    padding-top: 3px;
+    display: none;
   }
   .header .all .left .hamburgermenu {
     margin-right: 7px;
     padding-top: 3px;
-  }
-  .header .all .left .hamburgermenu ion-icon {
-    font-size: 22px;
   }
   .header .all .middle {
     padding: 5px 0;
@@ -939,9 +941,6 @@ p {
   .header .all .left .hamburgermenu {
     margin-right: 7px;
   }
-  .header .all .left .hamburgermenu ion-icon {
-    font-size: 23px;
-  }
   .header .all .middle {
     padding: 5px 0;
   }
@@ -989,9 +988,6 @@ p {
   }
   .header .all .left .hamburgermenu {
     margin-right: 7px;
-  }
-  .header .all .left .hamburgermenu ion-icon {
-    font-size: 23px;
   }
   .header .all .middle {
     padding: 10px 0;

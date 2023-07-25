@@ -60,8 +60,14 @@
                 align-items: center;
                 margin-right: 10px;
 
-                ion-icon {
-                    font-size: 30px;
+                svg {
+                    fill: var(--textColor);
+                    transition: var(--darkModeTransition);
+
+                    rect {
+                        transition: var(--darkModeTransition);
+                        fill: var(--textColor);
+                    }
                 }
             }
         }
@@ -269,16 +275,12 @@
                 justify-content: flex-start;
 
                 .menuname {
-                    padding-top: 3px;
+                    display: none;
                 }
 
                 .hamburgermenu {
                     margin-right: 7px;
                     padding-top: 3px;
-
-                    ion-icon {
-                        font-size: 22px;
-                    }
                 }
             }
 
@@ -356,10 +358,6 @@
 
                 .hamburgermenu {
                     margin-right: 7px;
-
-                    ion-icon {
-                        font-size: 23px;
-                    }
                 }
             }
 
@@ -437,10 +435,6 @@
 
                 .hamburgermenu {
                     margin-right: 7px;
-
-                    ion-icon {
-                        font-size: 23px;
-                    }
                 }
             }
 
