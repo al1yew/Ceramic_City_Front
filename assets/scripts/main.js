@@ -86,7 +86,7 @@ $(function () {
     //#region header scroll
 
     $(document).on("scroll", function () {
-        if ($(window).scrollTop() > $(window).height() / 2) {
+        if ($(window).scrollTop() > 100) {
             $(".header .all").addClass("thinheader");
             $(".header").addClass("changecolorheader");
         } else {
@@ -271,4 +271,47 @@ $(function () {
     });
 
     //#endregion main page collections span on phone
+
+    //--------------------- shop page
+
+    //#region shop page filters animations
+
+    $(document).on("click", ".clicktoopenfilterul", function () {
+        $(this).parent().find(".podfilterul").slideToggle(200);
+
+        if ($(this).parent().find(".plus").hasClass("d-none")) {
+            $(this).parent().find(".plus").removeClass("d-none");
+            $(this).parent().find(".minus").addClass("d-none");
+        } else {
+            $(this).parent().find(".minus").removeClass("d-none");
+            $(this).parent().find(".plus").addClass("d-none");
+        }
+    });
+
+    $(document).on("click", function (e) {
+        let isParentClass = $(e.target).parents(".filterli").length > 0;
+
+        if (!isParentClass) {
+            $(".podfilterul").slideUp(200);
+            $(".minus").addClass("d-none");
+            $(".plus").removeClass("d-none");
+        }
+    });
+
+    $(document).on("click", ".podfilterli", function () {
+        let ikonka = $(this).find(".checkikonka");
+        let input = $(this).find("input");
+
+        if (ikonka.hasClass("d-none") && !input.prop("checked")) {
+            input.prop("checked", true);
+            ikonka.removeClass("d-none");
+        } else {
+            input.prop("checked", false);
+            ikonka.addClass("d-none");
+        }
+
+        //xotel s label, no ne polucilos shto to, dvajdi zovet funkciyu
+    });
+
+    //#endregion shop page filters animations
 });

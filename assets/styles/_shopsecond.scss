@@ -1,0 +1,158 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #121219;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+    --red: #FF3D00;
+    --darkyellow: #A57E02;
+
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #121219;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.shopsecond {
+    background-color: var(--backgroundColor);
+    transition: var(--darkModeTransition);
+    color: var(--darkyellow);
+
+    .all {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .left {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+
+            p {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: var(--ralewaymedium);
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .filterul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+                .filterli {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    padding: 0;
+                    padding: 10px 0;
+                    cursor: pointer;
+
+                    .top {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .filtername {
+                            font-size: 20px;
+                            width: 90%;
+                        }
+
+                        .plus,
+                        .minus {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            width: 10%;
+                            height: max-content;
+
+                            ion-icon {
+                                font-size: 20px;
+                            }
+
+                            svg {
+                                transition: var(--darkModeTransition);
+                                color: var(--darkyellow);
+                            }
+                        }
+                    }
+
+                    .podfilterul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        display: none;
+
+                        .podfilterli {
+                            padding: 7px 0;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            cursor: pointer;
+
+                            .ischeckedspan {
+                                width: 18px;
+                                height: 18px;
+                                background-color: var(--backgroundColor);
+                                transition: var(--darkModeTransition);
+                                border: 0.8px solid var(--darkyellow);
+                                border-radius: 1.5px;
+                                position: relative;
+                                margin-right: 10px;
+
+                                ion-icon {
+                                    font-size: 25px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: var(--textColor);
+                                    transition: var(--darkModeTransition);
+                                }
+                            }
+
+                            input {
+                                display: none;
+                            }
+
+                            .podkategoriyaname {
+                                font-family: var(--ralewaylight);
+                                font-size: 14px;
+                                margin-right: 10px;
+                                color: var(--textColor);
+                                transition: var(--darkModeTransition);
+                                padding-top: 1px;
+                                &:hover {
+                                    color: var(--yellow);
+                                }
+                            }
+
+                            .podkategoriyacount {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

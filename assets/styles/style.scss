@@ -801,6 +801,8 @@ p {
 
 @import 'sidebar';
 
+@import 'shoppage';
+
 //#endregion imports
 
 //#region fonts
@@ -858,6 +860,7 @@ input::-webkit-inner-spin-button {
     --brown: #332D1C;
     --brownopacity: #E2BA3880;
     --red: #FF3D00;
+    --darkyellow: #A57E02;
 
     --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
@@ -886,6 +889,7 @@ body {
     --otherTextColor: #000000;
     --otherBackgroundColor: #FFFFFF;
     --brownopacity: #E2BA38;
+    --darkyellow: #E2BA38;
     --footercolor: #332D1C;
     --headerBackgroundColor: #332d1c69;
 }
