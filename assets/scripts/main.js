@@ -120,6 +120,7 @@ $(function () {
 
         if (!isParentClass && !isHamburgerMenu) {
             $(".sidebar").removeClass("opensidebar");
+            $(".podkategorii").fadeOut(120);
         }
     });
 
