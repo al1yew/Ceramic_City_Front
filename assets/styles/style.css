@@ -3148,6 +3148,75 @@ p {
     left: 0;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  .sidebar {
+    width: 250px;
+  }
+  .sidebar .all {
+    padding-left: 15px;
+    padding-top: 60px;
+  }
+  .sidebar .all .closesidebar {
+    top: 10px;
+    left: 10px;
+  }
+  .sidebar .all .closesidebar svg {
+    width: 30px;
+    height: 30px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:first-child {
+    padding-top: 15px;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .sidebarcategoryahref {
+    transition: 0.2s;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .sidebarcategoryahref:hover {
+    color: var(--yellow);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:hover .podkategorii {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory:hover .sidebarcategoryahref {
+    color: var(--yellow);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii {
+    padding-left: 15px;
+    padding-top: 60px;
+    width: 250px;
+    left: 250px;
+    opacity: unset;
+    visibility: unset;
+    display: none;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li {
+    padding: 10px 0;
+    font-size: 15px;
+    width: 100%;
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(1) {
+    padding-top: 0;
+    display: block;
+    font-family: var(--ralewaymedium);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(1) a {
+    color: var(--yellow);
+  }
+  .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(2) {
+    padding-top: 10px;
+  }
+  .opensidebar {
+    left: 0;
+  }
+}
 @font-face {
   font-family: ralewaymedium;
   src: url(../fonts/Raleway-Medium.ttf);

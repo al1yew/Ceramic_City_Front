@@ -302,3 +302,99 @@
     }
 
 }
+
+@media(min-width: 576px) and (max-width: 992px) {
+    .sidebar {
+        width: 250px;
+
+        .all {
+            padding-left: 15px;
+            padding-top: 60px;
+
+            .closesidebar {
+                top: 10px;
+                left: 10px;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .listsidebar {
+
+                .sidebarlistelement {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+
+                    .allcategories {
+
+                        .sidebarcategory {
+                            padding: 5px 0;
+                            font-size: 15px;
+
+                            &:first-child {
+                                padding-top: 15px;
+                            }
+
+                            .sidebarcategoryahref {
+                                transition: 0.2s;
+
+                                &:hover {
+                                    color: var(--yellow);
+                                }
+                            }
+
+                            &:hover {
+                                .podkategorii {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+                                .sidebarcategoryahref {
+                                    color: var(--yellow);
+                                }
+                            }
+
+                            .podkategorii {
+                                padding-left: 15px;
+                                padding-top: 60px;
+
+                                width: 250px;
+                                left: 250px;
+
+                                opacity: unset;
+                                visibility: unset;
+                                display: none;
+
+                                li {
+                                    padding: 10px 0;
+                                    font-size: 15px;
+                                    width: 100%;
+
+                                    &:nth-child(1) {
+                                        padding-top: 0;
+                                        display: block;
+                                        font-family: var(--ralewaymedium);
+
+                                        a {
+                                            color: var(--yellow);
+                                        }
+                                    }
+
+                                    &:nth-child(2) {
+                                        padding-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .opensidebar {
+        left: 0;
+    }
+}
