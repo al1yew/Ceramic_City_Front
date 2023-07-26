@@ -110,16 +110,24 @@ $(function () {
 
     $(document).on("click", ".clicktoopenallcategories", function () {
         $(".sidebarcategories").find(".allcategories").slideToggle(200);
-        $(".podkategorii").hide();
+        
     });
 
     $(document).on("click", function (e) {
         const isParentClass = $(e.target).parents(".sidebar").length > 0;
         const isHamburgerMenu =
             $(e.target).parents(".foropeningsidebar").length > 0;
-        console.log({ isParentClass, isHamburgerMenu });
+
         if (!isParentClass && !isHamburgerMenu) {
             $(".sidebar").removeClass("opensidebar");
+        }
+    });
+
+    $(document).on("click", function (e) {
+        const isParentClass = $(e.target).parents(".sidebarcategories").length > 0;
+
+        if (!isParentClass ) {
+            $(".sidebarcategories .allcategories").slideUp(200);
         }
     });
 
