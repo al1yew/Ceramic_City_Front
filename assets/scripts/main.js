@@ -97,7 +97,7 @@ $(function () {
 
     //#endregion header scroll
 
-    //#region header scroll
+    //#region sidebar functionality
 
     $(document).on("click", ".foropeningsidebar", function () {
         $(".sidebar").addClass("opensidebar");
@@ -110,7 +110,6 @@ $(function () {
 
     $(document).on("click", ".clicktoopenallcategories", function () {
         $(".sidebarcategories").find(".allcategories").slideToggle(200);
-        
     });
 
     $(document).on("click", function (e) {
@@ -125,9 +124,10 @@ $(function () {
     });
 
     $(document).on("click", function (e) {
-        const isParentClass = $(e.target).parents(".sidebarcategories").length > 0;
+        const isParentClass =
+            $(e.target).parents(".sidebarcategories").length > 0;
 
-        if (!isParentClass ) {
+        if (!isParentClass) {
             $(".sidebarcategories .allcategories").slideUp(200);
         }
     });
@@ -146,7 +146,7 @@ $(function () {
         }
     });
 
-    //#endregion header scroll
+    //#endregion sidebar functionality
 
     //#region main page banner slide
 
