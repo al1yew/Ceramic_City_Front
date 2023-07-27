@@ -2661,6 +2661,7 @@ p {
   transition: var(--darkModeTransition);
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
 }
 .footer .lastfooter p {
   margin: 0;
@@ -2771,7 +2772,7 @@ p {
   }
   .footer .lastfooter {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
   }
   .footer .all .left {
     display: none;
