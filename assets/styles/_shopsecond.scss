@@ -169,101 +169,7 @@
             padding: 0;
 
             .top {
-                background-color: var(--shopyellow);
-                transition: var(--darkModeTransition);
-                color: var(--textColor);
-                border-radius: 10px;
-                padding: 20px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                width: 100%;
-                margin-top: 40px;
-
-                .openfilter {
-                    display: none;
-                }
-
-                .sortingdiv {
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    justify-content: flex-end;
-                    width: max-content;
-                    align-items: center;
-
-                    .sortby {
-                        color: var(--black);
-                        font-family: var(--ralewaymedium);
-                        font-size: 20px;
-                        margin-right: 20px;
-                    }
-
-                    .sortbyoptions {
-                        margin: 0;
-                        padding: 6px 12px;
-                        background-color: var(--white);
-                        color: var(--black);
-                        border-radius: 10px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-
-                        font-size: 20px;
-                        width: 120px;
-                        font-family: var(--ralewaymedium);
-
-                        position: relative;
-                        cursor: pointer;
-
-                        select {
-                            display: none;
-                        }
-
-                        .icon {
-                            transition: 0.2s;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: max-content;
-                            height: max-content;
-                            padding-top: 2px;
-                        }
-
-                        .roundarrow {
-                            transform: rotate(180deg) !important;
-                        }
-
-                        ul {
-                            list-style: none;
-                            display: none;
-                            background-color: white;
-                            margin: 0;
-                            padding: 12px;
-                            width: 120px;
-                            border-radius: 10px;
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            z-index: 200;
-                            font-family: var(--ralewaymedium);
-
-                            .yellowli {
-                                color: var(--yellow);
-                            }
-
-                            li {
-                                padding: 5px;
-                                transition: 0.2s;
-
-                                &:hover {
-                                    color: var(--yellow);
-                                }
-                            }
-                        }
-                    }
-                }
-
+                display: none;
             }
 
             .products {
@@ -447,7 +353,6 @@
     .shopsecond {
 
         .all {
-
             .left {
                 margin: 0;
                 padding: 0 15px;
@@ -539,45 +444,26 @@
 
             .right {
                 .top {
-                    padding: 14px;
-                    border-radius: 10px;
-                    margin-top: 25px;
-                    justify-content: space-between;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     .openfilter {
-                        display: block;
-                        order: 3;
+                        display: inline;
                         font-family: var(--ralewaymedium);
                         color: var(--black);
+                        background-color: var(--yellow);
                         font-size: 15px;
                         padding: 5px 14px;
                         padding-top: 6px;
                         border: 1px solid var(--black);
                         border-radius: 7px;
                     }
-
-                    .sortingdiv {
-                        .sortby {
-                            font-size: 15px;
-                            margin-right: 15px;
-                            order: 1;
-                        }
-
-                        .sortbyoptions {
-                            padding: 6px 10px;
-                            font-size: 15px;
-                            width: 70px;
-                            order: 2;
-
-                            ul {
-                                width: 70px;
-                            }
-                        }
-                    }
                 }
 
                 .products {
-                    margin-top: 25px;
+                    margin-top: 10px;
                     grid-template-columns: 1fr 1fr;
                     gap: 20px;
 
@@ -755,45 +641,26 @@
 
             .right {
                 .top {
-                    padding: 15px;
-                    border-radius: 10px;
-                    margin-top: 25px;
-                    justify-content: space-between;
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     .openfilter {
-                        display: block;
-                        order: 3;
+                        display: inline;
                         font-family: var(--ralewaymedium);
                         color: var(--black);
+                        background-color: var(--yellow);
                         font-size: 15px;
-                        padding: 5px 14px;
-                        padding-top: 6px;
+                        padding: 7px 18px;
+                        padding-top: 8px;
                         border: 1px solid var(--black);
                         border-radius: 7px;
-                    }
-
-                    .sortingdiv {
-                        .sortby {
-                            font-size: 15px;
-                            margin-right: 15px;
-                            order: 1;
-                        }
-
-                        .sortbyoptions {
-                            padding: 6px 10px;
-                            font-size: 15px;
-                            width: 70px;
-                            order: 2;
-
-                            ul {
-                                width: 70px;
-                            }
-                        }
                     }
                 }
 
                 .products {
-                    margin-top: 25px;
+                    margin-top: 15px;
                     grid-template-columns: 1fr 1fr;
                     gap: 20px;
 
