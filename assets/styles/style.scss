@@ -881,6 +881,7 @@ body {
     transition: var(--darkModeTransition);
     background: var(--backgroundColor);
     color: var(--textColor);
+    position: relative;
 }
 
 .darkmode {
