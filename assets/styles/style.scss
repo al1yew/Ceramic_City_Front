@@ -861,7 +861,7 @@ input::-webkit-inner-spin-button {
     --brownopacity: #E2BA3880;
     --red: #FF3D00;
     --darkyellow: #A57E02;
-
+    --shopyellow: rgba(226, 186, 56, 0.50);
     --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
     --textColor: #121219;
@@ -890,6 +890,7 @@ body {
     --otherBackgroundColor: #FFFFFF;
     --brownopacity: #E2BA38;
     --darkyellow: #E2BA38;
+    --shopyellow: rgba(226, 186, 56, 1);
     --footercolor: #332D1C;
     --headerBackgroundColor: #332d1c69;
 }

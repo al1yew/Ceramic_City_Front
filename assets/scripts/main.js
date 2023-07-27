@@ -314,4 +314,43 @@ $(function () {
     });
 
     //#endregion shop page filters animations
+
+    //#region shop page sort by select option
+
+    //open
+    $(document).on("click", ".sortbyoptions", function (e) {
+        $(this).find(".sortby").toggle();
+        $(this).find(".icon").toggleClass("roundarrow");
+    });
+
+    //set
+    $(document).on("click", ".sortbyul li", function () {
+        $(this)
+            .parents(".sortbyoptions")
+            .find(".sorttype")
+            .text($(this).text());
+        $(this).addClass("yellowli");
+        $(this).siblings("li").removeClass("yellowli");
+
+        let val = $(this).attr('data-val')
+        let select = $(this).parents(".sortbyoptions").find('select');
+        select.val(val);
+    });
+
+    //close
+    $(document).on("click", function (e) {
+        const isParentClass =
+            $(e.target).parents(".sortbyoptions").length > 0 ||
+            $(e.target).is(".sortbyoptions");
+
+        if (isParentClass) {
+            $(this).find(".sortbyul").fadeToggle(200);
+            $(this).find(".icon").toggleClass("roundarrow");
+        } else {
+            $(this).find(".icon").removeClass("roundarrow");
+            $(this).find(".sortbyul").fadeOut(200);
+        }
+    });
+
+    //#endregion shop page sort by select option
 });
