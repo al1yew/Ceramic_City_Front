@@ -3320,7 +3320,7 @@ p {
   margin: 0;
   padding: 0;
   font-family: var(--ralewaymedium);
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 .shopsecond .all .left .filterul {
@@ -3421,7 +3421,87 @@ p {
   padding: 0;
 }
 .shopsecond .all .right .top {
+  background-color: var(--shopyellow);
+  transition: var(--darkModeTransition);
+  color: var(--textColor);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.shopsecond .all .right .top .openfilter {
   display: none;
+}
+.shopsecond .all .right .top .sortingdiv {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+}
+.shopsecond .all .right .top .sortingdiv .sortby {
+  color: var(--black);
+  font-family: var(--ralewaymedium);
+  font-size: 20px;
+  margin-right: 20px;
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions {
+  margin: 0;
+  padding: 6px 12px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  width: 180px;
+  font-family: var(--ralewaymedium);
+  position: relative;
+  cursor: pointer;
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions select {
+  display: none;
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions .icon {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 2px;
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul {
+  list-style: none;
+  display: none;
+  background-color: white;
+  margin: 0;
+  padding: 12px;
+  width: 180px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 200;
+  font-family: var(--ralewaymedium);
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul .yellowli {
+  color: var(--yellow);
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul li {
+  padding: 5px;
+  transition: 0.2s;
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul li:hover {
+  color: var(--yellow);
 }
 .shopsecond .all .right .products {
   padding: 0;
@@ -3449,14 +3529,14 @@ p {
   width: 100%;
 }
 .shopsecond .all .right .products .product .imgkeeper .sale {
-  padding: 2px 15px;
+  padding: 2px 14px;
   color: var(--black);
   font-size: 12px;
   background-color: var(--yellow);
   border-radius: 5px;
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 3%;
+  left: 4%;
   font-family: var(--ralewaymedium);
 }
 .shopsecond .all .right .products .product .addtowishlist {
@@ -3594,7 +3674,7 @@ p {
     justify-content: flex-start;
   }
   .shopsecond .all .left p {
-    font-size: 15px;
+    font-size: 18px;
   }
   .shopsecond .all .left .closefilterkeeper {
     width: 100%;
@@ -3604,7 +3684,7 @@ p {
   .shopsecond .all .left .closefilterkeeper .closefilter {
     position: absolute;
     top: -50px;
-    right: -15px;
+    right: -10px;
     width: -moz-max-content;
     width: max-content;
     cursor: pointer;
@@ -3646,31 +3726,49 @@ p {
     font-size: 10px;
   }
   .shopsecond .all .right .top {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 14px;
+    border-radius: 10px;
+    margin-top: 25px;
+    justify-content: space-between;
   }
   .shopsecond .all .right .top .openfilter {
-    display: inline;
+    display: block;
+    order: 3;
     font-family: var(--ralewaymedium);
     color: var(--black);
-    background-color: var(--yellow);
     font-size: 15px;
-    padding: 5px 14px;
+    padding: 5px 10px;
     padding-top: 6px;
     border: 1px solid var(--black);
     border-radius: 7px;
   }
+  .shopsecond .all .right .top .openfilter i {
+    margin-left: 5px;
+  }
+  .shopsecond .all .right .top .sortingdiv .sortby {
+    font-size: 15px;
+    margin-right: 15px;
+    order: 1;
+  }
+  .shopsecond .all .right .top .sortingdiv .sortbyoptions {
+    padding: 6px 8px;
+    font-size: 15px;
+    width: 130px;
+    order: 2;
+  }
+  .shopsecond .all .right .top .sortingdiv .sortbyoptions ul {
+    width: 130px;
+    padding: 8px;
+  }
   .shopsecond .all .right .products {
-    margin-top: 10px;
+    margin-top: 25px;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
   .shopsecond .all .right .products .product .imgkeeper .sale {
     padding: 0px 10px;
     font-size: 10px;
-    top: 4%;
+    top: 3%;
     left: 4%;
   }
   .shopsecond .all .right .products .product .addtowishlist {
@@ -3740,7 +3838,7 @@ p {
     justify-content: flex-start;
   }
   .shopsecond .all .left p {
-    font-size: 15px;
+    font-size: 19px;
   }
   .shopsecond .all .left .closefilterkeeper {
     width: 100%;
@@ -3750,7 +3848,7 @@ p {
   .shopsecond .all .left .closefilterkeeper .closefilter {
     position: absolute;
     top: -50px;
-    right: -15px;
+    right: -10px;
     width: -moz-max-content;
     width: max-content;
     cursor: pointer;
@@ -3792,24 +3890,41 @@ p {
     font-size: 11px;
   }
   .shopsecond .all .right .top {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+    justify-content: space-between;
   }
   .shopsecond .all .right .top .openfilter {
-    display: inline;
+    display: block;
+    order: 3;
     font-family: var(--ralewaymedium);
     color: var(--black);
-    background-color: var(--yellow);
     font-size: 15px;
-    padding: 7px 18px;
-    padding-top: 8px;
+    padding: 5px 12px;
+    padding-top: 6px;
     border: 1px solid var(--black);
     border-radius: 7px;
   }
+  .shopsecond .all .right .top .openfilter i {
+    margin-left: 5px;
+  }
+  .shopsecond .all .right .top .sortingdiv .sortby {
+    font-size: 15px;
+    margin-right: 15px;
+    order: 1;
+  }
+  .shopsecond .all .right .top .sortingdiv .sortbyoptions {
+    padding: 6px 10px;
+    font-size: 15px;
+    width: 145px;
+    order: 2;
+  }
+  .shopsecond .all .right .top .sortingdiv .sortbyoptions ul {
+    width: 145px;
+  }
   .shopsecond .all .right .products {
-    margin-top: 15px;
+    margin-top: 25px;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
@@ -3875,7 +3990,7 @@ p {
     padding-right: 20px;
   }
   .shopsecond .all .left p {
-    font-size: 18px;
+    font-size: 22px;
   }
   .shopsecond .all .left .filterul .filterli .top .filtername {
     font-size: 17px;
@@ -3894,11 +4009,11 @@ p {
   }
   .shopsecond .all .right .top .sortingdiv .sortbyoptions {
     font-size: 17px;
-    width: 80px;
+    width: 150px;
   }
   .shopsecond .all .right .top .sortingdiv .sortbyoptions ul {
     padding: 10px;
-    width: 80px;
+    width: 150px;
   }
   .shopsecond .all .right .products {
     margin-top: 25px;

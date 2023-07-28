@@ -315,7 +315,47 @@ $(function () {
 
     //#endregion shop page filters animations
 
-    //#region shop page filter-sidebar functionality
+    //#region shop page sort by select option
+
+    //open
+    $(document).on("click", ".sortbyoptions", function (e) {
+        $(this).find(".sortby").toggle();
+    });
+
+    //set
+    $(document).on("click", ".sortbyul li", function () {
+        let parent = $(this).parents(".sortbyoptions");
+        let spanInside = parent.find(".sorttype");
+        let svg = $(this).find("svg");
+        let clonedSvgElement = svg.clone();
+
+        spanInside.text($(this).text());
+        spanInside.append(clonedSvgElement);
+
+        $(this).addClass("yellowli");
+        $(this).siblings("li").removeClass("yellowli");
+
+        let val = $(this).attr("data-val");
+        let select = parent.find("select");
+        select.val(val);
+    });
+
+    //close
+    $(document).on("click", function (e) {
+        const isParentClass =
+            $(e.target).parents(".sortbyoptions").length > 0 ||
+            $(e.target).is(".sortbyoptions");
+
+        if (isParentClass) {
+            $(this).find(".sortbyul").fadeToggle(200);
+        } else {
+            $(this).find(".sortbyul").fadeOut(200);
+        }
+    });
+
+    //#endregion shop page sort by select option
+
+    //#region shop page filter sidebar functionality
 
     $(document).on("click", ".openfilter", function () {
         $(".telfiltermenu").toggleClass("togglefiltermenu");
@@ -334,5 +374,5 @@ $(function () {
         }
     });
 
-    //#endregion shop page filter-sidebar functionality
+    //#endregion shop page filter sidebar functionality
 });
