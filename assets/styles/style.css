@@ -3454,7 +3454,7 @@ p {
   margin: 0;
   padding: 6px 12px;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--yellow);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -3499,6 +3499,7 @@ p {
 .shopsecond .all .right .top .sortingdiv .sortbyoptions ul li {
   padding: 5px;
   transition: 0.2s;
+  color: var(--black);
 }
 .shopsecond .all .right .top .sortingdiv .sortbyoptions ul li:hover {
   color: var(--yellow);
@@ -4048,6 +4049,33 @@ p {
     height: 40px;
     padding-bottom: 2px;
   }
+}
+:root {
+  --white: #FFFFFF;
+  --yellow: #E2BA38;
+  --black: #121219;
+  --brown: #332D1C;
+  --brownopacity: #E2BA3880;
+  --red: #FF3D00;
+  --darkyellow: #A57E02;
+  --shopyellow: rgba(226, 186, 56, 0.50);
+  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --textColor: #121219;
+  --backgroundColor: #FFFFFF;
+  --otherTextColor: #FFFFFF;
+  --otherBackgroundColor: #332D1C;
+  --ralewaymedium: ralewaymedium;
+  --ralewaybold: ralewaybold;
+  --ralewaylight: ralewaylight;
+  --borderradius: 7px;
+}
+
+.productfirst {
+  margin-top: 71px;
+  padding: 0;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
 }
 @font-face {
   font-family: ralewaymedium;
