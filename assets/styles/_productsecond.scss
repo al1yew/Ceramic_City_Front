@@ -10,7 +10,7 @@
     --productyellow: rgba(226, 186, 56, 0.50);
     --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
     --darkModeTransition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
+    --productdetailh3: #121219;
     --textColor: #121219;
     --backgroundColor: #FFFFFF;
 
@@ -32,16 +32,15 @@
     .all {
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 53% 44%;
+        gap: 25px;
 
         .left {
             margin: 0;
             padding: 0;
             display: grid;
-            grid-template-columns: 15% 85%;
+            grid-template-columns: 13% 87%;
             gap: 15px;
 
             .productseconddots {
@@ -80,18 +79,18 @@
                     }
 
                     svg {
-                        width: 30px;
-                        height: 30px;
+                        width: 35px;
+                        height: 35px;
                         cursor: pointer;
                     }
                 }
 
                 .mainslideproductpageprev {
-                    left: 5px;
+                    left: 15px;
                 }
 
                 .mainslideproductpagenext {
-                    right: 5px;
+                    right: 15px;
                 }
 
                 .slider {
@@ -139,6 +138,92 @@
                         }
                     }
                 }
+            }
+        }
+
+        .right {
+            margin: 0;
+            padding: 0;
+            padding-left: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            background-color: var(--backgroundColor);
+            color: var(--textColor);
+            transition: var(--darkModeTransition);
+
+            h2 {
+                font-family: var(--ralewaybold);
+                color: var(--productdetailh3);
+                margin: 0;
+                padding: 0;
+                transition: var(--darkModeTransition);
+                width: 100%;
+            }
+
+            h5 {
+                margin: 0;
+                padding: 0;
+                font-family: var(--ralewaymedium);
+                color: var(--productyellow);
+                transition: var(--darkModeTransition);
+                width: 100%;
+            }
+
+            .desc {
+                font-size: 17px;
+                font-family: var(--ralewaymedium);
+                margin: 0;
+                padding: 0;
+            }
+
+            .colors {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+                p {
+                    width: 100%;
+                    font-family: var(--ralewaymedium);
+                    margin: 0;
+                    padding: 0;
+                    font-size: 16px;
+                    color: var(--yellow);
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    border-radius: 100%;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                }
+            }
+
+            h3 {
+                font-family: var(--ralewaybold);
+                width: 40%;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+            }
+
+            button {
+                padding: 10px 25px;
+                padding-top: 11px;
+                border-radius: 10px;
+                background-color: var(--yellow);
+                font-family: var(--ralewaymedium);
+                border: none;
+                color: var(--white);
+                outline: none;
             }
         }
     }

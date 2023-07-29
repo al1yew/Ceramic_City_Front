@@ -216,6 +216,14 @@
                         position: relative;
                         cursor: pointer;
 
+                        .sorttype {
+                            svg {
+                                path {
+                                    fill: var(--yellow);
+                                }
+                            }
+                        }
+
                         select {
                             display: none;
                         }
@@ -253,7 +261,21 @@
                                 transition: 0.2s;
                                 color: var(--black);
 
+                                svg {
+                                    transition: 0.2s;
+
+                                    path {
+                                        fill: var(--black);
+                                    }
+                                }
+
                                 &:hover {
+                                    svg {
+                                        path {
+                                            fill: var(--yellow);
+                                        }
+                                    }
+
                                     color: var(--yellow);
                                 }
                             }
@@ -552,7 +574,8 @@
                         border: 1px solid var(--black);
                         border-radius: 7px;
 
-                        i {
+                        svg {
+                            margin-bottom: 3px;
                             margin-left: 5px;
                         }
                     }
@@ -773,8 +796,9 @@
                         border: 1px solid var(--black);
                         border-radius: 7px;
 
-                        i {
+                        svg {
                             margin-left: 5px;
+                            margin-bottom: 3px;
                         }
                     }
 

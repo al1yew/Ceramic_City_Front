@@ -3465,6 +3465,9 @@ p {
   position: relative;
   cursor: pointer;
 }
+.shopsecond .all .right .top .sortingdiv .sortbyoptions .sorttype svg path {
+  fill: var(--yellow);
+}
 .shopsecond .all .right .top .sortingdiv .sortbyoptions select {
   display: none;
 }
@@ -3501,8 +3504,17 @@ p {
   transition: 0.2s;
   color: var(--black);
 }
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul li svg {
+  transition: 0.2s;
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul li svg path {
+  fill: var(--black);
+}
 .shopsecond .all .right .top .sortingdiv .sortbyoptions ul li:hover {
   color: var(--yellow);
+}
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul li:hover svg path {
+  fill: var(--yellow);
 }
 .shopsecond .all .right .products {
   padding: 0;
@@ -3743,7 +3755,8 @@ p {
     border: 1px solid var(--black);
     border-radius: 7px;
   }
-  .shopsecond .all .right .top .openfilter i {
+  .shopsecond .all .right .top .openfilter svg {
+    margin-bottom: 3px;
     margin-left: 5px;
   }
   .shopsecond .all .right .top .sortingdiv .sortby {
@@ -3907,8 +3920,9 @@ p {
     border: 1px solid var(--black);
     border-radius: 7px;
   }
-  .shopsecond .all .right .top .openfilter i {
+  .shopsecond .all .right .top .openfilter svg {
     margin-left: 5px;
+    margin-bottom: 3px;
   }
   .shopsecond .all .right .top .sortingdiv .sortby {
     font-size: 15px;
@@ -4180,6 +4194,7 @@ p {
   --productyellow: rgba(226, 186, 56, 0.50);
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   --darkModeTransition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --productdetailh3: #121219;
   --textColor: #121219;
   --backgroundColor: #FFFFFF;
   --otherTextColor: #FFFFFF;
@@ -4199,16 +4214,15 @@ p {
 .productsecond .all {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 53% 44%;
+  gap: 25px;
 }
 .productsecond .all .left {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 13% 87%;
   gap: 15px;
 }
 .productsecond .all .left .productseconddots {
@@ -4245,15 +4259,15 @@ p {
 }
 .productsecond .all .left .productpageimages .mainslideproductpageprev svg,
 .productsecond .all .left .productpageimages .mainslideproductpagenext svg {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 }
 .productsecond .all .left .productpageimages .mainslideproductpageprev {
-  left: 5px;
+  left: 15px;
 }
 .productsecond .all .left .productpageimages .mainslideproductpagenext {
-  right: 5px;
+  right: 15px;
 }
 .productsecond .all .left .productpageimages .slider {
   position: relative;
@@ -4294,6 +4308,83 @@ p {
   height: 28px;
   transition: var(--darkModeTransition);
   stroke: var(--yellow);
+}
+.productsecond .all .right {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.productsecond .all .right h2 {
+  font-family: var(--ralewaybold);
+  color: var(--productdetailh3);
+  margin: 0;
+  padding: 0;
+  transition: var(--darkModeTransition);
+  width: 100%;
+}
+.productsecond .all .right h5 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ralewaymedium);
+  color: var(--productyellow);
+  transition: var(--darkModeTransition);
+  width: 100%;
+}
+.productsecond .all .right .desc {
+  font-size: 17px;
+  font-family: var(--ralewaymedium);
+  margin: 0;
+  padding: 0;
+}
+.productsecond .all .right .colors {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.productsecond .all .right .colors p {
+  width: 100%;
+  font-family: var(--ralewaymedium);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--yellow);
+  margin-bottom: 15px;
+}
+.productsecond .all .right .colors span {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.productsecond .all .right h3 {
+  font-family: var(--ralewaybold);
+  width: 40%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.productsecond .all .right button {
+  padding: 10px 25px;
+  padding-top: 11px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  font-family: var(--ralewaymedium);
+  border: none;
+  color: var(--white);
+  outline: none;
 }
 
 @font-face {
@@ -4370,4 +4461,5 @@ body {
   --footercolor: #332D1C;
   --headerBackgroundColor: #332d1c69;
   --productyellow: #E2BA38;
+  --productdetailh3: #E2BA38;
 }/*# sourceMappingURL=style.css.map */
