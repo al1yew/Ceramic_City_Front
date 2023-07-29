@@ -1,0 +1,145 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #121219;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+    --red: #FF3D00;
+    --darkyellow: #A57E02;
+    --shopyellow: rgba(226, 186, 56, 0.50);
+    --productyellow: rgba(226, 186, 56, 0.50);
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    --darkModeTransition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #121219;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.productsecond {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    transition: var(--darkModeTransition);
+    margin-top: 40px;
+
+    .all {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .left {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 15% 85%;
+            gap: 15px;
+
+            .productseconddots {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+
+                div {
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-bottom: 15px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .productpageimages {
+                position: relative;
+
+                .mainslideproductpageprev,
+                .mainslideproductpagenext {
+                    position: absolute;
+                    top: 50%;
+                    opacity: 0.5;
+                    transition: 0.2s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
+
+                .mainslideproductpageprev {
+                    left: 5px;
+                }
+
+                .mainslideproductpagenext {
+                    right: 5px;
+                }
+
+                .slider {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    div {
+                        width: 100%;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        position: relative;
+                        margin: 0;
+                        padding: 0;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .addtowishlist {
+                            padding: 10px;
+                            border-radius: 100%;
+                            background-color: var(--white);
+                            position: absolute;
+                            top: 2%;
+                            right: 2%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.2s;
+
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+
+                            svg {
+                                stroke: var(--textColor);
+                                padding-top: 1px;
+                                width: 28px;
+                                height: 28px;
+                                transition: var(--darkModeTransition);
+                                stroke: var(--yellow)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

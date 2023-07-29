@@ -375,4 +375,28 @@ $(function () {
     });
 
     //#endregion shop page filter sidebar functionality
+
+    //--------------------- product page
+
+    //#region product page first slider
+
+    $(".productpageimages .slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $(".mainslideproductpageprev"),
+        nextArrow: $(".mainslideproductpagenext"),
+        dots: false,
+        autoplay: false,
+        infinite: true,
+        fade: true,
+    });
+
+    $(document).on("click", ".productseconddots div", function () {
+        let no = $(this).attr("data-val");
+
+        $(".productpageimages .slider").slick("slickGoTo", no);
+    });
+
+    //#endregion product page first slider
 });
