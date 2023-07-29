@@ -399,4 +399,68 @@ $(function () {
     });
 
     //#endregion product page first slider
+
+    //#region product page sliders
+
+    $(".productthirdslider").slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: $(".productthirdprev"),
+        nextArrow: $(".productthirdnext"),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+        ],
+    });
+
+    $(".productfourthslider").slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: $(".productfourthprev"),
+        nextArrow: $(".productfourthnext"),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+        ],
+    });
+
+    //#endregion product page slider
 });

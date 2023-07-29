@@ -162,7 +162,7 @@
                 width: 100%;
             }
 
-            h5 {
+            .no {
                 margin: 0;
                 padding: 0;
                 font-family: var(--ralewaymedium);
@@ -172,7 +172,7 @@
             }
 
             .desc {
-                font-size: 17px;
+                font-size: 16px;
                 font-family: var(--ralewaymedium);
                 margin: 0;
                 padding: 0;
@@ -206,24 +206,30 @@
                 }
             }
 
-            h3 {
-                font-family: var(--ralewaybold);
-                width: 40%;
-                text-align: left;
-                margin: 0;
-                padding: 0;
-                padding-top: 10px;
-            }
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
 
-            button {
-                padding: 10px 25px;
-                padding-top: 11px;
-                border-radius: 10px;
-                background-color: var(--yellow);
-                font-family: var(--ralewaymedium);
-                border: none;
-                color: var(--white);
-                outline: none;
+                h3 {
+                    font-family: var(--ralewaybold);
+                    text-align: left;
+                    margin: 0;
+                    padding: 0;
+                    color: var(--yellow);
+                }
+
+                button {
+                    padding: 10px 25px;
+                    padding-top: 11px;
+                    border-radius: 10px;
+                    background-color: var(--yellow);
+                    font-family: var(--ralewaymedium);
+                    border: none;
+                    outline: none;
+                    color: var(--white);
+                }
             }
         }
     }
