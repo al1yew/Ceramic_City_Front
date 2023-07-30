@@ -1,0 +1,60 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #121219;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+    --red: #FF3D00;
+    --darkyellow: #A57E02;
+
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    --textColor: #121219;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.wishlistfirst {
+    width: 100%;
+    margin-top: 71px;
+    position: relative;
+
+    img {
+        width: 100%;
+        filter: brightness(0.5);
+    }
+
+    h2 {
+        font-family: var(--ralewaymedium);
+        color: var(--yellow);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 576px) {
+    .wishlistfirst {
+        margin-top: 51px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .wishlistfirst {
+        margin-top: 54px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .wishlistfirst {
+        margin-top: 68px;
+    }
+}
