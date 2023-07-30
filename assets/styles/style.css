@@ -7609,7 +7609,7 @@ p {
   width: max-content;
   padding: 10px;
 }
-.collectionfifth .all .gotocollection {
+.collectionfifth .all .gotowishlist {
   margin: 0 auto;
   margin-top: 40px;
   padding: 10px 40px;
@@ -7622,7 +7622,7 @@ p {
   font-family: var(--ralewaymedium);
   transition: 0.2s;
 }
-.collectionfifth .all .gotocollection:hover {
+.collectionfifth .all .gotowishlist:hover {
   background-color: #A57E02;
 }
 .collectionfifth .all .collectionfifthslider {
@@ -7746,7 +7746,7 @@ p {
     bottom: 0px;
     padding-bottom: 7px;
   }
-  .collectionfifth .all .gotocollection {
+  .collectionfifth .all .gotowishlist {
     margin: 0;
     margin-top: 25px;
   }
@@ -7810,7 +7810,7 @@ p {
     bottom: 0px;
     padding-bottom: 7px;
   }
-  .collectionfifth .all .gotocollection {
+  .collectionfifth .all .gotowishlist {
     margin: 0;
     margin-top: 25px;
   }
@@ -7874,7 +7874,7 @@ p {
     bottom: 0px;
     padding-bottom: 7px;
   }
-  .collectionfifth .all .gotocollection {
+  .collectionfifth .all .gotowishlist {
     margin: 0;
     margin-top: 25px;
   }
