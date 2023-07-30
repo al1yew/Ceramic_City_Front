@@ -463,4 +463,70 @@ $(function () {
     });
 
     //#endregion product page slider
+
+    //--------------------- collection page
+
+    //#region collection page sliders
+
+    $(".collectionfourthslider").slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: $(".collectionfourthprev"),
+        nextArrow: $(".collectionfourthnext"),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+        ],
+    });
+
+    $(".collectionfifthslider").slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: $(".collectionfifthprev"),
+        nextArrow: $(".collectionfifthnext"),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                },
+            },
+        ],
+    });
+
+    //#endregion collection page slider
 });

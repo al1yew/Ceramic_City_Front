@@ -1,0 +1,190 @@
+.collectionthird {
+    margin-top: 30px;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    transition: var(--darkModeTransition);
+
+    .all {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: var(--backgroundColor);
+        color: var(--textColor);
+        transition: var(--darkModeTransition);
+
+        h2 {
+            font-family: var(--ralewaybold);
+            color: var(--productdetailh3);
+            margin: 0;
+            padding: 0;
+            transition: var(--darkModeTransition);
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .no {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            font-family: var(--ralewaymedium);
+            color: var(--textColor);
+            transition: var(--darkModeTransition);
+            width: 100%;
+        }
+
+        .desc {
+            font-size: 16px;
+            font-family: var(--ralewaymedium);
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                font-family: var(--ralewaybold);
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                color: var(--yellow);
+            }
+
+            button {
+                padding: 10px 25px;
+                padding-top: 11px;
+                border-radius: 10px;
+                background-color: var(--yellow);
+                font-family: var(--ralewaymedium);
+                border: none;
+                outline: none;
+                color: var(--white);
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .collectionthird {
+        margin-top: 0;
+
+        .all {
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 20px;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            .no {
+                margin-bottom: 15px;
+            }
+
+            .desc {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .bottom {
+
+                button {
+                    padding: 7px 15px;
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .collectionthird {
+
+        .right {
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 25px;
+
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            .no {
+                margin-bottom: 15px;
+            }
+
+            .desc {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .bottom {
+                button {
+                    padding: 9px 18px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .collectionthird {
+        .right {
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 30px;
+
+            h2 {
+                margin-bottom: 18px;
+            }
+
+            .no {
+                margin-bottom: 18px;
+            }
+
+            .desc {
+                font-size: 14px;
+                margin-bottom: 18px;
+            }
+
+            .bottom {
+                button {
+                    padding: 10px 20px;
+                    padding-top: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .collectionthird {
+        margin-top: 0px;
+
+        .right {
+            padding-left: 20px;
+
+            .desc {
+                font-size: 14px;
+            }
+
+            .bottom {
+                button {
+                    padding: 10px 20px;
+                    padding-top: 11px;
+                }
+            }
+        }
+    }
+}
