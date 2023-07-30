@@ -23,7 +23,411 @@
     --borderradius: 7px;
 }
 
-.contactsecond{
+.contactsecond {
     margin-top: 60px;
-    
+
+    .all {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        .top {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            h2 {
+                color: var(--yellow);
+                font-family: var(--ralewaybold);
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            p {
+                margin: 0 auto;
+                padding: 0;
+                font-family: var(--ralewaymedium);
+                font-weight: 300;
+                font-size: 17px;
+                width: 60%;
+                text-align: center;
+            }
+        }
+
+        .bottom {
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .left {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 50%;
+
+                .leftdiv {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    width: 100%;
+
+                    .icon {
+                        padding: 0;
+                        margin: 0;
+                        width: max-content;
+                        height: max-content;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg {
+                            width: 28px;
+                            height: 28px;
+
+                            path {
+                                fill: var(--yellow);
+                            }
+                        }
+                    }
+
+                    .data {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        font-family: var(--ralewaymedium);
+                        font-size: 16px;
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 20px;
+                        width: 90%;
+                        transition: var(--darkModeTransition);
+
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            width: 100%;
+
+                            a {
+                                color: var(--yellow);
+                            }
+
+                            span {
+                                color: var(--yellow);
+                            }
+
+                            &:nth-child(1) {
+                                color: var(--yellow);
+                                font-size: 24px;
+                                margin-bottom: 8px;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: 18px;
+                                font-family: var(--ralewaylight);
+                                color: var(--textColor);
+                                transition: var(--darkModeTransition);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 50%;
+
+                .inputkeeper {
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: 100%;
+
+                    label {
+                        color: var(--textColor);
+                        transition: var(--darkModeTransition);
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                        font-family: var(--ralewaylight);
+                    }
+
+                    input {
+                        border: 1px solid var(--yellow);
+                        outline: none;
+                        padding: 8px 12px;
+                        font-size: 20px;
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    textarea {
+                        resize: none;
+                        width: 100%;
+                        border-radius: 10px;
+                        outline: none;
+                        border: 1px solid var(--yellow);
+                        padding: 8px 12px;
+                        font-size: 20px;
+                        height: 200px;
+                    }
+                }
+
+                button {
+                    color: var(--white);
+                    background-color: var(--yellow);
+                    outline: none;
+                    border: none;
+                    padding: 10px 100px;
+                    font-size: 18px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contactsecond {
+        .all {
+            .top {
+                h2 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                    width: 100%;
+                }
+            }
+
+            .bottom {
+                margin-top: 40px;
+
+                .left {
+                    width: 100%;
+
+                    .leftdiv {
+                        margin-bottom: 20px;
+
+                        .icon {
+                            svg {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+
+                        .data {
+                            font-size: 16px;
+                            width: 100%;
+
+                            p {
+                                &:nth-child(1) {
+                                    font-size: 18px;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 100%;
+
+                    .inputkeeper {
+                        margin-bottom: 15px;
+
+                        label {
+                            margin-bottom: 9px;
+                            font-size: 16px;
+                        }
+
+                        input {
+                            padding: 6px 10px;
+                            font-size: 16px;
+                        }
+
+                        textarea {
+                            padding: 6px 10px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    button {
+                        padding: 10px 0;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .contactsecond {
+        .all {
+            .top {
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    font-size: 15px;
+                    width: 70%;
+                }
+            }
+
+            .bottom {
+                margin-top: 40px;
+
+                .left {
+                    width: 100%;
+
+                    .leftdiv {
+                        margin-bottom: 20px;
+
+                        .icon {
+                            svg {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+
+                        .data {
+                            font-size: 16px;
+                            width: 100%;
+
+                            p {
+                                &:nth-child(1) {
+                                    font-size: 18px;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 100%;
+
+                    .inputkeeper {
+                        margin-bottom: 15px;
+
+                        label {
+                            margin-bottom: 9px;
+                            font-size: 16px;
+                        }
+
+                        input {
+                            padding: 6px 10px;
+                            font-size: 16px;
+                        }
+
+                        textarea {
+                            padding: 6px 10px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    button {
+                        padding: 10px 0;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .contactsecond {
+        margin-top: 40px;
+
+        .all {
+
+            .top {
+                p {
+                    font-size: 16px;
+                    width: 80%;
+                }
+            }
+
+            .bottom {
+                margin-top: 40px;
+
+                .left {
+
+                    .leftdiv {
+                        margin-bottom: 30px;
+
+                        .data {
+                            p {
+                                &:nth-child(1) {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .inputkeeper {
+                        margin-bottom: 20px;
+
+                        label {
+                            margin-bottom: 15px;
+                            font-size: 18px;
+                        }
+
+                        input {
+                            padding: 8px 10px;
+                            font-size: 18px;
+                        }
+
+                        textarea {
+                            padding: 8px 10px;
+                            font-size: 18px;
+                        }
+                    }
+
+                    button {
+                        padding: 10px 100px;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
 }

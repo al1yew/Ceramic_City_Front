@@ -700,7 +700,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 .header .all .left .hamburgermenu svg {
   fill: var(--textColor);
@@ -899,7 +899,6 @@ p {
     display: none;
   }
   .header .all .left .hamburgermenu {
-    margin-right: 7px;
     padding-right: 40px;
     padding-top: 3px;
   }
@@ -970,7 +969,7 @@ p {
     justify-content: flex-start;
   }
   .header .all .left .hamburgermenu {
-    margin-right: 7px;
+    padding-right: 7px;
   }
   .header .all .middle {
     padding: 5px 0;
@@ -1012,7 +1011,7 @@ p {
     justify-content: flex-start;
   }
   .header .all .left .hamburgermenu {
-    margin-right: 7px;
+    padding-right: 7px;
   }
   .header .all .middle {
     padding: 10px 0;
@@ -5454,7 +5453,318 @@ p {
 .contactsecond {
   margin-top: 60px;
 }
+.contactsecond .all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.contactsecond .all .top {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.contactsecond .all .top h2 {
+  color: var(--yellow);
+  font-family: var(--ralewaybold);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contactsecond .all .top p {
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--ralewaymedium);
+  font-weight: 300;
+  font-size: 17px;
+  width: 60%;
+  text-align: center;
+}
+.contactsecond .all .bottom {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contactsecond .all .bottom .left {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+.contactsecond .all .bottom .left .leftdiv {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.contactsecond .all .bottom .left .leftdiv .icon {
+  padding: 0;
+  margin: 0;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactsecond .all .bottom .left .leftdiv .icon svg {
+  width: 28px;
+  height: 28px;
+}
+.contactsecond .all .bottom .left .leftdiv .icon svg path {
+  fill: var(--yellow);
+}
+.contactsecond .all .bottom .left .leftdiv .data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: var(--ralewaymedium);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 90%;
+  transition: var(--darkModeTransition);
+}
+.contactsecond .all .bottom .left .leftdiv .data p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.contactsecond .all .bottom .left .leftdiv .data p a {
+  color: var(--yellow);
+}
+.contactsecond .all .bottom .left .leftdiv .data p span {
+  color: var(--yellow);
+}
+.contactsecond .all .bottom .left .leftdiv .data p:nth-child(1) {
+  color: var(--yellow);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) {
+  font-size: 18px;
+  font-family: var(--ralewaylight);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.contactsecond .all .bottom .right {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+.contactsecond .all .bottom .right .inputkeeper {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.contactsecond .all .bottom .right .inputkeeper label {
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: var(--ralewaylight);
+}
+.contactsecond .all .bottom .right .inputkeeper input {
+  border: 1px solid var(--yellow);
+  outline: none;
+  padding: 8px 12px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+.contactsecond .all .bottom .right .inputkeeper textarea {
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--yellow);
+  padding: 8px 12px;
+  font-size: 20px;
+  height: 200px;
+}
+.contactsecond .all .bottom .right button {
+  color: var(--white);
+  background-color: var(--yellow);
+  outline: none;
+  border: none;
+  padding: 10px 100px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+}
 
+@media (max-width: 576px) {
+  .contactsecond .all .top h2 {
+    margin-bottom: 20px;
+  }
+  .contactsecond .all .top p {
+    font-size: 15px;
+    width: 100%;
+  }
+  .contactsecond .all .bottom {
+    margin-top: 40px;
+  }
+  .contactsecond .all .bottom .left {
+    width: 100%;
+  }
+  .contactsecond .all .bottom .left .leftdiv {
+    margin-bottom: 20px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data {
+    font-size: 16px;
+    width: 100%;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data p:nth-child(1) {
+    font-size: 18px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) {
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right {
+    width: 100%;
+  }
+  .contactsecond .all .bottom .right .inputkeeper {
+    margin-bottom: 15px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper label {
+    margin-bottom: 9px;
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper input {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper textarea {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right button {
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .contactsecond .all .top h2 {
+    margin-bottom: 25px;
+  }
+  .contactsecond .all .top p {
+    font-size: 15px;
+    width: 70%;
+  }
+  .contactsecond .all .bottom {
+    margin-top: 40px;
+  }
+  .contactsecond .all .bottom .left {
+    width: 100%;
+  }
+  .contactsecond .all .bottom .left .leftdiv {
+    margin-bottom: 20px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data {
+    font-size: 16px;
+    width: 100%;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data p:nth-child(1) {
+    font-size: 18px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) {
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right {
+    width: 100%;
+  }
+  .contactsecond .all .bottom .right .inputkeeper {
+    margin-bottom: 15px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper label {
+    margin-bottom: 9px;
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper input {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper textarea {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  .contactsecond .all .bottom .right button {
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .contactsecond {
+    margin-top: 40px;
+  }
+  .contactsecond .all .top p {
+    font-size: 16px;
+    width: 80%;
+  }
+  .contactsecond .all .bottom {
+    margin-top: 40px;
+  }
+  .contactsecond .all .bottom .left .leftdiv {
+    margin-bottom: 30px;
+  }
+  .contactsecond .all .bottom .left .leftdiv .data p:nth-child(1) {
+    font-size: 22px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper {
+    margin-bottom: 20px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper label {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper input {
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+  .contactsecond .all .bottom .right .inputkeeper textarea {
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+  .contactsecond .all .bottom .right button {
+    padding: 10px 100px;
+    font-size: 17px;
+  }
+}
 @font-face {
   font-family: ralewaymedium;
   src: url(../fonts/Raleway-Medium.ttf);

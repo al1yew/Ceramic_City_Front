@@ -60,7 +60,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-right: 10px;
+                padding-right: 10px;
 
                 svg {
                     fill: var(--textColor);
@@ -290,7 +290,6 @@
                 }
 
                 .hamburgermenu {
-                    margin-right: 7px;
                     padding-right: 40px;
                     padding-top: 3px;
                 }
@@ -390,7 +389,7 @@
                 justify-content: flex-start;
 
                 .hamburgermenu {
-                    margin-right: 7px;
+                    padding-right: 7px;
                 }
             }
 
@@ -453,7 +452,7 @@
                 justify-content: flex-start;
 
                 .hamburgermenu {
-                    margin-right: 7px;
+                    padding-right: 7px;
                 }
             }
 
