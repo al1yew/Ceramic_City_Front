@@ -4381,14 +4381,29 @@ p {
   color: var(--yellow);
 }
 .productsecond .all .right .bottom button {
-  padding: 10px 25px;
+  padding: 10px 0;
+  width: 200px;
   padding-top: 11px;
   border-radius: 10px;
   background-color: var(--yellow);
   font-family: var(--ralewaymedium);
   border: none;
+  text-align: center;
   outline: none;
   color: var(--white);
+}
+.productsecond .all .right .bottom .phoneno {
+  padding: 10px 0;
+  padding-top: 11px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: var(--yellow);
+  font-family: var(--ralewaymedium);
+  border: none;
+  outline: none;
+  color: var(--white);
+  display: none;
 }
 
 @media (max-width: 576px) {
@@ -4451,7 +4466,13 @@ p {
     margin-right: 10px;
   }
   .productsecond .all .right .bottom button {
-    padding: 7px 15px;
+    padding: 7px 0;
+    width: 180px;
+    padding-top: 8px;
+  }
+  .productsecond .all .right .bottom .phoneno {
+    padding: 7px 0;
+    width: 180px;
     padding-top: 8px;
   }
 }
@@ -4512,8 +4533,14 @@ p {
     margin-right: 10px;
   }
   .productsecond .all .right .bottom button {
-    padding: 9px 18px;
-    padding-top: 10px;
+    padding: 8px 0;
+    width: 190px;
+    padding-top: 9px;
+  }
+  .productsecond .all .right .bottom .phoneno {
+    padding: 8px 0;
+    width: 190px;
+    padding-top: 9px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -4573,8 +4600,14 @@ p {
     margin-right: 10px;
   }
   .productsecond .all .right .bottom button {
-    padding: 10px 20px;
-    padding-top: 11px;
+    padding: 8px 0;
+    width: 200px;
+    padding-top: 9px;
+  }
+  .productsecond .all .right .bottom .phoneno {
+    padding: 8px 0;
+    width: 200px;
+    padding-top: 9px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -4607,10 +4640,6 @@ p {
   .productsecond .all .right .colors p {
     font-size: 14px;
     margin-bottom: 12px;
-  }
-  .productsecond .all .right .bottom button {
-    padding: 10px 20px;
-    padding-top: 11px;
   }
 }
 :root {
@@ -7078,14 +7107,29 @@ p {
   color: var(--yellow);
 }
 .collectionthird .all .bottom button {
-  padding: 10px 25px;
+  padding: 10px 0;
+  width: 200px;
   padding-top: 11px;
   border-radius: 10px;
   background-color: var(--yellow);
   font-family: var(--ralewaymedium);
   border: none;
+  text-align: center;
   outline: none;
   color: var(--white);
+}
+.collectionthird .all .bottom .phoneno {
+  padding: 10px 0;
+  padding-top: 11px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: var(--yellow);
+  font-family: var(--ralewaymedium);
+  border: none;
+  outline: none;
+  color: var(--white);
+  display: none;
 }
 
 @media (max-width: 576px) {
@@ -7108,7 +7152,13 @@ p {
     margin-bottom: 10px;
   }
   .collectionthird .all .bottom button {
-    padding: 7px 15px;
+    padding: 7px 0;
+    width: 180px;
+    padding-top: 8px;
+  }
+  .collectionthird .all .bottom .phoneno {
+    padding: 7px 0;
+    width: 180px;
     padding-top: 8px;
   }
 }
@@ -7129,8 +7179,14 @@ p {
     margin-bottom: 15px;
   }
   .collectionthird .right .bottom button {
-    padding: 9px 18px;
-    padding-top: 10px;
+    padding: 8px 0;
+    width: 190px;
+    padding-top: 9px;
+  }
+  .collectionthird .right .bottom .phoneno {
+    padding: 8px 0;
+    width: 190px;
+    padding-top: 9px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -7150,8 +7206,14 @@ p {
     margin-bottom: 18px;
   }
   .collectionthird .right .bottom button {
-    padding: 10px 20px;
-    padding-top: 11px;
+    padding: 8px 0;
+    width: 200px;
+    padding-top: 9px;
+  }
+  .collectionthird .right .bottom .phoneno {
+    padding: 8px 0;
+    width: 200px;
+    padding-top: 9px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -7163,10 +7225,6 @@ p {
   }
   .collectionthird .right .desc {
     font-size: 14px;
-  }
-  .collectionthird .right .bottom button {
-    padding: 10px 20px;
-    padding-top: 11px;
   }
 }
 :root {

@@ -464,6 +464,15 @@ $(function () {
 
     //#endregion product page slider
 
+    //#region product page call us
+
+    $(document).on("click", ".callus", function () {
+        $(this).hide();
+        $(".phoneno").fadeIn(100);
+    });
+
+    //#endregion product page call us
+
     //--------------------- collection page
 
     //#region collection page sliders

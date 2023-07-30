@@ -221,14 +221,30 @@
                 }
 
                 button {
-                    padding: 10px 25px;
+                    padding: 10px 0;
+                    width: 200px;
                     padding-top: 11px;
                     border-radius: 10px;
                     background-color: var(--yellow);
                     font-family: var(--ralewaymedium);
                     border: none;
+                    text-align: center;
                     outline: none;
                     color: var(--white);
+                }
+
+                .phoneno {
+                    padding: 10px 0;
+                    padding-top: 11px;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                    background-color: var(--yellow);
+                    font-family: var(--ralewaymedium);
+                    border: none;
+                    outline: none;
+                    color: var(--white);
+                    display: none;
                 }
             }
         }
@@ -317,7 +333,14 @@
 
                 .bottom {
                     button {
-                        padding: 7px 15px;
+                        padding: 7px 0;
+                        width: 180px;
+                        padding-top: 8px;
+                    }
+
+                    .phoneno {
+                        padding: 7px 0;
+                        width: 180px;
                         padding-top: 8px;
                     }
                 }
@@ -407,8 +430,15 @@
 
                 .bottom {
                     button {
-                        padding: 9px 18px;
-                        padding-top: 10px;
+                        padding: 8px 0;
+                        width: 190px;
+                        padding-top: 9px;
+                    }
+
+                    .phoneno {
+                        padding: 8px 0;
+                        width: 190px;
+                        padding-top: 9px;
                     }
                 }
             }
@@ -497,8 +527,15 @@
 
                 .bottom {
                     button {
-                        padding: 10px 20px;
-                        padding-top: 11px;
+                        padding: 8px 0;
+                        width: 200px;
+                        padding-top: 9px;
+                    }
+
+                    .phoneno {
+                        padding: 8px 0;
+                        width: 200px;
+                        padding-top: 9px;
                     }
                 }
             }
@@ -546,13 +583,6 @@
                     p {
                         font-size: 14px;
                         margin-bottom: 12px;
-                    }
-                }
-
-                .bottom {
-                    button {
-                        padding: 10px 20px;
-                        padding-top: 11px;
                     }
                 }
             }
