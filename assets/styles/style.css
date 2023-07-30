@@ -1575,7 +1575,7 @@ p {
 }
 .mainthird .all .mainthirdslider .product .content .price {
   text-decoration: line-through;
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -1588,7 +1588,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .mainthird .all .mainthirdslider .product .content .colors {
   width: 100%;
@@ -2307,7 +2307,7 @@ p {
 .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo .right .bottom {
   width: 100%;
   font-size: 15px;
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
   color: var(--black);
 }
 
@@ -3592,7 +3592,7 @@ p {
   color: var(--textColor);
 }
 .shopsecond .all .right .products .product .content .price {
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -3607,7 +3607,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .shopsecond .all .right .products .product .content .colors {
   width: 100%;
@@ -4331,7 +4331,7 @@ p {
 .productsecond .all .right .no {
   margin: 0;
   padding: 0;
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   color: var(--textColor);
   transition: var(--darkModeTransition);
   width: 100%;
@@ -4374,7 +4374,7 @@ p {
   width: 100%;
 }
 .productsecond .all .right .bottom h3 {
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
   text-align: left;
   margin: 0;
   padding: 0;
@@ -4399,7 +4399,7 @@ p {
   width: 200px;
   text-align: center;
   background-color: var(--yellow);
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   border: none;
   outline: none;
   color: var(--white);
@@ -4791,7 +4791,7 @@ p {
 }
 .productthird .all .productthirdslider .product .content .price {
   text-decoration: line-through;
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -4804,7 +4804,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .productthird .all .productthirdslider .product .content .colors {
   width: 100%;
@@ -5170,7 +5170,7 @@ p {
 }
 .productfourth .all .productfourthslider .product .content .price {
   text-decoration: line-through;
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -5183,7 +5183,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .productfourth .all .productfourthslider .product .content .colors {
   width: 100%;
@@ -5588,7 +5588,7 @@ p {
 }
 .contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) {
   font-size: 18px;
-  font-family: var(--ralewaylight);
+  font-family: var(--montlight);
   color: var(--textColor);
   transition: var(--darkModeTransition);
 }
@@ -6151,7 +6151,7 @@ p {
   color: var(--textColor);
 }
 .collectionssecond .all .right .collections .collection .content .price {
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -6166,7 +6166,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .collectionssecond .all .pagination {
   padding: 0;
@@ -7100,7 +7100,7 @@ p {
   padding: 0;
 }
 .collectionthird .all .bottom h3 {
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
   text-align: left;
   margin: 0;
   padding: 0;
@@ -7125,7 +7125,7 @@ p {
   width: 200px;
   text-align: center;
   background-color: var(--yellow);
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   border: none;
   outline: none;
   color: var(--white);
@@ -7376,7 +7376,7 @@ p {
 }
 .collectionfourth .all .collectionfourthslider .product .content .price {
   text-decoration: line-through;
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -7389,7 +7389,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .collectionfourth .all .collectionfourthslider .product .content .colors {
   width: 100%;
@@ -7755,7 +7755,7 @@ p {
 }
 .collectionfifth .all .collectionfifthslider .product .content .price {
   text-decoration: line-through;
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -7768,7 +7768,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .collectionfifth .all .collectionfifthslider .product .content .colors {
   width: 100%;
@@ -8147,7 +8147,7 @@ p {
   color: var(--textColor);
 }
 .wishlistsecond .all .products .product .content .price {
-  font-family: var(--ralewaymedium);
+  font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
   text-align: start;
@@ -8162,7 +8162,7 @@ p {
   text-align: end;
   font-size: 18px;
   color: var(--red);
-  font-family: var(--ralewaybold);
+  font-family: var(--montbold);
 }
 .wishlistsecond .all .products .product .content .colors {
   width: 100%;
@@ -8396,6 +8396,18 @@ p {
   font-family: ralewaylight;
   src: url(../fonts/Raleway-Light.ttf);
 }
+@font-face {
+  font-family: montMedium;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: montBold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montLight;
+  src: url(../fonts/Montserra);
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -8436,6 +8448,9 @@ input::-webkit-inner-spin-button {
   --ralewaymedium: ralewaymedium;
   --ralewaybold: ralewaybold;
   --ralewaylight: ralewaylight;
+  --montmedium: montMedium;
+  --montbold: montBold;
+  --montlight: montLight;
   --borderradius: 7px;
 }
 

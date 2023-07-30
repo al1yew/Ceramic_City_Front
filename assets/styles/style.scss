@@ -831,6 +831,22 @@ p {
     src: url(../fonts/Raleway-Light.ttf);
 }
 
+@font-face {
+    font-family: montMedium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: montBold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: montLight;
+    src: url(../fonts/Montserra);
+}
+
+
 //#endregion fonts
 
 //#region animations
@@ -883,6 +899,9 @@ input::-webkit-inner-spin-button {
     --ralewaymedium: ralewaymedium;
     --ralewaybold: ralewaybold;
     --ralewaylight: ralewaylight;
+    --montmedium: montMedium;
+    --montbold: montBold;
+    --montlight: montLight;
 
     --borderradius: 7px;
 }

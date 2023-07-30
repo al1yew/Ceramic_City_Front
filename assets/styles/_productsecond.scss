@@ -165,7 +165,7 @@
             .no {
                 margin: 0;
                 padding: 0;
-                font-family: var(--ralewaymedium);
+                font-family: var(--montmedium);
                 color: var(--textColor);
                 transition: var(--darkModeTransition);
                 width: 100%;
@@ -213,7 +213,7 @@
                 width: 100%;
 
                 h3 {
-                    font-family: var(--ralewaybold);
+                    font-family: var(--montbold);
                     text-align: left;
                     margin: 0;
                     padding: 0;
@@ -240,7 +240,7 @@
                     width: 200px;
                     text-align: center;
                     background-color: var(--yellow);
-                    font-family: var(--ralewaymedium);
+                    font-family: var(--montmedium);
                     border: none;
                     outline: none;
                     color: var(--white);
