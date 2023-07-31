@@ -538,4 +538,36 @@ $(function () {
     });
 
     //#endregion collection page slider
+
+    //--------------------- about page
+
+    //#region about page sliders
+
+    $(".aboutthird .all .left").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        autoplaySpeed: 2500,
+        infinite: true,
+        fade: true,
+        arrows: true,
+        prevArrow: $(".aboutthirdprev"),
+        nextArrow: $(".aboutthirdnext"),
+    });
+
+    $(".aboutfourth .all .right").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        autoplaySpeed: 2500,
+        infinite: true,
+        fade: true,
+        arrows: true,
+        prevArrow: $(".aboutfourthprev"),
+        nextArrow: $(".aboutfourthnext"),
+    });
+
+    //#endregion about page sliders
 });

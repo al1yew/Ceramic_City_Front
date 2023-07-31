@@ -1,0 +1,114 @@
+:root {
+    --white: #FFFFFF;
+    --yellow: #E2BA38;
+    --black: #121219;
+    --brown: #332D1C;
+    --brownopacity: #E2BA3880;
+    --red: #FF3D00;
+    --darkyellow: #A57E02;
+    --shopyellow: rgba(226, 186, 56, 0.50);
+    --productyellow: rgba(226, 186, 56, 0.50);
+    --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    --darkModeTransition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    --productdetailh3: #121219;
+    --textColor: #121219;
+    --backgroundColor: #FFFFFF;
+
+    --otherTextColor: #FFFFFF;
+    --otherBackgroundColor: #332D1C;
+    --ralewaymedium: ralewaymedium;
+    --ralewaybold: ralewaybold;
+    --ralewaylight: ralewaylight;
+
+    --borderradius: 7px;
+}
+
+.aboutsecond {
+    margin-top: 60px;
+    background-color: var(--backgroundColor);
+    transition: var(--darkModeTransition);
+
+    .all {
+        display: grid;
+        grid-template-columns: 60% 25%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        p {
+            font-family: var(--ralewaymedium);
+            font-size: 32px;
+            color: var(--yellow);
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            margin: 0;
+            padding: 0;
+            padding: 11px 20px;
+            font-family: var(--ralewaymedium);
+            text-align: center;
+            color: var(--white);
+            background-color: var(--yellow);
+            border-radius: 10px;
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .aboutsecond {
+        margin-top: 40px;
+
+        .all {
+            display: flex;
+            grid-template-columns: unset;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            p {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            a {
+                padding: 9px;
+                display: block;
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .aboutsecond {
+        margin-top: 40px;
+
+        .all {
+            display: flex;
+            grid-template-columns: unset;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            p {
+                font-size: 26px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            a {
+                padding: 9px;
+                display: block;
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+}
