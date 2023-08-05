@@ -134,14 +134,30 @@
                             &:nth-child(1) {
                                 color: var(--yellow);
                                 font-size: 24px;
+                                font-family: var(--ralewaymedium);
                                 margin-bottom: 8px;
                             }
 
                             &:nth-child(2) {
                                 font-size: 18px;
-                                font-family: var(--montlight);
                                 color: var(--textColor);
                                 transition: var(--darkModeTransition);
+                                font-family: var(--ralewaymedium);
+
+                                .nexochu {
+                                    font-family: var(--montlight);
+                                    color: var(--textColor);
+                                }
+
+                                .nexochu1 {
+                                    font-family: var(--montlight);
+                                    color: var(--yellow);
+                                }
+
+                                a {
+                                    font-family: var(--montlight);
+                                    color: var(--yellow);
+                                }
                             }
                         }
                     }

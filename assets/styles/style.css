@@ -5584,13 +5584,26 @@ p {
 .contactsecond .all .bottom .left .leftdiv .data p:nth-child(1) {
   color: var(--yellow);
   font-size: 24px;
+  font-family: var(--ralewaymedium);
   margin-bottom: 8px;
 }
 .contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) {
   font-size: 18px;
-  font-family: var(--montlight);
   color: var(--textColor);
   transition: var(--darkModeTransition);
+  font-family: var(--ralewaymedium);
+}
+.contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) .nexochu {
+  font-family: var(--montlight);
+  color: var(--textColor);
+}
+.contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) .nexochu1 {
+  font-family: var(--montlight);
+  color: var(--yellow);
+}
+.contactsecond .all .bottom .left .leftdiv .data p:nth-child(2) a {
+  font-family: var(--montlight);
+  color: var(--yellow);
 }
 .contactsecond .all .bottom .right {
   margin: 0;
