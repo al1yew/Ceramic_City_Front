@@ -1574,7 +1574,6 @@ p {
   color: var(--textColor);
 }
 .mainthird .all .mainthirdslider .product .content .price {
-  text-decoration: line-through;
   font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
@@ -2290,6 +2289,8 @@ p {
   border-radius: 10px;
 }
 .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding .forotherpadding .allhoverinfo .right {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
