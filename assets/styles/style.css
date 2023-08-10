@@ -1578,6 +1578,7 @@ p {
   width: 40%;
   font-size: 16px;
   text-align: start;
+  margin: 1px 0;
 }
 .mainthird .all .mainthirdslider .product .content .price i {
   margin-left: 4px;
@@ -1769,6 +1770,7 @@ p {
   .mainthird .all .mainthirdslider .product .content .price {
     width: 40%;
     font-size: 15px;
+    margin: 0.5px 0;
   }
   .mainthird .all .mainthirdslider .product .content .discountprice {
     width: 50%;
@@ -1798,6 +1800,7 @@ p {
   .mainthird .all .mainthirdslider .product .content .price {
     width: 40%;
     font-size: 15px;
+    margin: 0.5px 0;
   }
   .mainthird .all .mainthirdslider .product .content .discountprice {
     width: 50%;
@@ -2114,17 +2117,18 @@ p {
     left: 75px;
   }
   .mainfifth .contentkeeper .right h4 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .mainfifth .contentkeeper .right p {
     font-size: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .mainfifth .contentkeeper .right .fourthp {
     display: none;
   }
   .mainfifth .contentkeeper .right a {
     right: 15px;
+    font-size: 14px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2230,8 +2234,9 @@ p {
   border-radius: 100%;
   transition: 0.2s;
   cursor: pointer;
-  padding: 30px;
+  padding: 15px;
   margin: 0;
+  transform: translate(-50%, -50%);
 }
 .mainsixth .all .mainsixthslider .slide .hoverfordetails:hover .forpadding {
   background-color: rgb(255, 255, 255);

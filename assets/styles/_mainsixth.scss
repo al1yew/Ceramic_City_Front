@@ -100,8 +100,9 @@
                     border-radius: 100%;
                     transition: 0.2s;
                     cursor: pointer;
-                    padding: 30px;
+                    padding: 15px;
                     margin: 0;
+                    transform: translate(-50%, -50%);
 
                     &:hover {
                         .forpadding {
