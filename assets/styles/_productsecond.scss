@@ -13,6 +13,9 @@
     --productdetailh3: #121219;
     --textColor: #121219;
     --backgroundColor: #FFFFFF;
+    --montmedium: montMedium;
+    --montbold: montBold;
+    --montlight: montLight;
 
     --otherTextColor: #FFFFFF;
     --otherBackgroundColor: #332D1C;
@@ -178,31 +181,107 @@
                 padding: 0;
             }
 
-            .colors {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-                margin: 0;
-                padding: 0;
+            .information {
                 width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                font-family: var(--ralewaymedium);
 
-                p {
-                    width: 100%;
-                    font-family: var(--ralewaymedium);
-                    margin: 0;
-                    padding: 0;
-                    font-size: 16px;
-                    color: var(--yellow);
-                    margin-bottom: 15px;
+                .brand,
+                .country {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    p {
+                        color: var(--yellow);
+                        font-size: 16px;
+                        width: 100%;
+                    }
+
+                    a {
+                        color: var(--textColor);
+                        text-decoration: underline;
+                        font-size: 14px;
+                        transition: var(--darkModeTransition);
+                    }
                 }
 
-                span {
-                    border-radius: 100%;
-                    width: 25px;
-                    height: 25px;
-                    cursor: pointer;
-                    margin-right: 10px;
+                .category {
+                    grid-column: 2/4;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    span {
+                        margin: 0 5px;
+                        margin-top: -2px;
+                    }
+
+                    p {
+                        color: var(--yellow);
+                        font-size: 16px;
+                        width: 100%;
+                    }
+
+                    a {
+                        color: var(--textColor);
+                        text-decoration: underline;
+                        font-size: 14px;
+                        transition: var(--darkModeTransition);
+                    }
+                }
+
+                .size {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    p {
+                        &:nth-child(1) {
+                            color: var(--yellow);
+                            font-size: 16px;
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            color: var(--textColor);
+                            text-decoration: underline;
+                            font-size: 14px;
+                            transition: var(--darkModeTransition);
+                        }
+                    }
+                }
+
+                .colors {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 16px;
+                        color: var(--yellow);
+                        margin-bottom: 7px;
+                    }
+
+                    span {
+                        border-radius: 100%;
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                        margin-right: 10px;
+                    }
                 }
             }
 
@@ -211,13 +290,17 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                flex-wrap: wrap;
 
                 h3 {
                     font-family: var(--montbold);
                     text-align: left;
                     margin: 0;
                     padding: 0;
-                    color: var(--yellow);
+
+                    &:nth-child(2) {
+                        font-family: var(--montmedium);
+                    }
                 }
 
                 button {
@@ -305,6 +388,46 @@
                 padding-left: 0px;
                 margin-top: 20px;
 
+                .information {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+
+                    .category {
+                        grid-column: 1/3;
+                    }
+
+                    .colors {
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .bottom {
+                    margin-top: 15px;
+
+                    button {
+                        padding: 7px 0;
+                        margin: 0;
+                        width: 160px;
+                        font-size: 14px;
+                        padding-top: 8px;
+                    }
+
+                    .phoneno {
+                        padding: 7px 0;
+                        margin: 0;
+                        width: 160px;
+                        font-size: 14px;
+                        padding-top: 8px;
+                    }
+                }
+
                 h2 {
                     margin-bottom: 10px;
                 }
@@ -316,33 +439,6 @@
                 .desc {
                     font-size: 13px;
                     margin-bottom: 10px;
-                }
-
-                .colors {
-                    margin-bottom: 10px;
-
-                    p {
-                        font-size: 14px;
-                        margin-bottom: 10px;
-                    }
-
-                    span {
-                        margin-right: 10px;
-                    }
-                }
-
-                .bottom {
-                    button {
-                        padding: 7px 0;
-                        width: 180px;
-                        padding-top: 8px;
-                    }
-
-                    .phoneno {
-                        padding: 7px 0;
-                        width: 180px;
-                        padding-top: 8px;
-                    }
                 }
             }
         }
@@ -415,20 +511,42 @@
                     margin-bottom: 15px;
                 }
 
-                .colors {
-                    margin-bottom: 15px;
+                .information {
+                    gap: 20px;
 
-                    p {
-                        font-size: 15px;
-                        margin-bottom: 10px;
+                    .brand,
+                    .country {
+
+                        p {
+                            font-size: 15px;
+                        }
                     }
 
-                    span {
-                        margin-right: 10px;
+                    .category {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .size {
+
+                        p {
+                            &:nth-child(1) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .colors {
+                        p {
+                            font-size: 15px;
+                        }
                     }
                 }
 
                 .bottom {
+                    margin-top: 20px;
+
                     button {
                         padding: 8px 0;
                         width: 190px;
@@ -512,20 +630,9 @@
                     margin-bottom: 18px;
                 }
 
-                .colors {
-                    margin-bottom: 18px;
-
-                    p {
-                        font-size: 16px;
-                        margin-bottom: 12px;
-                    }
-
-                    span {
-                        margin-right: 10px;
-                    }
-                }
-
                 .bottom {
+                    margin-top: 20px;
+
                     button {
                         padding: 8px 0;
                         width: 200px;
@@ -579,10 +686,32 @@
                     font-size: 14px;
                 }
 
-                .colors {
-                    p {
-                        font-size: 14px;
-                        margin-bottom: 12px;
+                .information {
+                    gap: 20px;
+
+                    .colors {
+                        p {
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+
+                .bottom {
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                    button {
+                        padding: 8px 0;
+                        width: 180px;
+                        padding-top: 9px;
+                    }
+
+                    .phoneno {
+                        padding: 8px 0;
+                        width: 180px;
+                        padding-top: 9px;
                     }
                 }
             }
