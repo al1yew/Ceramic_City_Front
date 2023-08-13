@@ -277,6 +277,22 @@ $(function () {
     //#region shop page filters animations
 
     $(document).on("click", ".clicktoopenfilterul", function () {
+        $(this)
+            .parent()
+            .siblings(".allfiltervalues")
+            .find(".podfilterul")
+            .slideUp(200);
+        $(this)
+            .parent()
+            .siblings(".allfiltervalues")
+            .find(".minus")
+            .addClass("d-none");
+        $(this)
+            .parent()
+            .siblings(".allfiltervalues")
+            .find(".plus")
+            .removeClass("d-none");
+
         $(this).parent().find(".podfilterul").slideToggle(200);
 
         if ($(this).parent().find(".plus").hasClass("d-none")) {
@@ -289,7 +305,7 @@ $(function () {
     });
 
     $(document).on("click", function (e) {
-        let isParentClass = $(e.target).parents(".filterli").length > 0;
+        let isParentClass = $(e.target).parents(".allfiltervalues").length > 0;
 
         if (!isParentClass) {
             $(".podfilterul").slideUp(200);
@@ -298,9 +314,30 @@ $(function () {
         }
     });
 
+    $(document).on("click", ".hamsinisech", function () {
+        let input = $(this).find("input");
+        let ikonka = $(this).find(".checkikonka");
+
+        if (ikonka.hasClass("d-none") && !input.prop("checked")) {
+            input.prop("checked", true);
+            ikonka.removeClass("d-none");
+
+            $(this).siblings("li").find(".checkikonka").removeClass("d-none");
+            $(this).siblings("li").find("input").prop("checked", true);
+        } else {
+            input.prop("checked", false);
+            ikonka.addClass("d-none");
+
+            $(this).siblings("li").find(".checkikonka").addClass("d-none");
+            $(this).siblings("li").find("input").prop("checked", false);
+        }
+    });
+
     $(document).on("click", ".podfilterli", function () {
         let ikonka = $(this).find(".checkikonka");
         let input = $(this).find("input");
+        let parent = $(this).parent();
+        let hamsinisech = parent.find(".hamsinisech");
 
         if (ikonka.hasClass("d-none") && !input.prop("checked")) {
             input.prop("checked", true);
@@ -310,7 +347,16 @@ $(function () {
             ikonka.addClass("d-none");
         }
 
-        //xotel s label, no ne polucilos shto to, dvajdi zovet funkciyu
+        if (
+            parent.find(".podfilterli").find(".checkikonka").hasClass("d-none")
+        ) {
+            hamsinisech.find(".checkikonka").addClass("d-none");
+            hamsinisech.find("input").prop("checked", false);
+        }
+    });
+
+    $(document).on("click", ".reload", function () {
+        window.location.reload();
     });
 
     //#endregion shop page filters animations
@@ -357,7 +403,8 @@ $(function () {
 
     //#region shop page filter sidebar functionality
 
-    $(document).on("click", ".openfilter", function () {
+    $(document).on("click", ".openfilter", function (e) {
+        e.stopPropagation();
         $(".telfiltermenu").toggleClass("togglefiltermenu");
     });
 

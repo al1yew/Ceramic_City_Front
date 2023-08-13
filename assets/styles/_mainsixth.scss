@@ -91,6 +91,25 @@
                 border-radius: 10px;
                 position: relative;
 
+                .gotocollection {
+                    position: absolute;
+                    bottom: 3%;
+                    right: 1%;
+                    padding: 5px 15px;
+                    opacity: 0.5;
+                    color: var(--white);
+                    background-color: var(--yellow);
+                    border-radius: 7px;
+                    font-size: 14px;
+                    width: max-content;
+                    font-family: var(--ralewaymedium);
+                    transition: 0.2s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
                 img {
                     width: 100%;
                 }

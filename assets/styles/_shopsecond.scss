@@ -40,10 +40,18 @@
             margin: 0;
             padding-top: 30px;
             padding-right: 50px;
+            padding-bottom: 50px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             flex-direction: column;
+
+            hr {
+                background-color: var(--yellow);
+                width: 100%;
+                height: 2px;
+                margin: 10px 0;
+            }
 
             p {
                 width: 100%;
@@ -104,8 +112,11 @@
                         margin: 0;
                         padding: 0;
                         display: none;
+                        max-height: 250px;
+                        overflow-y: scroll;
 
-                        .podfilterli {
+                        .podfilterli,
+                        .hamsinisech {
                             padding: 7px 0;
                             font-size: 14px;
                             display: flex;
@@ -159,6 +170,140 @@
                                 font-size: 11px;
                             }
                         }
+                    }
+                }
+            }
+
+            .colorfilter {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                padding: 5px 0;
+                cursor: pointer;
+
+                .top {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .filtername {
+                        font-size: 20px;
+                        width: 90%;
+                    }
+
+                    .plus,
+                    .minus {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        width: 10%;
+                        height: max-content;
+
+                        ion-icon {
+                            font-size: 20px;
+                        }
+
+                        svg {
+                            transition: var(--darkModeTransition);
+                            color: var(--darkyellow);
+                        }
+                    }
+                }
+
+                .podfilterul {
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+
+                    .colorlikeeper {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        justify-content: flex-start;
+
+                        .podfilterli,
+                        .hamsinisech {
+                            padding: 0;
+                            margin: 0;
+                            margin-top: 15px;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                .podkategoriyaname {
+                                    color: var(--yellow);
+                                }
+                            }
+
+                            .ischeckedspan {
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 100%;
+                                background-color: var(--backgroundColor);
+                                transition: var(--darkModeTransition);
+                                border: 0.5px solid var(--darkyellow);
+                                position: relative;
+
+                                ion-icon {
+                                    font-size: 25px;
+                                    position: absolute;
+                                    top: 52%;
+                                    left: 48%;
+                                    transform: translate(-50%, -50%);
+                                    color: var(--textColor);
+                                    transition: var(--darkModeTransition);
+                                }
+                            }
+
+                            input {
+                                display: none;
+                            }
+
+                            .podkategoriyaname {
+                                font-family: var(--ralewaylight);
+                                font-size: 14px;
+                                margin-right: 10px;
+                                color: var(--textColor);
+                                transition: var(--darkModeTransition);
+                                padding-top: 1px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 30px;
+
+                button {
+                    width: 45%;
+                    padding: 10px 0;
+                    color: var(--white);
+                    background-color: var(--yellow);
+                    border-radius: 7px;
+                    font-size: 16px;
+                    font-family: var(--ralewaymedium);
+                    transition: 0.2s;
+                    border: none;
+                    outline: none;
+
+                    &:hover {
+                        background-color: #A57E02;
                     }
                 }
             }
@@ -384,7 +529,7 @@
                         .discountprice {
                             width: 40%;
                             text-align: end;
-                            font-size: 18px;
+                            font-size: 16px;
                             color: var(--red);
                             font-family: var(--montbold);
                         }
@@ -401,6 +546,7 @@
                                 height: 18px;
                                 border-radius: 100%;
                                 margin-right: 8px;
+                                border: 0.1px solid var(--textColor);
                             }
                         }
                     }
@@ -471,6 +617,7 @@
                 margin: 0;
                 padding: 0 15px;
                 padding-top: 60px;
+                padding-bottom: 50px;
                 position: fixed;
                 right: -100%;
                 top: 0;
@@ -481,38 +628,31 @@
                 width: 200px;
                 z-index: 3000;
                 justify-content: flex-start;
+                align-items: flex-start;
 
                 p {
                     font-size: 18px;
                 }
 
-                .closefilterkeeper {
-                    width: 100%;
-                    position: relative;
-                    height: 1px;
+                .closefilter {
+                    position: absolute;
+                    top: 20px;
+                    right: 5px;
+                    width: max-content;
+                    cursor: pointer;
 
-                    .closefilter {
-                        position: absolute;
-                        top: -50px;
-                        right: -10px;
-                        width: max-content;
-                        cursor: pointer;
+                    svg {
+                        width: 35px;
+                        height: 35px;
+                        stroke: var(--textColor);
 
-                        svg {
-                            width: 35px;
-                            height: 35px;
-                            stroke: var(--textColor);
-
-                            path {
-                                fill: var(--textColor);
-                            }
+                        path {
+                            fill: var(--textColor);
                         }
                     }
                 }
 
                 .filterul {
-                    height: 100%;
-
                     .filterli {
                         .top {
                             .filtername {
@@ -529,7 +669,8 @@
 
                         .podfilterul {
 
-                            .podfilterli {
+                            .podfilterli,
+                            .hamsinisech {
                                 padding: 5px 0;
                                 font-size: 13px;
 
@@ -549,6 +690,37 @@
 
                                 .podkategoriyacount {
                                     font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .colorfilter {
+                    .top {
+                        .filtername {
+                            font-size: 15px;
+                        }
+
+                        .plus,
+                        .minus {
+                            ion-icon {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .podfilterul {
+
+                        .colorlikeeper {
+                            grid-template-columns: 1fr 1fr;
+
+                            .podfilterli,
+                            .hamsinisech {
+                                margin-top: 10px;
+
+                                .podkategoriyaname {
+                                    font-size: 13px;
                                 }
                             }
                         }
@@ -640,12 +812,12 @@
 
                             .price {
                                 width: 40%;
-                                font-size: 14px;
+                                font-size: 15px;
                             }
 
                             .discountprice {
                                 width: 50%;
-                                font-size: 16px;
+                                font-size: 15px;
                             }
 
                             .colors {
@@ -693,6 +865,7 @@
                 margin: 0;
                 padding: 0 15px;
                 padding-top: 60px;
+                padding-bottom: 50px;
                 position: fixed;
                 right: -100%;
                 top: 0;
@@ -708,32 +881,25 @@
                     font-size: 19px;
                 }
 
-                .closefilterkeeper {
-                    width: 100%;
-                    position: relative;
-                    height: 1px;
+                .closefilter {
+                    position: absolute;
+                    top: 20px;
+                    right: 5px;
+                    width: max-content;
+                    cursor: pointer;
 
-                    .closefilter {
-                        position: absolute;
-                        top: -50px;
-                        right: -10px;
-                        width: max-content;
-                        cursor: pointer;
+                    svg {
+                        width: 35px;
+                        height: 35px;
+                        stroke: var(--textColor);
 
-                        svg {
-                            width: 35px;
-                            height: 35px;
-                            stroke: var(--textColor);
-
-                            path {
-                                fill: var(--textColor);
-                            }
+                        path {
+                            fill: var(--textColor);
                         }
                     }
                 }
 
                 .filterul {
-                    height: 100%;
 
                     .filterli {
                         .top {
@@ -751,7 +917,8 @@
 
                         .podfilterul {
 
-                            .podfilterli {
+                            .podfilterli,
+                            .hamsinisech {
                                 padding: 7px 0;
                                 font-size: 14px;
 
@@ -771,6 +938,37 @@
 
                                 .podkategoriyacount {
                                     font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .colorfilter {
+                    .top {
+                        .filtername {
+                            font-size: 17px;
+                        }
+
+                        .plus,
+                        .minus {
+                            ion-icon {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+
+                    .podfilterul {
+
+                        .colorlikeeper {
+                            grid-template-columns: 1fr 1fr;
+
+                            .podfilterli,
+                            .hamsinisech {
+                                margin-top: 10px;
+
+                                .podkategoriyaname {
+                                    font-size: 14px;
                                 }
                             }
                         }
@@ -861,12 +1059,12 @@
 
                             .price {
                                 width: 40%;
-                                font-size: 16px;
+                                font-size: 15px;
                             }
 
                             .discountprice {
                                 width: 50%;
-                                font-size: 18px;
+                                font-size: 15px;
                             }
 
                             .colors {
@@ -935,6 +1133,22 @@
                         }
                     }
                 }
+
+                .colorfilter {
+                    .top {
+
+                        .filtername {
+                            font-size: 17px;
+                        }
+
+                        .plus,
+                        .minus {
+                            ion-icon {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
             }
 
             .right {
@@ -984,7 +1198,7 @@
 
                             .price {
                                 width: 40%;
-                                font-size: 15px;
+                                font-size: 16px;
                             }
 
                             .discountprice {

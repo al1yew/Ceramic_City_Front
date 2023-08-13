@@ -168,7 +168,7 @@
                     .discountprice {
                         width: 40%;
                         text-align: end;
-                        font-size: 18px;
+                        font-size: 16px;
                         color: var(--red);
                         font-family: var(--montbold);
                     }
@@ -185,6 +185,7 @@
                             height: 18px;
                             border-radius: 100%;
                             margin-right: 8px;
+                            border: 0.1px solid var(--textColor);
                         }
                     }
                 }
@@ -257,13 +258,12 @@
 
                         .price {
                             width: 40%;
-                            font-size: 14px;
-
+                            font-size: 15px;
                         }
 
                         .discountprice {
                             width: 50%;
-                            font-size: 16px;
+                            font-size: 15px;
                         }
 
                         .colors {
@@ -344,12 +344,12 @@
 
                         .price {
                             width: 40%;
-                            font-size: 14px;
+                            font-size: 15px;
                         }
 
                         .discountprice {
                             width: 50%;
-                            font-size: 16px;
+                            font-size: 15px;
                         }
 
                         .colors {
@@ -414,7 +414,7 @@
 
                         .price {
                             width: 40%;
-                            font-size: 15px;
+                            font-size: 16px;
                             margin: 0.5px 0;
                         }
 
@@ -460,7 +460,7 @@
 
                         .price {
                             width: 40%;
-                            font-size: 15px;
+                            font-size: 16px;
                             margin: 0.5px 0;
                         }
 

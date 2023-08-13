@@ -134,7 +134,7 @@
                     .discountprice {
                         width: 40%;
                         text-align: end;
-                        font-size: 18px;
+                        font-size: 16px;
                         color: var(--red);
                         font-family: var(--montbold);
                     }
@@ -150,6 +150,7 @@
                             width: 18px;
                             height: 18px;
                             border-radius: 100%;
+                            border: 0.1px solid var(--textColor);
                             margin-right: 8px;
                         }
                     }
@@ -254,12 +255,12 @@
 
                         .price {
                             width: 40%;
-                            font-size: 14px;
+                            font-size: 15px;
                         }
 
                         .discountprice {
                             width: 50%;
-                            font-size: 16px;
+                            font-size: 15px;
                         }
 
                         .colors {
@@ -346,7 +347,7 @@
 
                         .discountprice {
                             width: 50%;
-                            font-size: 18px;
+                            font-size: 16px;
                         }
 
                         .colors {
@@ -413,7 +414,7 @@
 
                         .price {
                             width: 40%;
-                            font-size: 15px;
+                            font-size: 16px;
                         }
 
                         .discountprice {

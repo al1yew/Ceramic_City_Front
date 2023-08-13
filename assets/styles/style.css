@@ -1586,7 +1586,7 @@ p {
 .mainthird .all .mainthirdslider .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -1602,6 +1602,7 @@ p {
   height: 18px;
   border-radius: 100%;
   margin-right: 8px;
+  border: 0.1px solid var(--textColor);
 }
 
 @media (max-width: 576px) {
@@ -1654,11 +1655,11 @@ p {
   }
   .mainthird .all .mainthirdslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .mainthird .all .mainthirdslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .mainthird .all .mainthirdslider .product .content .colors {
     margin-top: 7px;
@@ -1718,11 +1719,11 @@ p {
   }
   .mainthird .all .mainthirdslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .mainthird .all .mainthirdslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .mainthird .all .mainthirdslider .product .content .colors {
     margin-top: 7px;
@@ -1769,7 +1770,7 @@ p {
   }
   .mainthird .all .mainthirdslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0.5px 0;
   }
   .mainthird .all .mainthirdslider .product .content .discountprice {
@@ -1799,7 +1800,7 @@ p {
   }
   .mainthird .all .mainthirdslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0.5px 0;
   }
   .mainthird .all .mainthirdslider .product .content .discountprice {
@@ -2225,6 +2226,24 @@ p {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+}
+.mainsixth .all .mainsixthslider .slide .gotocollection {
+  position: absolute;
+  bottom: 3%;
+  right: 1%;
+  padding: 5px 15px;
+  opacity: 0.5;
+  color: var(--white);
+  background-color: var(--yellow);
+  border-radius: 7px;
+  font-size: 14px;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: var(--ralewaymedium);
+  transition: 0.2s;
+}
+.mainsixth .all .mainsixthslider .slide .gotocollection:hover {
+  opacity: 1;
 }
 .mainsixth .all .mainsixthslider .slide img {
   width: 100%;
@@ -3315,10 +3334,17 @@ p {
   margin: 0;
   padding-top: 30px;
   padding-right: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+}
+.shopsecond .all .left hr {
+  background-color: var(--yellow);
+  width: 100%;
+  height: 2px;
+  margin: 10px 0;
 }
 .shopsecond .all .left p {
   width: 100%;
@@ -3376,8 +3402,11 @@ p {
   margin: 0;
   padding: 0;
   display: none;
+  max-height: 250px;
+  overflow-y: scroll;
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech {
   padding: 7px 0;
   font-size: 14px;
   display: flex;
@@ -3385,10 +3414,12 @@ p {
   align-items: center;
   cursor: pointer;
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli:hover .podkategoriyaname {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli:hover .podkategoriyaname,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech:hover .podkategoriyaname {
   color: var(--yellow);
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .ischeckedspan {
   width: 18px;
   height: 18px;
   background-color: var(--backgroundColor);
@@ -3398,7 +3429,8 @@ p {
   position: relative;
   margin-right: 10px;
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .ischeckedspan ion-icon {
   font-size: 25px;
   position: absolute;
   top: 50%;
@@ -3407,10 +3439,12 @@ p {
   color: var(--textColor);
   transition: var(--darkModeTransition);
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli input {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli input,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech input {
   display: none;
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyaname {
   font-family: var(--ralewaylight);
   font-size: 14px;
   margin-right: 10px;
@@ -3418,8 +3452,131 @@ p {
   transition: var(--darkModeTransition);
   padding-top: 1px;
 }
-.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount {
+.shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount,
+.shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyacount {
   font-size: 11px;
+}
+.shopsecond .all .left .colorfilter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.shopsecond .all .left .colorfilter .top {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopsecond .all .left .colorfilter .top .filtername {
+  font-size: 20px;
+  width: 90%;
+}
+.shopsecond .all .left .colorfilter .top .plus,
+.shopsecond .all .left .colorfilter .top .minus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 10%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.shopsecond .all .left .colorfilter .top .plus ion-icon,
+.shopsecond .all .left .colorfilter .top .minus ion-icon {
+  font-size: 20px;
+}
+.shopsecond .all .left .colorfilter .top .plus svg,
+.shopsecond .all .left .colorfilter .top .minus svg {
+  transition: var(--darkModeTransition);
+  color: var(--darkyellow);
+}
+.shopsecond .all .left .colorfilter .podfilterul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli,
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli:hover .podkategoriyaname,
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech:hover .podkategoriyaname {
+  color: var(--yellow);
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli .ischeckedspan,
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech .ischeckedspan {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+  border: 0.5px solid var(--darkyellow);
+  position: relative;
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli .ischeckedspan ion-icon,
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech .ischeckedspan ion-icon {
+  font-size: 25px;
+  position: absolute;
+  top: 52%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli input,
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech input {
+  display: none;
+}
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli .podkategoriyaname,
+.shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech .podkategoriyaname {
+  font-family: var(--ralewaylight);
+  font-size: 14px;
+  margin-right: 10px;
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  padding-top: 1px;
+}
+.shopsecond .all .left .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.shopsecond .all .left .buttons button {
+  width: 45%;
+  padding: 10px 0;
+  color: var(--white);
+  background-color: var(--yellow);
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: var(--ralewaymedium);
+  transition: 0.2s;
+  border: none;
+  outline: none;
+}
+.shopsecond .all .left .buttons button:hover {
+  background-color: #A57E02;
 }
 .shopsecond .all .right {
   margin: 0;
@@ -3611,7 +3768,7 @@ p {
 .shopsecond .all .right .products .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -3627,6 +3784,7 @@ p {
   height: 18px;
   border-radius: 100%;
   margin-right: 8px;
+  border: 0.1px solid var(--textColor);
 }
 .shopsecond .all .pagination {
   padding: 0;
@@ -3680,6 +3838,7 @@ p {
     margin: 0;
     padding: 0 15px;
     padding-top: 60px;
+    padding-bottom: 50px;
     position: fixed;
     right: -100%;
     top: 0;
@@ -3690,33 +3849,26 @@ p {
     width: 200px;
     z-index: 3000;
     justify-content: flex-start;
+    align-items: flex-start;
   }
   .shopsecond .all .left p {
     font-size: 18px;
   }
-  .shopsecond .all .left .closefilterkeeper {
-    width: 100%;
-    position: relative;
-    height: 1px;
-  }
-  .shopsecond .all .left .closefilterkeeper .closefilter {
+  .shopsecond .all .left .closefilter {
     position: absolute;
-    top: -50px;
-    right: -10px;
+    top: 20px;
+    right: 5px;
     width: -moz-max-content;
     width: max-content;
     cursor: pointer;
   }
-  .shopsecond .all .left .closefilterkeeper .closefilter svg {
+  .shopsecond .all .left .closefilter svg {
     width: 35px;
     height: 35px;
     stroke: var(--textColor);
   }
-  .shopsecond .all .left .closefilterkeeper .closefilter svg path {
+  .shopsecond .all .left .closefilter svg path {
     fill: var(--textColor);
-  }
-  .shopsecond .all .left .filterul {
-    height: 100%;
   }
   .shopsecond .all .left .filterul .filterli .top .filtername {
     font-size: 15px;
@@ -3725,23 +3877,46 @@ p {
   .shopsecond .all .left .filterul .filterli .top .minus ion-icon {
     font-size: 15px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech {
     padding: 5px 0;
     font-size: 13px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .ischeckedspan {
     width: 15px;
     height: 15px;
     margin-right: 8px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .ischeckedspan ion-icon {
     font-size: 22px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyaname {
     font-size: 13px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyacount {
     font-size: 10px;
+  }
+  .shopsecond .all .left .colorfilter .top .filtername {
+    font-size: 15px;
+  }
+  .shopsecond .all .left .colorfilter .top .plus ion-icon,
+  .shopsecond .all .left .colorfilter .top .minus ion-icon {
+    font-size: 15px;
+  }
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli,
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech {
+    margin-top: 10px;
+  }
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli .podkategoriyaname,
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech .podkategoriyaname {
+    font-size: 13px;
   }
   .shopsecond .all .right .top {
     padding: 14px;
@@ -3810,11 +3985,11 @@ p {
   }
   .shopsecond .all .right .products .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .shopsecond .all .right .products .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .shopsecond .all .right .products .product .content .colors {
     margin-top: 7px;
@@ -3845,6 +4020,7 @@ p {
     margin: 0;
     padding: 0 15px;
     padding-top: 60px;
+    padding-bottom: 50px;
     position: fixed;
     right: -100%;
     top: 0;
@@ -3859,29 +4035,21 @@ p {
   .shopsecond .all .left p {
     font-size: 19px;
   }
-  .shopsecond .all .left .closefilterkeeper {
-    width: 100%;
-    position: relative;
-    height: 1px;
-  }
-  .shopsecond .all .left .closefilterkeeper .closefilter {
+  .shopsecond .all .left .closefilter {
     position: absolute;
-    top: -50px;
-    right: -10px;
+    top: 20px;
+    right: 5px;
     width: -moz-max-content;
     width: max-content;
     cursor: pointer;
   }
-  .shopsecond .all .left .closefilterkeeper .closefilter svg {
+  .shopsecond .all .left .closefilter svg {
     width: 35px;
     height: 35px;
     stroke: var(--textColor);
   }
-  .shopsecond .all .left .closefilterkeeper .closefilter svg path {
+  .shopsecond .all .left .closefilter svg path {
     fill: var(--textColor);
-  }
-  .shopsecond .all .left .filterul {
-    height: 100%;
   }
   .shopsecond .all .left .filterul .filterli .top .filtername {
     font-size: 17px;
@@ -3890,23 +4058,46 @@ p {
   .shopsecond .all .left .filterul .filterli .top .minus ion-icon {
     font-size: 17px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech {
     padding: 7px 0;
     font-size: 14px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .ischeckedspan {
     width: 15px;
     height: 15px;
     margin-right: 10px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .ischeckedspan ion-icon {
     font-size: 21px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyaname {
     font-size: 14px;
   }
-  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount {
+  .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount,
+  .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyacount {
     font-size: 11px;
+  }
+  .shopsecond .all .left .colorfilter .top .filtername {
+    font-size: 17px;
+  }
+  .shopsecond .all .left .colorfilter .top .plus ion-icon,
+  .shopsecond .all .left .colorfilter .top .minus ion-icon {
+    font-size: 17px;
+  }
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli,
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech {
+    margin-top: 10px;
+  }
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli .podkategoriyaname,
+  .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech .podkategoriyaname {
+    font-size: 14px;
   }
   .shopsecond .all .right .top {
     padding: 15px;
@@ -3974,11 +4165,11 @@ p {
   }
   .shopsecond .all .right .products .product .content .price {
     width: 40%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .shopsecond .all .right .products .product .content .discountprice {
     width: 50%;
-    font-size: 18px;
+    font-size: 15px;
   }
   .shopsecond .all .right .products .product .content .colors {
     margin-top: 7px;
@@ -4019,6 +4210,13 @@ p {
   .shopsecond .all .left .filterul .filterli .top .minus ion-icon {
     font-size: 18px;
   }
+  .shopsecond .all .left .colorfilter .top .filtername {
+    font-size: 17px;
+  }
+  .shopsecond .all .left .colorfilter .top .plus ion-icon,
+  .shopsecond .all .left .colorfilter .top .minus ion-icon {
+    font-size: 18px;
+  }
   .shopsecond .all .right .top {
     padding: 17px;
     margin-top: 25px;
@@ -4052,7 +4250,7 @@ p {
   }
   .shopsecond .all .right .products .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .shopsecond .all .right .products .product .content .discountprice {
     width: 50%;
@@ -4440,6 +4638,7 @@ p {
   height: 25px;
   cursor: pointer;
   margin-right: 10px;
+  border: 0.1px solid var(--textColor);
 }
 .productsecond .all .right .bottom {
   display: flex;
@@ -4907,7 +5106,7 @@ p {
 .productthird .all .productthirdslider .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -4922,6 +5121,7 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 100%;
+  border: 0.1px solid var(--textColor);
   margin-right: 8px;
 }
 
@@ -4975,11 +5175,11 @@ p {
   }
   .productthird .all .productthirdslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .productthird .all .productthirdslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .productthird .all .productthirdslider .product .content .colors {
     margin-top: 7px;
@@ -5039,11 +5239,11 @@ p {
   }
   .productthird .all .productthirdslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .productthird .all .productthirdslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .productthird .all .productthirdslider .product .content .colors {
     margin-top: 7px;
@@ -5090,7 +5290,7 @@ p {
   }
   .productthird .all .productthirdslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .productthird .all .productthirdslider .product .content .discountprice {
     width: 50%;
@@ -5119,7 +5319,7 @@ p {
   }
   .productthird .all .productthirdslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .productthird .all .productthirdslider .product .content .discountprice {
     width: 50%;
@@ -5286,7 +5486,7 @@ p {
 .productfourth .all .productfourthslider .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -5301,6 +5501,7 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 100%;
+  border: 0.1px solid var(--textColor);
   margin-right: 8px;
 }
 
@@ -5354,11 +5555,11 @@ p {
   }
   .productfourth .all .productfourthslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .productfourth .all .productfourthslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .productfourth .all .productfourthslider .product .content .colors {
     margin-top: 7px;
@@ -5418,11 +5619,11 @@ p {
   }
   .productfourth .all .productfourthslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .productfourth .all .productfourthslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .productfourth .all .productfourthslider .product .content .colors {
     margin-top: 7px;
@@ -5469,7 +5670,7 @@ p {
   }
   .productfourth .all .productfourthslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .productfourth .all .productfourthslider .product .content .discountprice {
     width: 50%;
@@ -5498,7 +5699,7 @@ p {
   }
   .productfourth .all .productfourthslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .productfourth .all .productfourthslider .product .content .discountprice {
     width: 50%;
@@ -6004,254 +6205,31 @@ p {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.collectionssecond .all .left {
-  padding: 0;
-  margin: 0;
-  padding-top: 30px;
-  padding-right: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.collectionssecond .all .left p {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: var(--ralewaymedium);
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.collectionssecond .all .left .filterul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.collectionssecond .all .left .filterul .filterli {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  padding: 5px 0;
-  cursor: pointer;
-}
-.collectionssecond .all .left .filterul .filterli .top {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.collectionssecond .all .left .filterul .filterli .top .filtername {
-  font-size: 20px;
-  width: 90%;
-}
-.collectionssecond .all .left .filterul .filterli .top .plus,
-.collectionssecond .all .left .filterul .filterli .top .minus {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 10%;
-  height: -moz-max-content;
-  height: max-content;
-}
-.collectionssecond .all .left .filterul .filterli .top .plus ion-icon,
-.collectionssecond .all .left .filterul .filterli .top .minus ion-icon {
-  font-size: 20px;
-}
-.collectionssecond .all .left .filterul .filterli .top .plus svg,
-.collectionssecond .all .left .filterul .filterli .top .minus svg {
-  transition: var(--darkModeTransition);
-  color: var(--darkyellow);
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli {
-  padding: 7px 0;
-  font-size: 14px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli:hover .podkategoriyaname {
-  color: var(--yellow);
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan {
-  width: 18px;
-  height: 18px;
-  background-color: var(--backgroundColor);
-  transition: var(--darkModeTransition);
-  border: 0.8px solid var(--darkyellow);
-  border-radius: 1.5px;
-  position: relative;
-  margin-right: 10px;
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon {
-  font-size: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--textColor);
-  transition: var(--darkModeTransition);
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli input {
-  display: none;
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname {
-  font-family: var(--ralewaylight);
-  font-size: 14px;
-  margin-right: 10px;
-  color: var(--textColor);
-  transition: var(--darkModeTransition);
-  padding-top: 1px;
-}
-.collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount {
-  font-size: 11px;
-}
-.collectionssecond .all .right {
-  margin: 0;
-  padding: 0;
-}
-.collectionssecond .all .right .top {
-  background-color: var(--shopyellow);
-  transition: var(--darkModeTransition);
-  color: var(--textColor);
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  margin-top: 40px;
-}
-.collectionssecond .all .right .top .openfilter {
-  display: none;
-}
-.collectionssecond .all .right .top .sortingdiv {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  width: -moz-max-content;
-  width: max-content;
-  align-items: center;
-}
-.collectionssecond .all .right .top .sortingdiv .sortby {
-  color: var(--black);
-  font-family: var(--ralewaymedium);
-  font-size: 20px;
-  margin-right: 20px;
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions {
-  margin: 0;
-  padding: 6px 12px;
-  background-color: var(--white);
-  color: var(--yellow);
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-  width: 180px;
-  font-family: var(--ralewaymedium);
-  position: relative;
-  cursor: pointer;
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions .sorttype svg path {
-  fill: var(--yellow);
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions select {
-  display: none;
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions .icon {
-  transition: 0.2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: -moz-max-content;
-  width: max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding-top: 2px;
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul {
-  list-style: none;
-  display: none;
-  background-color: white;
-  margin: 0;
-  padding: 12px;
-  width: 180px;
-  border-radius: 10px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 200;
-  font-family: var(--ralewaymedium);
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul .yellowli {
-  color: var(--yellow);
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul li {
-  padding: 5px;
-  transition: 0.2s;
-  color: var(--black);
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul li svg {
-  transition: 0.2s;
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul li svg path {
-  fill: var(--black);
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul li:hover {
-  color: var(--yellow);
-}
-.collectionssecond .all .right .top .sortingdiv .sortbyoptions ul li:hover svg path {
-  fill: var(--yellow);
-}
-.collectionssecond .all .right .collections {
+.collectionssecond .all .collections {
   padding: 0;
   margin: 0;
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  row-gap: 40px;
+  gap: 40px;
   width: 100%;
 }
-.collectionssecond .all .right .collections .collection {
+.collectionssecond .all .collections .collection {
   margin: 0;
   padding: 0;
   position: relative;
 }
-.collectionssecond .all .right .collections .collection .imgkeeper {
+.collectionssecond .all .collections .collection .imgkeeper {
   width: 100%;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   display: block;
 }
-.collectionssecond .all .right .collections .collection .imgkeeper img {
+.collectionssecond .all .collections .collection .imgkeeper img {
   width: 100%;
 }
-.collectionssecond .all .right .collections .collection .imgkeeper .sale {
-  padding: 2px 14px;
-  color: var(--black);
-  font-size: 12px;
-  background-color: var(--yellow);
-  border-radius: 5px;
-  position: absolute;
-  top: 3%;
-  left: 4%;
-  font-family: var(--ralewaymedium);
-}
-.collectionssecond .all .right .collections .collection .content {
+.collectionssecond .all .collections .collection .content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -6259,32 +6237,14 @@ p {
   margin: 0;
   padding: 0;
 }
-.collectionssecond .all .right .collections .collection .content .name {
+.collectionssecond .all .collections .collection .content .name,
+.collectionssecond .all .collections .collection .content .style {
   font-size: 15px;
   font-family: var(--ralewaymedium);
-  width: 100%;
   margin-top: 8px;
   margin-bottom: 5px;
   transition: var(--darkModeTransition);
   color: var(--textColor);
-}
-.collectionssecond .all .right .collections .collection .content .price {
-  font-family: var(--montmedium);
-  width: 40%;
-  font-size: 16px;
-  text-align: start;
-  color: var(--textColor);
-  transition: var(--darkModeTransition);
-}
-.collectionssecond .all .right .collections .collection .content .price i {
-  margin-left: 4px;
-}
-.collectionssecond .all .right .collections .collection .content .discountprice {
-  width: 40%;
-  text-align: end;
-  font-size: 18px;
-  color: var(--red);
-  font-family: var(--montbold);
 }
 .collectionssecond .all .pagination {
   padding: 0;
@@ -6334,133 +6294,17 @@ p {
 }
 
 @media (max-width: 576px) {
-  .collectionssecond .all .left {
-    margin: 0;
-    padding: 0 15px;
-    padding-top: 60px;
-    position: fixed;
-    right: -100%;
-    top: 0;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: var(--backgroundColor);
-    transition: 0.3s;
-    width: 200px;
-    z-index: 3000;
-    justify-content: flex-start;
-  }
-  .collectionssecond .all .left p {
-    font-size: 18px;
-  }
-  .collectionssecond .all .left .closefilterkeeper {
-    width: 100%;
-    position: relative;
-    height: 1px;
-  }
-  .collectionssecond .all .left .closefilterkeeper .closefilter {
-    position: absolute;
-    top: -50px;
-    right: -10px;
-    width: -moz-max-content;
-    width: max-content;
-    cursor: pointer;
-  }
-  .collectionssecond .all .left .closefilterkeeper .closefilter svg {
-    width: 35px;
-    height: 35px;
-    stroke: var(--textColor);
-  }
-  .collectionssecond .all .left .closefilterkeeper .closefilter svg path {
-    fill: var(--textColor);
-  }
-  .collectionssecond .all .left .filterul {
-    height: 100%;
-  }
-  .collectionssecond .all .left .filterul .filterli .top .filtername {
-    font-size: 15px;
-  }
-  .collectionssecond .all .left .filterul .filterli .top .plus ion-icon,
-  .collectionssecond .all .left .filterul .filterli .top .minus ion-icon {
-    font-size: 15px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli {
-    padding: 5px 0;
-    font-size: 13px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan {
-    width: 15px;
-    height: 15px;
-    margin-right: 8px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon {
-    font-size: 22px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname {
-    font-size: 13px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount {
-    font-size: 10px;
-  }
-  .collectionssecond .all .right .top {
-    padding: 14px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-content: space-between;
-  }
-  .collectionssecond .all .right .top .openfilter {
-    display: block;
-    order: 3;
-    font-family: var(--ralewaymedium);
-    color: var(--black);
-    font-size: 15px;
-    padding: 5px 10px;
-    padding-top: 6px;
-    border: 1px solid var(--black);
-    border-radius: 7px;
-  }
-  .collectionssecond .all .right .top .openfilter svg {
-    margin-bottom: 3px;
-    margin-left: 5px;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortby {
-    font-size: 15px;
-    margin-right: 15px;
-    order: 1;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortbyoptions {
-    padding: 6px 8px;
-    font-size: 15px;
-    width: 130px;
-    order: 2;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortbyoptions ul {
-    width: 130px;
-    padding: 8px;
-  }
-  .collectionssecond .all .right .collections {
+  .collectionssecond .all .collections {
     margin-top: 25px;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
   }
-  .collectionssecond .all .right .collections .collection .imgkeeper .sale {
-    padding: 0px 10px;
-    font-size: 10px;
-    top: 3%;
-    left: 4%;
-  }
-  .collectionssecond .all .right .collections .collection .content {
+  .collectionssecond .all .collections .collection .content {
     padding: 0;
   }
-  .collectionssecond .all .right .collections .collection .content .name {
+  .collectionssecond .all .collections .collection .content .name,
+  .collectionssecond .all .collections .collection .content .style {
     font-size: 15px;
-  }
-  .collectionssecond .all .right .collections .collection .content .price {
-    width: 40%;
-    font-size: 14px;
-  }
-  .collectionssecond .all .right .collections .collection .content .discountprice {
-    width: 50%;
-    font-size: 16px;
   }
   .collectionssecond .all .pagination {
     margin-top: 50px;
@@ -6480,132 +6324,17 @@ p {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .collectionssecond .all .left {
-    margin: 0;
-    padding: 0 15px;
-    padding-top: 60px;
-    position: fixed;
-    right: -100%;
-    top: 0;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: var(--backgroundColor);
-    transition: 0.3s;
-    width: 230px;
-    z-index: 3000;
-    justify-content: flex-start;
-  }
-  .collectionssecond .all .left p {
-    font-size: 19px;
-  }
-  .collectionssecond .all .left .closefilterkeeper {
-    width: 100%;
-    position: relative;
-    height: 1px;
-  }
-  .collectionssecond .all .left .closefilterkeeper .closefilter {
-    position: absolute;
-    top: -50px;
-    right: -10px;
-    width: -moz-max-content;
-    width: max-content;
-    cursor: pointer;
-  }
-  .collectionssecond .all .left .closefilterkeeper .closefilter svg {
-    width: 35px;
-    height: 35px;
-    stroke: var(--textColor);
-  }
-  .collectionssecond .all .left .closefilterkeeper .closefilter svg path {
-    fill: var(--textColor);
-  }
-  .collectionssecond .all .left .filterul {
-    height: 100%;
-  }
-  .collectionssecond .all .left .filterul .filterli .top .filtername {
-    font-size: 17px;
-  }
-  .collectionssecond .all .left .filterul .filterli .top .plus ion-icon,
-  .collectionssecond .all .left .filterul .filterli .top .minus ion-icon {
-    font-size: 17px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli {
-    padding: 7px 0;
-    font-size: 14px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .ischeckedspan ion-icon {
-    font-size: 21px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyaname {
-    font-size: 14px;
-  }
-  .collectionssecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount {
-    font-size: 11px;
-  }
-  .collectionssecond .all .right .top {
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-content: space-between;
-  }
-  .collectionssecond .all .right .top .openfilter {
-    display: block;
-    order: 3;
-    font-family: var(--ralewaymedium);
-    color: var(--black);
-    font-size: 15px;
-    padding: 5px 12px;
-    padding-top: 6px;
-    border: 1px solid var(--black);
-    border-radius: 7px;
-  }
-  .collectionssecond .all .right .top .openfilter svg {
-    margin-left: 5px;
-    margin-bottom: 3px;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortby {
-    font-size: 15px;
-    margin-right: 15px;
-    order: 1;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortbyoptions {
-    padding: 6px 10px;
-    font-size: 15px;
-    width: 145px;
-    order: 2;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortbyoptions ul {
-    width: 145px;
-  }
-  .collectionssecond .all .right .collections {
+  .collectionssecond .all .collections {
     margin-top: 25px;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .collectionssecond .all .right .collections .collection .imgkeeper .sale {
-    padding: 1px 10px;
-    font-size: 12px;
-    top: 4%;
-    left: 4%;
-  }
-  .collectionssecond .all .right .collections .collection .content {
+  .collectionssecond .all .collections .collection .content {
     padding: 0;
   }
-  .collectionssecond .all .right .collections .collection .content .name {
+  .collectionssecond .all .collections .collection .content .name,
+  .collectionssecond .all .collections .collection .content .style {
     font-size: 16px;
-  }
-  .collectionssecond .all .right .collections .collection .content .price {
-    width: 40%;
-    font-size: 16px;
-  }
-  .collectionssecond .all .right .collections .collection .content .discountprice {
-    width: 50%;
-    font-size: 18px;
   }
   .collectionssecond .all .pagination {
     margin-top: 50px;
@@ -6625,54 +6354,12 @@ p {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .collectionssecond .all .left {
-    padding-top: 0;
-    padding-right: 20px;
-  }
-  .collectionssecond .all .left p {
-    font-size: 22px;
-  }
-  .collectionssecond .all .left .filterul .filterli .top .filtername {
-    font-size: 17px;
-  }
-  .collectionssecond .all .left .filterul .filterli .top .plus ion-icon,
-  .collectionssecond .all .left .filterul .filterli .top .minus ion-icon {
-    font-size: 18px;
-  }
-  .collectionssecond .all .right .top {
-    padding: 17px;
-    margin-top: 25px;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortby {
-    font-size: 17px;
-    margin-right: 15px;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortbyoptions {
-    font-size: 17px;
-    width: 150px;
-  }
-  .collectionssecond .all .right .top .sortingdiv .sortbyoptions ul {
-    padding: 10px;
-    width: 150px;
-  }
-  .collectionssecond .all .right .collections {
+  .collectionssecond .all .collections {
     margin-top: 25px;
     gap: 20px;
   }
-  .collectionssecond .all .right .collections .collection .imgkeeper .sale {
-    padding: 0px 13px;
-    font-size: 11px;
-  }
-  .collectionssecond .all .right .collections .collection .content {
+  .collectionssecond .all .collections .collection .content {
     padding: 0;
-  }
-  .collectionssecond .all .right .collections .collection .content .price {
-    width: 40%;
-    font-size: 15px;
-  }
-  .collectionssecond .all .right .collections .collection .content .discountprice {
-    width: 50%;
-    font-size: 16px;
   }
   .collectionssecond .all .pagination {
     margin-top: 70px;
@@ -7505,7 +7192,7 @@ p {
 .collectionfourth .all .collectionfourthslider .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -7520,6 +7207,7 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 100%;
+  border: 0.1px solid var(--textColor);
   margin-right: 8px;
 }
 
@@ -7573,11 +7261,11 @@ p {
   }
   .collectionfourth .all .collectionfourthslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .collectionfourth .all .collectionfourthslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .collectionfourth .all .collectionfourthslider .product .content .colors {
     margin-top: 7px;
@@ -7637,11 +7325,11 @@ p {
   }
   .collectionfourth .all .collectionfourthslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .collectionfourth .all .collectionfourthslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .collectionfourth .all .collectionfourthslider .product .content .colors {
     margin-top: 7px;
@@ -7688,7 +7376,7 @@ p {
   }
   .collectionfourth .all .collectionfourthslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .collectionfourth .all .collectionfourthslider .product .content .discountprice {
     width: 50%;
@@ -7884,7 +7572,7 @@ p {
 .collectionfifth .all .collectionfifthslider .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -7899,6 +7587,7 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 100%;
+  border: 0.1px solid var(--textColor);
   margin-right: 8px;
 }
 
@@ -7952,11 +7641,11 @@ p {
   }
   .collectionfifth .all .collectionfifthslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .collectionfifth .all .collectionfifthslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .collectionfifth .all .collectionfifthslider .product .content .colors {
     margin-top: 7px;
@@ -8016,11 +7705,11 @@ p {
   }
   .collectionfifth .all .collectionfifthslider .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .collectionfifth .all .collectionfifthslider .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .collectionfifth .all .collectionfifthslider .product .content .colors {
     margin-top: 7px;
@@ -8067,7 +7756,7 @@ p {
   }
   .collectionfifth .all .collectionfifthslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .collectionfifth .all .collectionfifthslider .product .content .discountprice {
     width: 50%;
@@ -8096,7 +7785,7 @@ p {
   }
   .collectionfifth .all .collectionfifthslider .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .collectionfifth .all .collectionfifthslider .product .content .discountprice {
     width: 50%;
@@ -8278,7 +7967,7 @@ p {
 .wishlistsecond .all .products .product .content .discountprice {
   width: 40%;
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--red);
   font-family: var(--montbold);
 }
@@ -8293,6 +7982,7 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 100%;
+  border: 0.1px solid var(--textColor);
   margin-right: 8px;
 }
 .wishlistsecond .all .pagination {
@@ -8374,11 +8064,11 @@ p {
   }
   .wishlistsecond .all .products .product .content .price {
     width: 40%;
-    font-size: 14px;
+    font-size: 15px;
   }
   .wishlistsecond .all .products .product .content .discountprice {
     width: 50%;
-    font-size: 16px;
+    font-size: 15px;
   }
   .wishlistsecond .all .products .product .content .colors {
     margin-top: 7px;
@@ -8440,7 +8130,7 @@ p {
   }
   .wishlistsecond .all .products .product .content .discountprice {
     width: 50%;
-    font-size: 18px;
+    font-size: 16px;
   }
   .wishlistsecond .all .products .product .content .colors {
     margin-top: 7px;
@@ -8485,7 +8175,7 @@ p {
   }
   .wishlistsecond .all .products .product .content .price {
     width: 40%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .wishlistsecond .all .products .product .content .discountprice {
     width: 50%;
