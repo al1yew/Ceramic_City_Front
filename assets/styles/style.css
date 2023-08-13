@@ -3551,7 +3551,6 @@ p {
 .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .hamsinisech .podkategoriyaname {
   font-family: var(--ralewaylight);
   font-size: 14px;
-  margin-right: 10px;
   color: var(--textColor);
   transition: var(--darkModeTransition);
   padding-top: 1px;
