@@ -5094,7 +5094,6 @@ p {
   color: var(--textColor);
 }
 .productthird .all .productthirdslider .product .content .price {
-  text-decoration: line-through;
   font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
@@ -5474,7 +5473,6 @@ p {
   color: var(--textColor);
 }
 .productfourth .all .productfourthslider .product .content .price {
-  text-decoration: line-through;
   font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
@@ -7180,7 +7178,6 @@ p {
   color: var(--textColor);
 }
 .collectionfourth .all .collectionfourthslider .product .content .price {
-  text-decoration: line-through;
   font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
@@ -7560,7 +7557,6 @@ p {
   color: var(--textColor);
 }
 .collectionfifth .all .collectionfifthslider .product .content .price {
-  text-decoration: line-through;
   font-family: var(--montmedium);
   width: 40%;
   font-size: 16px;
