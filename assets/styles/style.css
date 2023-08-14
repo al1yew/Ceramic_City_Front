@@ -9142,4 +9142,20 @@ body {
   --headerBackgroundColor: #332d1c69;
   --productyellow: #E2BA38;
   --productdetailh3: #E2BA38;
+}
+
+.validation-summary-errors {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid var(--textColor);
+  border-radius: 10px;
+}
+.validation-summary-errors ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--ralewaymedium);
+  color: var(--red);
 }/*# sourceMappingURL=style.css.map */
