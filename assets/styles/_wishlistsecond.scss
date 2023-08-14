@@ -102,7 +102,7 @@
                     }
                 }
 
-                .addtowishlist {
+                .deletefromtowishlist {
                     padding: 8px;
                     border-radius: 100%;
                     background-color: var(--white);
@@ -124,7 +124,11 @@
                         width: 18px;
                         height: 18px;
                         transition: var(--darkModeTransition);
-                        stroke: var(--yellow)
+                        stroke: var(--yellow);
+
+                        path {
+                            fill: var(--yellow);
+                        }
                     }
                 }
 
@@ -275,7 +279,7 @@
                         }
                     }
 
-                    .addtowishlist {
+                    .deletefromtowishlist {
                         padding: 7px;
                         top: 2%;
                         right: 4%;
@@ -378,7 +382,7 @@
                         }
                     }
 
-                    .addtowishlist {
+                    .deletefromtowishlist {
                         padding: 8px;
                         top: 3%;
                         right: 4%;
@@ -464,7 +468,7 @@
                         }
                     }
 
-                    .addtowishlist {
+                    .deletefromtowishlist {
                         padding: 6px;
                         right: 4%;
                     }

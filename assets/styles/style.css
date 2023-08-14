@@ -8200,7 +8200,7 @@ p {
   left: 4%;
   font-family: var(--ralewaymedium);
 }
-.wishlistsecond .all .products .product .addtowishlist {
+.wishlistsecond .all .products .product .deletefromtowishlist {
   padding: 8px;
   border-radius: 100%;
   background-color: var(--white);
@@ -8212,16 +8212,19 @@ p {
   align-items: center;
   transition: 0.2s;
 }
-.wishlistsecond .all .products .product .addtowishlist:hover {
+.wishlistsecond .all .products .product .deletefromtowishlist:hover {
   transform: scale(1.05);
 }
-.wishlistsecond .all .products .product .addtowishlist svg {
+.wishlistsecond .all .products .product .deletefromtowishlist svg {
   stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
   transition: var(--darkModeTransition);
   stroke: var(--yellow);
+}
+.wishlistsecond .all .products .product .deletefromtowishlist svg path {
+  fill: var(--yellow);
 }
 .wishlistsecond .all .products .product .content {
   display: flex;
@@ -8342,15 +8345,15 @@ p {
     top: 3%;
     left: 4%;
   }
-  .wishlistsecond .all .products .product .addtowishlist {
+  .wishlistsecond .all .products .product .deletefromtowishlist {
     padding: 7px;
     top: 2%;
     right: 4%;
   }
-  .wishlistsecond .all .products .product .addtowishlist:hover {
+  .wishlistsecond .all .products .product .deletefromtowishlist:hover {
     transform: unset;
   }
-  .wishlistsecond .all .products .product .addtowishlist svg {
+  .wishlistsecond .all .products .product .deletefromtowishlist svg {
     width: 16px;
     height: 16px;
   }
@@ -8415,15 +8418,15 @@ p {
     top: 4%;
     left: 4%;
   }
-  .wishlistsecond .all .products .product .addtowishlist {
+  .wishlistsecond .all .products .product .deletefromtowishlist {
     padding: 8px;
     top: 3%;
     right: 4%;
   }
-  .wishlistsecond .all .products .product .addtowishlist:hover {
+  .wishlistsecond .all .products .product .deletefromtowishlist:hover {
     transform: unset;
   }
-  .wishlistsecond .all .products .product .addtowishlist svg {
+  .wishlistsecond .all .products .product .deletefromtowishlist svg {
     width: 18px;
     height: 18px;
   }
@@ -8475,7 +8478,7 @@ p {
     padding: 0px 13px;
     font-size: 11px;
   }
-  .wishlistsecond .all .products .product .addtowishlist {
+  .wishlistsecond .all .products .product .deletefromtowishlist {
     padding: 6px;
     right: 4%;
   }
