@@ -8187,6 +8187,13 @@ p {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+.wishlistsecond .all .ifwishlistisempty {
+  margin-top: 60px;
+  font-family: var(--ralewaymedium);
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+}
 .wishlistsecond .all .products {
   padding: 0;
   margin: 0;
@@ -8343,7 +8350,6 @@ p {
   font-size: 18px;
   width: 45px;
   height: 45px;
-  padding-bottom: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8358,6 +8364,11 @@ p {
   background-color: var(--yellow);
   color: var(--white);
 }
+.wishlistsecond .all .pagination ul li a {
+  width: 100%;
+  padding-bottom: 3px;
+  height: 100%;
+}
 .wishlistsecond .all .pagination ul .selectedpage {
   background-color: var(--yellow);
   color: var(--white);
@@ -8367,6 +8378,12 @@ p {
 }
 
 @media (max-width: 576px) {
+  .wishlistsecond .all .ifwishlistisempty {
+    font-family: var(--ralewaymedium);
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
   .wishlistsecond .all .products {
     margin-top: 25px;
     grid-template-columns: 1fr 1fr;
@@ -8440,6 +8457,12 @@ p {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+  .wishlistsecond .all .ifwishlistisempty {
+    font-family: var(--ralewaymedium);
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
   .wishlistsecond .all .products {
     margin-top: 25px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -8513,6 +8536,12 @@ p {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .wishlistsecond .all .ifwishlistisempty {
+    font-family: var(--ralewaymedium);
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+  }
   .wishlistsecond .all .products {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 25px;

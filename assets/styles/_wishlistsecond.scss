@@ -35,6 +35,14 @@
         align-items: flex-start;
         flex-wrap: wrap;
 
+        .ifwishlistisempty {
+            margin-top: 60px;
+            font-family: var(--ralewaymedium);
+            font-size: 35px;
+            text-align: center;
+            width: 100%;
+        }
+
         .products {
             padding: 0;
             margin: 0;
@@ -213,7 +221,6 @@
                     font-size: 18px;
                     width: 45px;
                     height: 45px;
-                    padding-bottom: 3px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -227,6 +234,12 @@
                     &:hover {
                         background-color: var(--yellow);
                         color: var(--white);
+                    }
+
+                    a {
+                        width: 100%;
+                        padding-bottom: 3px;
+                        height: 100%;
                     }
                 }
 
@@ -247,6 +260,13 @@
     .wishlistsecond {
 
         .all {
+            .ifwishlistisempty {
+                font-family: var(--ralewaymedium);
+                font-size: 20px;
+                text-align: center;
+                width: 100%;
+            }
+
             .products {
                 margin-top: 25px;
                 grid-template-columns: 1fr 1fr;
@@ -350,6 +370,13 @@
 @media(min-width: 576px) and (max-width: 768px) {
     .wishlistsecond {
         .all {
+            .ifwishlistisempty {
+                font-family: var(--ralewaymedium);
+                font-size: 28px;
+                text-align: center;
+                width: 100%;
+            }
+
             .products {
                 margin-top: 25px;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -453,6 +480,12 @@
 @media(min-width: 768px) and (max-width: 992px) {
     .wishlistsecond {
         .all {
+            .ifwishlistisempty {
+                font-family: var(--ralewaymedium);
+                font-size: 32px;
+                text-align: center;
+                width: 100%;
+            }
 
             .products {
                 grid-template-columns: 1fr 1fr 1fr;
