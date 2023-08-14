@@ -151,15 +151,18 @@
 
                     &:hover {
                         transform: scale(1.05);
+
+                        svg {
+                            fill: var(--yellow);
+                        }
                     }
 
                     svg {
-                        stroke: var(--textColor);
                         padding-top: 1px;
                         width: 18px;
                         height: 18px;
-                        transition: var(--darkModeTransition);
-                        stroke: var(--yellow)
+                        transition: 0.2s;
+                        stroke: var(--yellow);
                     }
                 }
 

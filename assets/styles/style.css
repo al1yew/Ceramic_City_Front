@@ -742,25 +742,31 @@ p {
   cursor: pointer;
   padding-top: 3px;
 }
+.header .all .right .search .searchicon:hover svg {
+  stroke: var(--yellow);
+}
 .header .all .right .search .searchicon svg {
   stroke: var(--textColor);
+  transition: 0.3s;
   width: 22px;
   height: 22px;
-  transition: var(--darkModeTransition);
 }
 .header .all .right .search .searchmenu {
+  border: 0.5px solid var(--textColor);
   z-index: 1001;
   border-bottom-left-radius: var(--borderradius);
   border-bottom-right-radius: var(--borderradius);
   height: 250px;
   width: 250px;
-  opacity: 0.7;
   position: absolute;
   margin: 0;
   padding: 0;
   right: 0%;
   top: 100%;
   display: none;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
 }
 .header .all .right .search .searchmenu .menucontent {
   background-color: var(--backgroundColor);
@@ -780,7 +786,7 @@ p {
   width: 100%;
   margin: 0;
   padding: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid var(--textColor);
   display: grid;
   grid-template-columns: auto 200px;
   justify-content: space-between;
@@ -831,11 +837,13 @@ p {
 .header .all .right .search .searchmenu .menucontent .searchitems li {
   cursor: pointer;
   width: 100%;
+  margin-bottom: 4px;
 }
 .header .all .right .search .searchmenu .menucontent .searchitems li a {
   display: block;
   width: 100%;
   font-size: 18px;
+  transition: 0.2s;
 }
 .header .all .right .search .searchmenu .menucontent .searchitems li a:hover {
   color: var(--yellow);
@@ -848,10 +856,13 @@ p {
   align-items: flex-end;
   transition: var(--darkModeTransition);
 }
+.header .all .right .wishlist:hover svg {
+  stroke: var(--yellow);
+}
 .header .all .right .wishlist svg {
   stroke: var(--textColor);
   width: 24px;
-  transition: var(--darkModeTransition);
+  transition: 0.3s;
   height: 24px;
 }
 .header .all .right .colormode span {
@@ -863,10 +874,13 @@ p {
   cursor: pointer;
   padding-top: 3px;
 }
+.header .all .right .colormode span:hover svg {
+  stroke: var(--yellow);
+}
 .header .all .right .colormode span svg {
   stroke: var(--textColor);
+  transition: 0.3s;
   width: 24px;
-  transition: var(--darkModeTransition);
   height: 24px;
 }
 .header .all .right .colormode .sun svg {
@@ -1575,12 +1589,14 @@ p {
 .mainthird .all .mainthirdslider .product .addtowishlist:hover {
   transform: scale(1.05);
 }
+.mainthird .all .mainthirdslider .product .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .mainthird .all .mainthirdslider .product .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .mainthird .all .mainthirdslider .product .content {
@@ -2837,6 +2853,16 @@ p {
 .footer .all .right .links svg {
   width: 31px;
   height: 31px;
+  transition: 0.3s;
+}
+.footer .all .right .links svg path {
+  transition: 0.3s;
+}
+.footer .all .right .links .fill:hover path {
+  fill: var(--textColor);
+}
+.footer .all .right .links .stroke:hover path {
+  stroke: var(--textColor);
 }
 
 @media (max-width: 576px) {
@@ -3790,7 +3816,7 @@ p {
   background-color: var(--white);
   position: absolute;
   top: 2%;
-  right: 4%;
+  right: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3799,12 +3825,14 @@ p {
 .shopsecond .all .right .products .product .addtowishlist:hover {
   transform: scale(1.05);
 }
+.shopsecond .all .right .products .product .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .shopsecond .all .right .products .product .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .shopsecond .all .right .products .product .content {
@@ -4599,12 +4627,14 @@ p {
 .productsecond .all .left .productpageimages .slider div .addtowishlist:hover {
   transform: scale(1.05);
 }
+.productsecond .all .left .productpageimages .slider div .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .productsecond .all .left .productpageimages .slider div .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 28px;
   height: 28px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .productsecond .all .right {
@@ -5183,12 +5213,14 @@ p {
 .productthird .all .productthirdslider .product .addtowishlist:hover {
   transform: scale(1.05);
 }
+.productthird .all .productthirdslider .product .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .productthird .all .productthirdslider .product .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .productthird .all .productthirdslider .product .content {
@@ -5606,12 +5638,14 @@ p {
 .productfourth .all .productfourthslider .product .addtowishlist:hover {
   transform: scale(1.05);
 }
+.productfourth .all .productfourthslider .product .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .productfourth .all .productfourthslider .product .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .productfourth .all .productfourthslider .product .content {
@@ -7355,12 +7389,14 @@ p {
 .collectionfourth .all .collectionfourthslider .product .addtowishlist:hover {
   transform: scale(1.05);
 }
+.collectionfourth .all .collectionfourthslider .product .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .collectionfourth .all .collectionfourthslider .product .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .collectionfourth .all .collectionfourthslider .product .content {
@@ -7778,12 +7814,14 @@ p {
 .collectionfifth .all .collectionfifthslider .product .addtowishlist:hover {
   transform: scale(1.05);
 }
+.collectionfifth .all .collectionfifthslider .product .addtowishlist:hover svg {
+  fill: var(--yellow);
+}
 .collectionfifth .all .collectionfifthslider .product .addtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.2s;
   stroke: var(--yellow);
 }
 .collectionfifth .all .collectionfifthslider .product .content {
@@ -8216,11 +8254,10 @@ p {
   transform: scale(1.05);
 }
 .wishlistsecond .all .products .product .deletefromtowishlist svg {
-  stroke: var(--textColor);
   padding-top: 1px;
   width: 18px;
   height: 18px;
-  transition: var(--darkModeTransition);
+  transition: 0.3s;
   stroke: var(--yellow);
 }
 .wishlistsecond .all .products .product .deletefromtowishlist svg path {

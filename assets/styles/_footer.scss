@@ -160,6 +160,27 @@
                 svg {
                     width: 31px;
                     height: 31px;
+                    transition: 0.3s;
+
+                    path {
+                        transition: 0.3s;
+                    }
+                }
+
+                .fill {
+                    &:hover {
+                        path {
+                            fill: var(--textColor);
+                        }
+                    }
+                }
+
+                .stroke {
+                    &:hover {
+                        path {
+                            stroke: var(--textColor);
+                        }
+                    }
                 }
             }
         }

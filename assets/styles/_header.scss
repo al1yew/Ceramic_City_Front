@@ -107,27 +107,36 @@
                     cursor: pointer;
                     padding-top: 3px;
 
+                    &:hover {
+                        svg {
+                            stroke: var(--yellow);
+                        }
+                    }
+
                     svg {
                         stroke: var(--textColor);
+                        transition: 0.3s;
                         width: 22px;
                         height: 22px;
-                        transition: var(--darkModeTransition);
                     }
                 }
 
                 .searchmenu {
+                    border: 0.5px solid var(--textColor);
                     z-index: 1001;
                     border-bottom-left-radius: var(--borderradius);
                     border-bottom-right-radius: var(--borderradius);
                     height: 250px;
                     width: 250px;
-                    opacity: 0.7;
                     position: absolute;
                     margin: 0;
                     padding: 0;
                     right: 0%;
                     top: 100%;
                     display: none;
+                    background-color: var(--backgroundColor);
+                    color: var(--textColor);
+                    transition: var(--darkModeTransition);
 
                     .menucontent {
                         background-color: var(--backgroundColor);
@@ -147,7 +156,7 @@
                             width: 100%;
                             margin: 0;
                             padding: 10px;
-                            border-bottom: 1px solid black;
+                            border-bottom: 0.5px solid var(--textColor);
                             display: grid;
                             grid-template-columns: auto 200px;
                             justify-content: space-between;
@@ -201,11 +210,13 @@
                             li {
                                 cursor: pointer;
                                 width: 100%;
+                                margin-bottom: 4px;
 
                                 a {
                                     display: block;
                                     width: 100%;
                                     font-size: 18px;
+                                    transition: 0.2s;
 
                                     &:hover {
                                         color: var(--yellow);
@@ -224,10 +235,16 @@
                 align-items: flex-end;
                 transition: var(--darkModeTransition);
 
+                &:hover {
+                    svg {
+                        stroke: var(--yellow);
+                    }
+                }
+
                 svg {
                     stroke: var(--textColor);
                     width: 24px;
-                    transition: var(--darkModeTransition);
+                    transition: 0.3s;
                     height: 24px;
                 }
             }
@@ -241,10 +258,16 @@
                     cursor: pointer;
                     padding-top: 3px;
 
+                    &:hover {
+                        svg {
+                            stroke: var(--yellow);
+                        }
+                    }
+
                     svg {
                         stroke: var(--textColor);
+                        transition: 0.3s;
                         width: 24px;
-                        transition: var(--darkModeTransition);
                         height: 24px;
                     }
                 }
