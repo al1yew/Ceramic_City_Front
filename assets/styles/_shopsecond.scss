@@ -606,7 +606,6 @@
                     font-size: 18px;
                     width: 45px;
                     height: 45px;
-                    padding-bottom: 3px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -620,6 +619,15 @@
                     &:hover {
                         background-color: var(--yellow);
                         color: var(--white);
+                    }
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        padding-bottom: 3px;
+                        height: 100%;
                     }
                 }
 

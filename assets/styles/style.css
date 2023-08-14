@@ -3908,7 +3908,6 @@ p {
   font-size: 18px;
   width: 45px;
   height: 45px;
-  padding-bottom: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3922,6 +3921,14 @@ p {
 .shopsecond .all .pagination ul li:hover {
   background-color: var(--yellow);
   color: var(--white);
+}
+.shopsecond .all .pagination ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3px;
+  height: 100%;
 }
 .shopsecond .all .pagination ul .selectedpage {
   background-color: var(--yellow);
@@ -6490,7 +6497,6 @@ p {
   font-size: 18px;
   width: 45px;
   height: 45px;
-  padding-bottom: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6504,6 +6510,14 @@ p {
 .collectionssecond .all .pagination ul li:hover {
   background-color: var(--yellow);
   color: var(--white);
+}
+.collectionssecond .all .pagination ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3px;
+  height: 100%;
 }
 .collectionssecond .all .pagination ul .selectedpage {
   background-color: var(--yellow);
@@ -8365,6 +8379,9 @@ p {
   color: var(--white);
 }
 .wishlistsecond .all .pagination ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding-bottom: 3px;
   height: 100%;
