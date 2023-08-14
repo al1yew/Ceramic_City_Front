@@ -40,8 +40,9 @@
             margin: 0;
             padding: 0;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 20px;
+            row-gap: 30px;
 
             .category {
                 display: flex;
@@ -60,6 +61,7 @@
                     &:hover {
                         img {
                             transform: scale(1.05);
+                            filter: brightness(0.5);
                         }
                     }
 
@@ -178,6 +180,8 @@
 
         .all {
             .categories {
+                grid-template-columns: 1fr 1fr;
+
                 .category {
                     .imgkeeper {
                         .name {

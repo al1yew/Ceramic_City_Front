@@ -1331,8 +1331,9 @@ p {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  row-gap: 30px;
 }
 .mainsecond .all .categories .category {
   display: flex;
@@ -1350,6 +1351,7 @@ p {
 }
 .mainsecond .all .categories .category .imgkeeper:hover img {
   transform: scale(1.05);
+  filter: brightness(0.5);
 }
 .mainsecond .all .categories .category .imgkeeper img {
   width: 100%;
@@ -1426,6 +1428,9 @@ p {
 @media (min-width: 768px) and (max-width: 992px) {
   .mainsecond {
     margin-top: 60px;
+  }
+  .mainsecond .all .categories {
+    grid-template-columns: 1fr 1fr;
   }
   .mainsecond .all .categories .category .imgkeeper .name {
     font-size: 19px;
