@@ -1518,9 +1518,31 @@ p {
   border-radius: 10px;
   overflow: hidden;
   display: block;
+  position: relative;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper:hover .firstimage {
+  opacity: 0;
+  visibility: hidden;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper:hover .secondimage {
+  opacity: 1;
+  visibility: visible;
 }
 .mainthird .all .mainthirdslider .product .imgkeeper img {
   width: 100%;
+  transition: 0.3s;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper .firstimage {
+  opacity: 1;
+  visibility: visible;
+}
+.mainthird .all .mainthirdslider .product .imgkeeper .secondimage {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mainthird .all .mainthirdslider .product .imgkeeper .sale {
   padding: 2px 15px;
@@ -1629,6 +1651,17 @@ p {
     margin: 0;
     margin-top: 25px;
   }
+  .mainthird .all .mainthirdslider .product .imgkeeper:hover .firstimage {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper:hover .secondimage {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper img {
+    transition: unset;
+  }
   .mainthird .all .mainthirdslider .product .imgkeeper .sale {
     padding: 0px 10px;
     font-size: 10px;
@@ -1692,6 +1725,17 @@ p {
   .mainthird .all .gotoshop {
     margin: 0;
     margin-top: 25px;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper:hover .firstimage {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper:hover .secondimage {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mainthird .all .mainthirdslider .product .imgkeeper img {
+    transition: unset;
   }
   .mainthird .all .mainthirdslider .product .imgkeeper .sale {
     padding: 0px 10px;
