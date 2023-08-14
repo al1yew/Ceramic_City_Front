@@ -448,9 +448,37 @@
                         border-radius: 10px;
                         overflow: hidden;
                         display: block;
+                        position: relative;
+
+                        &:hover {
+                            .firstimage {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+
+                            .secondimage {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
 
                         img {
                             width: 100%;
+                            transition: 0.3s;
+                        }
+
+                        .firstimage {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                        .secondimage {
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
                         }
 
                         .sale {
@@ -607,9 +635,7 @@
 
 @media(max-width: 576px) {
     .shopsecond {
-
         .all {
-
             .left {
                 margin: 0;
                 padding: 0 15px;
@@ -777,6 +803,22 @@
 
                     .product {
                         .imgkeeper {
+                            &:hover {
+                                .firstimage {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+                                .secondimage {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+                            }
+
+                            img {
+                                transition: unset;
+                            }
+
                             .sale {
                                 padding: 0px 10px;
                                 font-size: 10px;
@@ -1024,6 +1066,22 @@
 
                     .product {
                         .imgkeeper {
+                            &:hover {
+                                .firstimage {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+                                .secondimage {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+                            }
+
+                            img {
+                                transition: unset;
+                            }
+
                             .sale {
                                 padding: 1px 10px;
                                 font-size: 12px;
