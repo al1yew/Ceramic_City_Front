@@ -3891,7 +3891,8 @@ p {
   margin-right: 8px;
   border: 0.1px solid var(--textColor);
 }
-.shopsecond .all .pagination {
+.shopsecond .all .right .products .pagination {
+  grid-column: 1/4;
   padding: 0;
   margin: 0;
   margin-top: 80px;
@@ -3900,7 +3901,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.shopsecond .all .pagination ul {
+.shopsecond .all .right .products .pagination ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -3908,7 +3909,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
-.shopsecond .all .pagination ul li {
+.shopsecond .all .right .products .pagination ul li {
   margin: 0 15px;
   font-family: var(--ralewaymedium);
   border-radius: 10px;
@@ -3925,11 +3926,11 @@ p {
   transition: 0.2s;
   cursor: pointer;
 }
-.shopsecond .all .pagination ul li:hover {
+.shopsecond .all .right .products .pagination ul li:hover {
   background-color: var(--yellow);
   color: var(--white);
 }
-.shopsecond .all .pagination ul li a {
+.shopsecond .all .right .products .pagination ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3937,11 +3938,11 @@ p {
   padding-bottom: 3px;
   height: 100%;
 }
-.shopsecond .all .pagination ul .selectedpage {
+.shopsecond .all .right .products .pagination ul .selectedpage {
   background-color: var(--yellow);
   color: var(--white);
 }
-.shopsecond .all .pagination ul .otherli {
+.shopsecond .all .right .products .pagination ul .otherli {
   width: 70px;
 }
 
@@ -4126,17 +4127,18 @@ p {
     width: 15px;
     height: 15px;
   }
-  .shopsecond .all .pagination {
+  .shopsecond .all .right .products .pagination {
+    grid-column: 1/3;
     margin-top: 50px;
   }
-  .shopsecond .all .pagination ul li {
+  .shopsecond .all .right .products .pagination ul li {
     margin: 0 10px;
     font-size: 14px;
     width: 35px;
     padding-bottom: 1px;
     height: 35px;
   }
-  .shopsecond .all .pagination ul .otherli {
+  .shopsecond .all .right .products .pagination ul .otherli {
     width: 50px;
   }
   .togglefiltermenu {
@@ -4322,17 +4324,18 @@ p {
     width: 15px;
     height: 15px;
   }
-  .shopsecond .all .pagination {
+  .shopsecond .all .right .products .pagination {
+    grid-column: 1/3;
     margin-top: 50px;
   }
-  .shopsecond .all .pagination ul li {
+  .shopsecond .all .right .products .pagination ul li {
     margin: 0 10px;
     font-size: 15px;
     width: 40px;
     padding-bottom: 1px;
     height: 40px;
   }
-  .shopsecond .all .pagination ul .otherli {
+  .shopsecond .all .right .products .pagination ul .otherli {
     width: 55px;
   }
   .togglefiltermenu {
@@ -4405,10 +4408,10 @@ p {
     width: 50%;
     font-size: 16px;
   }
-  .shopsecond .all .pagination {
+  .shopsecond .all .right .products .pagination {
     margin-top: 70px;
   }
-  .shopsecond .all .pagination ul li {
+  .shopsecond .all .right .products .pagination ul li {
     margin: 0 10px;
     font-size: 16px;
     width: 40px;
@@ -8362,7 +8365,8 @@ p {
   border: 0.1px solid var(--textColor);
   margin-right: 8px;
 }
-.wishlistsecond .all .pagination {
+.wishlistsecond .all .products .pagination {
+  grid-column: 1/5;
   padding: 0;
   margin: 0;
   margin-top: 80px;
@@ -8371,7 +8375,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.wishlistsecond .all .pagination ul {
+.wishlistsecond .all .products .pagination ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -8379,7 +8383,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
-.wishlistsecond .all .pagination ul li {
+.wishlistsecond .all .products .pagination ul li {
   margin: 0 15px;
   font-family: var(--ralewaymedium);
   border-radius: 10px;
@@ -8396,11 +8400,11 @@ p {
   transition: 0.2s;
   cursor: pointer;
 }
-.wishlistsecond .all .pagination ul li:hover {
+.wishlistsecond .all .products .pagination ul li:hover {
   background-color: var(--yellow);
   color: var(--white);
 }
-.wishlistsecond .all .pagination ul li a {
+.wishlistsecond .all .products .pagination ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8408,11 +8412,11 @@ p {
   padding-bottom: 3px;
   height: 100%;
 }
-.wishlistsecond .all .pagination ul .selectedpage {
+.wishlistsecond .all .products .pagination ul .selectedpage {
   background-color: var(--yellow);
   color: var(--white);
 }
-.wishlistsecond .all .pagination ul .otherli {
+.wishlistsecond .all .products .pagination ul .otherli {
   width: 70px;
 }
 
@@ -8477,17 +8481,18 @@ p {
     width: 15px;
     height: 15px;
   }
-  .wishlistsecond .all .pagination {
+  .wishlistsecond .all .products .pagination {
+    grid-column: 1/3;
     margin-top: 50px;
   }
-  .wishlistsecond .all .pagination ul li {
+  .wishlistsecond .all .products .pagination ul li {
     margin: 0 10px;
     font-size: 14px;
     width: 35px;
     padding-bottom: 1px;
     height: 35px;
   }
-  .wishlistsecond .all .pagination ul .otherli {
+  .wishlistsecond .all .products .pagination ul .otherli {
     width: 50px;
   }
   .togglefiltermenu {
@@ -8555,17 +8560,18 @@ p {
     width: 15px;
     height: 15px;
   }
-  .wishlistsecond .all .pagination {
+  .wishlistsecond .all .products .pagination {
+    grid-column: 1/4;
     margin-top: 50px;
   }
-  .wishlistsecond .all .pagination ul li {
+  .wishlistsecond .all .products .pagination ul li {
     margin: 0 10px;
     font-size: 15px;
     width: 40px;
     padding-bottom: 1px;
     height: 40px;
   }
-  .wishlistsecond .all .pagination ul .otherli {
+  .wishlistsecond .all .products .pagination ul .otherli {
     width: 55px;
   }
   .togglefiltermenu {
@@ -8602,10 +8608,11 @@ p {
     width: 50%;
     font-size: 16px;
   }
-  .wishlistsecond .all .pagination {
+  .wishlistsecond .all .products .pagination {
+    grid-column: 1/4;
     margin-top: 70px;
   }
-  .wishlistsecond .all .pagination ul li {
+  .wishlistsecond .all .products .pagination ul li {
     margin: 0 10px;
     font-size: 16px;
     width: 40px;
