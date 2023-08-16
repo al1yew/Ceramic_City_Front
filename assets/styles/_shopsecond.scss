@@ -427,14 +427,6 @@
 
             }
 
-            .iftherearenoproducts {
-                margin-top: 60px;
-                font-family: var(--ralewaymedium);
-                font-size: 35px;
-                text-align: center;
-                width: 100%;
-            }
-
             .products {
                 padding: 0;
                 margin: 0;
@@ -586,6 +578,15 @@
                             }
                         }
                     }
+                }
+
+                .iftherearenoproducts {
+                    grid-column: 1/4;
+                    margin-top: 60px;
+                    font-family: var(--ralewaymedium);
+                    font-size: 35px;
+                    text-align: center;
+                    width: 100%;
                 }
 
                 .pagination {
@@ -816,12 +817,6 @@
                     }
                 }
 
-                .iftherearenoproducts {
-                    font-size: 20px;
-                    text-align: center;
-                    width: 100%;
-                }
-
                 .products {
                     margin-top: 25px;
                     grid-template-columns: 1fr 1fr;
@@ -894,6 +889,13 @@
                                 }
                             }
                         }
+                    }
+
+                    .iftherearenoproducts {
+                        font-size: 20px;
+                        grid-column: 1/3;
+                        text-align: center;
+                        width: 100%;
                     }
 
                     .pagination {
@@ -1086,12 +1088,6 @@
                     }
                 }
 
-                .iftherearenoproducts {
-                    font-size: 28px;
-                    text-align: center;
-                    width: 100%;
-                }
-
                 .products {
                     margin-top: 25px;
                     grid-template-columns: 1fr 1fr;
@@ -1164,6 +1160,13 @@
                                 }
                             }
                         }
+                    }
+
+                    .iftherearenoproducts {
+                        font-size: 28px;
+                        text-align: center;
+                        grid-column: 1/3;
+                        width: 100%;
                     }
 
                     .pagination {
@@ -1265,12 +1268,6 @@
                     }
                 }
 
-                .iftherearenoproducts {
-                    font-size: 32px;
-                    text-align: center;
-                    width: 100%;
-                }
-
                 .products {
                     margin-top: 25px;
                     gap: 20px;
@@ -1301,6 +1298,12 @@
                                 font-size: 16px;
                             }
                         }
+                    }
+
+                    .iftherearenoproducts {
+                        font-size: 32px;
+                        text-align: center;
+                        width: 100%;
                     }
 
                     .pagination {
