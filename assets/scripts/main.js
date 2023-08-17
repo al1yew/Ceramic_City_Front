@@ -68,10 +68,12 @@ $(function () {
     $(document).on("input", ".searchinput", function (e) {
         $(".closeicon").show();
         $(".searchbutton").hide();
+        $(".searchitems").slideDown(120);
 
         if ($(this).val().length == 0) {
             $(".closeicon").hide();
             $(".searchbutton").show();
+            $(".searchitems").slideUp(120);
         }
     });
 

@@ -728,6 +728,7 @@ p {
   grid-template-columns: auto auto auto;
   -moz-column-gap: 12px;
        column-gap: 12px;
+  justify-content: flex-end;
 }
 .header .all .right .search {
   display: flex;
@@ -752,11 +753,9 @@ p {
   height: 22px;
 }
 .header .all .right .search .searchmenu {
-  border: 0.5px solid var(--textColor);
   z-index: 1001;
   border-bottom-left-radius: var(--borderradius);
   border-bottom-right-radius: var(--borderradius);
-  height: 250px;
   width: 250px;
   position: absolute;
   margin: 0;
@@ -767,6 +766,7 @@ p {
   background-color: var(--backgroundColor);
   color: var(--textColor);
   transition: var(--darkModeTransition);
+  box-shadow: 0px 0px 5px 0px var(--textColor);
 }
 .header .all .right .search .searchmenu .menucontent {
   background-color: var(--backgroundColor);
@@ -786,9 +786,7 @@ p {
   width: 100%;
   margin: 0;
   padding: 10px;
-  border-bottom: 0.5px solid var(--textColor);
-  display: grid;
-  grid-template-columns: auto 200px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -799,6 +797,7 @@ p {
   transition: var(--darkModeTransition);
   color: var(--textColor);
   font-size: 18px;
+  width: 195px;
 }
 .header .all .right .search .searchmenu .menucontent .top input::-moz-placeholder {
   font-size: 16px;
@@ -819,11 +818,15 @@ p {
 }
 .header .all .right .search .searchmenu .menucontent .top span svg {
   stroke: var(--textColor);
-  width: 21px;
-  height: 21px;
+  width: 26px;
+  height: 26px;
   transition: var(--darkModeTransition);
 }
 .header .all .right .search .searchmenu .menucontent .top .closeicon {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: none;
 }
 .header .all .right .search .searchmenu .menucontent .searchitems {
@@ -832,7 +835,9 @@ p {
   padding: 10px;
   overflow-y: scroll;
   list-style: none;
-  height: 80%;
+  height: 200px;
+  display: none;
+  border-top: 0.5px solid var(--textColor);
 }
 .header .all .right .search .searchmenu .menucontent .searchitems li {
   cursor: pointer;
@@ -922,7 +927,6 @@ p {
   .header .all .right {
     -moz-column-gap: 12px;
          column-gap: 12px;
-    justify-content: flex-end;
   }
   .header .all .right .search .searchicon {
     width: -moz-max-content;
@@ -940,7 +944,6 @@ p {
     transition: var(--darkModeTransition);
   }
   .header .all .right .search .searchmenu {
-    height: 250px;
     width: 100%;
   }
   .header .all .right .search .searchmenu .menucontent .top {
@@ -948,6 +951,7 @@ p {
   }
   .header .all .right .search .searchmenu .menucontent .top input {
     font-size: 15px;
+    width: 88%;
   }
   .header .all .right .search .searchmenu .menucontent .top input::-moz-placeholder {
     font-size: 15px;
@@ -994,7 +998,6 @@ p {
     justify-content: flex-end;
   }
   .header .all .right .search .searchmenu {
-    height: 250px;
     width: 50%;
   }
   .header .all .right .search .searchmenu .menucontent .top {
