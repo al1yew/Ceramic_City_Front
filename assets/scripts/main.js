@@ -333,6 +333,19 @@ $(function () {
         }
     });
 
+    $(document).on("click", ".isoutlet", function () {
+        let input = $(this).find("input");
+        let ikonka = $(this).find(".checkikonka");
+
+        if (ikonka.hasClass("d-none") && !input.prop("checked")) {
+            input.prop("checked", true);
+            ikonka.removeClass("d-none");
+        } else {
+            input.prop("checked", false);
+            ikonka.addClass("d-none");
+        }
+    });
+
     $(document).on("click", ".podfilterli", function () {
         let ikonka = $(this).find(".checkikonka");
         let input = $(this).find("input");

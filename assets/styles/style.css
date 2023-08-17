@@ -3415,6 +3415,9 @@ p {
   align-items: flex-start;
   flex-direction: column;
 }
+.shopsecond .all .left select {
+  display: none;
+}
 .shopsecond .all .left hr {
   background-color: var(--yellow);
   width: 100%;
@@ -3529,6 +3532,51 @@ p {
 }
 .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount,
 .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyacount {
+  font-size: 11px;
+}
+.shopsecond .all .left .isoutlet {
+  margin-top: 15px;
+  padding: 7px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.shopsecond .all .left .isoutlet:hover .podkategoriyaname {
+  color: var(--yellow);
+}
+.shopsecond .all .left .isoutlet .ischeckedspan {
+  width: 18px;
+  height: 18px;
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+  border: 0.8px solid var(--darkyellow);
+  border-radius: 1.5px;
+  position: relative;
+  margin-right: 10px;
+}
+.shopsecond .all .left .isoutlet .ischeckedspan ion-icon {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+.shopsecond .all .left .isoutlet input {
+  display: none;
+}
+.shopsecond .all .left .isoutlet .podkategoriyaname {
+  font-family: var(--ralewaylight);
+  font-size: 14px;
+  margin-right: 10px;
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  padding-top: 1px;
+}
+.shopsecond .all .left .isoutlet .podkategoriyacount {
   font-size: 11px;
 }
 .shopsecond .all .left .colorfilter {
@@ -3703,9 +3751,6 @@ p {
 }
 .shopsecond .all .right .top .sortingdiv .sortbyoptions .sorttype svg path {
   fill: var(--yellow);
-}
-.shopsecond .all .right .top .sortingdiv .sortbyoptions select {
-  display: none;
 }
 .shopsecond .all .right .top .sortingdiv .sortbyoptions .icon {
   transition: 0.2s;
@@ -4014,6 +4059,24 @@ p {
   .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyacount {
     font-size: 10px;
   }
+  .shopsecond .all .left .isoutlet {
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .shopsecond .all .left .isoutlet .ischeckedspan {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+  .shopsecond .all .left .isoutlet .ischeckedspan ion-icon {
+    font-size: 22px;
+  }
+  .shopsecond .all .left .isoutlet .podkategoriyaname {
+    font-size: 13px;
+  }
+  .shopsecond .all .left .isoutlet .podkategoriyacount {
+    font-size: 10px;
+  }
   .shopsecond .all .left .colorfilter .top .filtername {
     font-size: 15px;
   }
@@ -4211,6 +4274,24 @@ p {
   }
   .shopsecond .all .left .filterul .filterli .podfilterul .podfilterli .podkategoriyacount,
   .shopsecond .all .left .filterul .filterli .podfilterul .hamsinisech .podkategoriyacount {
+    font-size: 11px;
+  }
+  .shopsecond .all .left .isoutlet {
+    padding: 7px 0;
+    font-size: 14px;
+  }
+  .shopsecond .all .left .isoutlet .ischeckedspan {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  .shopsecond .all .left .isoutlet .ischeckedspan ion-icon {
+    font-size: 21px;
+  }
+  .shopsecond .all .left .isoutlet .podkategoriyaname {
+    font-size: 14px;
+  }
+  .shopsecond .all .left .isoutlet .podkategoriyacount {
     font-size: 11px;
   }
   .shopsecond .all .left .colorfilter .top .filtername {

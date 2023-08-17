@@ -405,7 +405,7 @@
             <section class="shopsecond">
                 <div class="container">
                     <div class="row all">
-                        <div class="left telfiltermenu col-lg-3 col-md-3-5">
+                        <form class="left telfiltermenu col-lg-3 col-md-3-5">
                             <span class="closefilter">
                                 <svg
                                     viewBox="0 0 24 24"
@@ -957,11 +957,25 @@
                                     </div>
                                 </li>
                             </ul>
+                            <span class="isoutlet">
+                                <span class="ischeckedspan">
+                                    <ion-icon
+                                        name="checkmark-outline"
+                                        class="checkikonka d-none"
+                                    ></ion-icon>
+                                </span>
+                                <input type="checkbox" name="isoutlet" />
+                                <span class="podkategoriyaname">
+                                    Outlet Mallar
+                                </span>
+                            </span>
                             <div class="buttons">
                                 <button class="reload">Yenilə</button>
-                                <button class="clicktofilter">Axtar</button>
+                                <button type="submit" class="clicktofilter">
+                                    Axtar
+                                </button>
                             </div>
-                        </div>
+                        </form>
                         <div class="right col-lg-9 col-md-8-5 col-12 col-sm-12">
                             <div class="top">
                                 <span class="openfilter">
