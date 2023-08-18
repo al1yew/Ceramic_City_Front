@@ -101,19 +101,23 @@ $(function () {
 
     //#region sidebar functionality
 
+    //open sidebar
     $(document).on("click", ".foropeningsidebar", function () {
         $(".sidebar").addClass("opensidebar");
     });
 
+    //close sidebar
     $(document).on("click", ".closesidebar", function () {
         $(".sidebar").removeClass("opensidebar");
-        $(".sidebarcategories").find(".allcategories").hide();
+        $(".sidebarcategories").find(".allcategories").slideUp(200);
     });
 
+    //slide all categories
     $(document).on("click", ".clicktoopenallcategories", function () {
         $(".sidebarcategories").find(".allcategories").slideToggle(200);
     });
 
+    //close the whole sidebar on document click
     $(document).on("click", function (e) {
         const isParentClass = $(e.target).parents(".sidebar").length > 0;
         const isHamburgerMenu =
@@ -121,27 +125,32 @@ $(function () {
 
         if (!isParentClass && !isHamburgerMenu) {
             $(".sidebar").removeClass("opensidebar");
-            $(".podkategorii").fadeOut(120);
+            if ($(document).width() < 992) {
+                $(".podkategorii").fadeOut(120);
+            }
         }
     });
 
+    //slide up categories on click outside of <li>
     $(document).on("click", function (e) {
         const isParentClass =
             $(e.target).parents(".sidebarcategories").length > 0;
 
         if (!isParentClass) {
             $(".sidebarcategories .allcategories").slideUp(200);
+            if ($(document).width() < 992) {
+                $(".podkategorii").fadeOut(120);
+            }
         }
     });
-
+    //open podkategorii on click on the category, and close other ones
     $(document).on("click", ".sidebarcategory", function (e) {
         if ($(document).width() < 992) {
-            e.preventDefault();
-            $(".podkategorii").hide();
-            $(this).find(".podkategorii").fadeIn(150);
+            $(".sidebarcategory").not(this).find(".podkategorii").fadeOut(100);
+            $(this).find(".podkategorii").fadeIn(100);
         }
     });
-
+    //prevent a href on phone, we have to click now.
     $(document).on("click", ".sidebarcategoryahref", function (e) {
         if ($(document).width() < 992) {
             e.preventDefault();
