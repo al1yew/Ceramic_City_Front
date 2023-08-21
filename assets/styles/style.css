@@ -3864,6 +3864,9 @@ p {
 .shopsecond .all .right .top .sortingdiv .sortbyoptions ul .yellowli {
   color: var(--yellow);
 }
+.shopsecond .all .right .top .sortingdiv .sortbyoptions ul .yellowli svg path {
+  fill: var(--yellow);
+}
 .shopsecond .all .right .top .sortingdiv .sortbyoptions ul li {
   padding: 5px;
   transition: 0.2s;
