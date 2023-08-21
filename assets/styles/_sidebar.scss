@@ -44,6 +44,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        flex-direction: column;
         position: relative;
         font-family: var(--ralewaymedium);
         width: 100%;
@@ -199,6 +200,10 @@
                 }
             }
         }
+
+        .languages {
+            display: none;
+        }
     }
 }
 
@@ -293,6 +298,30 @@
                             }
                         }
                     }
+                }
+            }
+
+            .languages {
+                margin: 0;
+                padding: 0;
+                display: grid;
+                align-items: center;
+                width: 100%;
+                grid-template-columns: 50px 50px;
+                font-family: var(--ralewaymedium);
+
+                label {
+                    margin: 0;
+                    padding: 0;
+
+                    input {
+                        display: none;
+                    }
+                }
+
+                .active {
+                    text-decoration: underline;
+                    color: var(--yellow);
                 }
             }
         }

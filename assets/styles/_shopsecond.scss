@@ -450,6 +450,12 @@
 
                             .yellowli {
                                 color: var(--yellow);
+
+                                svg {
+                                    path {
+                                        fill: var(--yellow);
+                                    }
+                                }
                             }
 
                             li {

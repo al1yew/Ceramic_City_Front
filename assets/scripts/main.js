@@ -99,6 +99,22 @@ $(function () {
 
     //#endregion header scroll
 
+    //#region header language
+
+    $(document).on("click", ".currentlang", function () {
+        $(this).parent().find(".labels").fadeToggle(100);
+    });
+
+    $(document).on("click", function (e) {
+        const isParentClass = $(e.target).parents(".languages").length > 0;
+
+        if (!isParentClass) {
+            $(".labels").fadeOut(100);
+        }
+    });
+
+    //#endregion header language
+
     //#region sidebar functionality
 
     //open sidebar

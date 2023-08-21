@@ -725,7 +725,7 @@ p {
   padding: 0;
   font-family: var(--ralewaymedium);
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   -moz-column-gap: 12px;
        column-gap: 12px;
   justify-content: flex-end;
@@ -897,6 +897,58 @@ p {
 .header .all .right .colormode .moon {
   margin: 0 1px;
 }
+.header .all .right .languages {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ralewaylight);
+  border-bottom: 1px solid var(--textColor);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header .all .right .languages .currentlang {
+  cursor: pointer;
+}
+.header .all .right .languages .labels {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 50px;
+  padding: 5px;
+  display: none;
+  background-color: var(--backgroundColor);
+  border-bottom-left-radius: var(--borderradius);
+  border-bottom-right-radius: var(--borderradius);
+}
+.header .all .right .languages .labels .keeper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.header .all .right .languages .labels .keeper label {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.header .all .right .languages .labels .keeper label:last-child {
+  margin-bottom: 0;
+}
+.header .all .right .languages .labels .keeper label:hover {
+  color: var(--yellow);
+}
+.header .all .right .languages .labels .keeper label input {
+  display: none;
+}
+.header .all .right .languages .labels .keeper .active {
+  text-decoration: underline;
+  color: var(--yellow);
+}
 .header .thinheader {
   transition: 0.2s;
   grid-template-columns: auto 130px auto;
@@ -927,6 +979,7 @@ p {
   .header .all .right {
     -moz-column-gap: 12px;
          column-gap: 12px;
+    grid-template-columns: auto auto auto;
   }
   .header .all .right .search .searchicon {
     width: -moz-max-content;
@@ -973,6 +1026,9 @@ p {
     width: 25px;
     height: 25px;
     transition: var(--darkModeTransition);
+  }
+  .header .all .right .languages {
+    display: none;
   }
   .header .thinheader {
     grid-template-columns: 33% 100px 33%;
@@ -3054,6 +3110,7 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: column;
   position: relative;
   font-family: var(--ralewaymedium);
   width: 100%;
@@ -3179,6 +3236,9 @@ p {
 .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:hover a {
   color: var(--yellow);
 }
+.sidebar .all .languages {
+  display: none;
+}
 
 .opensidebar {
   left: 0;
@@ -3249,6 +3309,26 @@ p {
   }
   .sidebar .all .listsidebar .sidebarlistelement .allcategories .sidebarcategory .podkategorii li:nth-child(2) {
     padding-top: 10px;
+  }
+  .sidebar .all .languages {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 50px 50px;
+    font-family: var(--ralewaymedium);
+  }
+  .sidebar .all .languages label {
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar .all .languages label input {
+    display: none;
+  }
+  .sidebar .all .languages .active {
+    text-decoration: underline;
+    color: var(--yellow);
   }
   .opensidebar {
     left: 0;
