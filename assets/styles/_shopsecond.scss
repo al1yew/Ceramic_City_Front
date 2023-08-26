@@ -316,7 +316,7 @@
                                     top: 52%;
                                     left: 48%;
                                     transform: translate(-50%, -50%);
-                                    color: var(--textColor);
+                                    color: #36454F;
                                     transition: var(--darkModeTransition);
                                 }
                             }
@@ -992,6 +992,10 @@
                                 width: 35px;
                                 padding-bottom: 1px;
                                 height: 35px;
+
+                                a {
+                                    padding-bottom: 0;
+                                }
                             }
 
                             .otherli {

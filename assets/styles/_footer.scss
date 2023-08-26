@@ -101,13 +101,22 @@
 
         .right {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-end;
             flex-direction: column;
             margin: 0;
             padding: 0;
             padding-top: 30px;
             width: 50%;
+
+            p {
+                width: 100%;
+                font-family: var(--ralewaymedium);
+                color: var(--yellow);
+                margin-bottom: 20px;
+                font-size: 25px;
+                text-align: end;
+            }
 
             .subscribe {
                 display: grid;
@@ -116,6 +125,7 @@
                 width: 100%;
                 margin: 0;
                 padding: 0;
+                margin-bottom: 20px;
 
                 input {
                     border: 1px solid var(--yellow);
@@ -124,8 +134,9 @@
                     padding: 8px;
                     padding-left: 20px;
                     font-size: 16px;
-                    color: var(--textColor);
+                    color: var(--black);
                     background-color: var(--white);
+                    font-family: var(--ralewaymedium);
                 }
 
                 button {
@@ -214,14 +225,20 @@
                 flex-direction: column;
                 width: 100%;
                 order: 1;
-                margin-bottom: 20px;
+                margin-bottom: 0px;
+
+                p {
+                    margin-bottom: 15px;
+                    text-align: center;
+                    font-size: 20px;
+                }
 
                 .subscribe {
                     display: grid;
                     grid-template-columns: auto 100px;
                     gap: 15px;
                     width: 100%;
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     input {
                         font-size: 14px;
@@ -262,10 +279,16 @@
             }
 
             .middle {
+                padding-top: 15px;
                 width: 100%;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                order: 2;
+                flex-direction: row;
+
+                a {
+                    padding-bottom: 0px;
+                    font-size: 16px;
+                }
             }
 
             .right {
@@ -275,6 +298,12 @@
                 width: 100%;
                 order: 1;
                 margin-bottom: 20px;
+
+                p {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 25px;
+                }
 
                 .subscribe {
                     display: grid;
@@ -318,15 +347,28 @@
         .all {
 
             .left {
-                width: 27%;
+                width: 35%;
+                order: 2;
+                padding-top: 50px;
             }
 
             .middle {
-                width: 18%;
+                padding-top: 30px;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                order: 1;
+
+                a {
+                    padding-bottom: 0px;
+                    font-size: 16px;
+                }
             }
 
             .right {
-                width: 55%;
+                width: 65%;
+                order: 3;
 
                 .subscribe {
                     grid-template-columns: auto 120px;

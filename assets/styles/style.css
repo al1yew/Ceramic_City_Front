@@ -2858,13 +2858,21 @@ p {
 }
 .footer .all .right {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   flex-direction: column;
   margin: 0;
   padding: 0;
   padding-top: 30px;
   width: 50%;
+}
+.footer .all .right p {
+  width: 100%;
+  font-family: var(--ralewaymedium);
+  color: var(--yellow);
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: end;
 }
 .footer .all .right .subscribe {
   display: grid;
@@ -2873,6 +2881,7 @@ p {
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 .footer .all .right .subscribe input {
   border: 1px solid var(--yellow);
@@ -2881,8 +2890,9 @@ p {
   padding: 8px;
   padding-left: 20px;
   font-size: 16px;
-  color: var(--textColor);
+  color: var(--black);
   background-color: var(--white);
+  font-family: var(--ralewaymedium);
 }
 .footer .all .right .subscribe button {
   border: none;
@@ -2947,14 +2957,19 @@ p {
     flex-direction: column;
     width: 100%;
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  .footer .all .right p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
   }
   .footer .all .right .subscribe {
     display: grid;
     grid-template-columns: auto 100px;
     gap: 15px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .footer .all .right .subscribe input {
     font-size: 14px;
@@ -2984,10 +2999,15 @@ p {
     display: none;
   }
   .footer .all .middle {
+    padding-top: 15px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    order: 2;
+    flex-direction: row;
+  }
+  .footer .all .middle a {
+    padding-bottom: 0px;
+    font-size: 16px;
   }
   .footer .all .right {
     justify-content: center;
@@ -2996,6 +3016,11 @@ p {
     width: 100%;
     order: 1;
     margin-bottom: 20px;
+  }
+  .footer .all .right p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
   }
   .footer .all .right .subscribe {
     display: grid;
@@ -3028,13 +3053,25 @@ p {
     font-size: 13px;
   }
   .footer .all .left {
-    width: 27%;
+    width: 35%;
+    order: 2;
+    padding-top: 50px;
   }
   .footer .all .middle {
-    width: 18%;
+    padding-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    order: 1;
+  }
+  .footer .all .middle a {
+    padding-bottom: 0px;
+    font-size: 16px;
   }
   .footer .all .right {
-    width: 55%;
+    width: 65%;
+    order: 3;
   }
   .footer .all .right .subscribe {
     grid-template-columns: auto 120px;
@@ -3747,7 +3784,7 @@ p {
   top: 52%;
   left: 48%;
   transform: translate(-50%, -50%);
-  color: var(--textColor);
+  color: #36454F;
   transition: var(--darkModeTransition);
 }
 .shopsecond .all .left .colorfilter .podfilterul .colorlikeeper .podfilterli input,
@@ -4289,6 +4326,9 @@ p {
     width: 35px;
     padding-bottom: 1px;
     height: 35px;
+  }
+  .shopsecond .all .right .products .pagination ul li a {
+    padding-bottom: 0;
   }
   .shopsecond .all .right .products .pagination ul .otherli {
     width: 50px;

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Email Template</title>
+        <style>
+            body {
+                font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f7f7f7;
+            }
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #000;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .logo {
+                max-width: 220px;
+            }
+            .contact-info {
+                margin-top: 10px;
+            }
+            .heading {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            .message {
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+            .contact-info a {
+                color: #e2ba38;
+                text-decoration: none;
+            }
+
+            .contact-info span {
+                color: #e2ba38;
+                text-decoration: none;
+            }
+            .map {
+                width: 100%;
+            }
+            .map iframe {
+                height: 300px;
+                width: 100%;
+            }
+
+            @media (prefers-color-scheme: light) {
+                .container {
+                    background-color: white;
+                }
+                .heading,
+                .message {
+                    color: #333;
+                }
+                .contact-info {
+                    color: #777;
+                }
+                .contact-info span {
+                    color: #e2ba38;
+                    text-decoration: none;
+                }
+                .contact-info a {
+                    color: #e2ba38;
+                    text-decoration: none;
+                }
+            }
+            @media (prefers-color-scheme: dark) {
+                .container {
+                    background-color: #333;
+                }
+                .heading,
+                .message {
+                    color: #ddd;
+                }
+
+                .contact-info {
+                    color: #999;
+                }
+                .contact-info span {
+                    color: #e2ba38;
+                    text-decoration: none;
+                }
+                .contact-info a {
+                    color: #e2ba38;
+                    text-decoration: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">Salam Mamedov Mamed,</div>
+            <div class="message">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt id corporis libero, alias numquam nam assumenda quis
+                accusantium culpa placeat earum nemo a cumque repellendus,
+                facilis blanditiis, officia fugit quaerat quia! Voluptatem vel
+                voluptatibus ex, natus suscipit sunt et possimus voluptas
+                molestiae porro facilis consequuntur, tenetur est veritatis
+                magnam dolorum necessitatibus rem non? Fuga aut corporis et?
+                Asperiores adipisci corporis praesentium minima quam delectus
+                placeat, quibusdam perferendis iste. Veniam sit non repellat
+                amet minima optio omnis id eligendi aspernatur nisi distinctio
+                eum dolores quia dicta enim, consequatur provident tenetur nulla
+                recusandae voluptates rem, quas exercitationem nam! Eius odit
+                molestiae ad.
+            </div>
+            <div class="signature">
+                <img
+                    src="https://ceramiccity.az/assets/images/logo.png"
+                    alt="Ceramic City Logo"
+                    class="logo"
+                />
+                <div class="contact-info">
+                    <p class="phones">
+                        Telefonlarımız:
+                        <br />
+                        <a href="tel:+994502892689">+994 50 289 26 89</a>
+                        <br />
+                        <a href="tel:+994124960075">+994 12 496 00 75</a>
+                    </p>
+                    <p class="email">
+                        Email:
+                        <br />
+                        <a href="mailto:office@santemax.com">
+                            office@santemax.com
+                        </a>
+                    </p>
+                    <p class="address">
+                        Addresimiz:
+                        <br />
+                        <span
+                            >Azərbaycan, Bakı, Xətai Prospekti 35, AZ1008</span
+                        >
+                    </p>
+                    <p class="worktime">
+                        İş vaxtlarımız:
+                        <br />
+                        <span
+                            >Hər gün 10:00-dan 19:00-dək xidmətinizdəyik
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12155.416691451257!2d49.8600571!3d40.3899245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d147ffb35fb%3A0x7e11667a7cb540c7!2sCeramic%20City!5e0!3m2!1sru!2saz!4v1690216390504!5m2!1sru!2saz"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+    </body>
+</html>
