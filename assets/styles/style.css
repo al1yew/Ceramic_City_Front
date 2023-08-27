@@ -7016,6 +7016,7 @@ p {
   cursor: pointer;
   padding: 30px;
   margin: 0;
+  transform: translate(-50%, -50%);
 }
 .collectionsecond .all .collection .hoverfordetails:hover .forpadding {
   background-color: rgb(255, 255, 255);
@@ -7492,9 +7493,6 @@ p {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .collectionthird {
-    margin-top: 0px;
-  }
   .collectionthird .right {
     padding-left: 20px;
   }
