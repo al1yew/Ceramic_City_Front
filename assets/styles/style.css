@@ -1411,6 +1411,7 @@ p {
 .mainsecond .all .categories .category {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -5003,6 +5004,7 @@ p {
   height: 25px;
   cursor: pointer;
   margin-right: 10px;
+  margin-bottom: 10px;
   border: 0.1px solid var(--textColor);
 }
 .productsecond .all .right .bottom {
@@ -5099,6 +5101,7 @@ p {
   }
   .productsecond .all .right .information .colors span {
     margin-right: 8px;
+    margin-bottom: 8px;
   }
   .productsecond .all .right .bottom {
     margin-top: 15px;
