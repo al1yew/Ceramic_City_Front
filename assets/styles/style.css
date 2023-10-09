@@ -4750,25 +4750,26 @@ p {
   }
 }
 :root {
-  --white: #FFFFFF;
-  --yellow: #E2BA38;
+  --white: #ffffff;
+  --yellow: #e2ba38;
   --black: #121219;
-  --brown: #332D1C;
-  --brownopacity: #E2BA3880;
-  --red: #FF3D00;
-  --darkyellow: #A57E02;
-  --shopyellow: rgba(226, 186, 56, 0.50);
-  --productyellow: rgba(226, 186, 56, 0.50);
-  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --brown: #332d1c;
+  --brownopacity: #e2ba3880;
+  --red: #ff3d00;
+  --darkyellow: #a57e02;
+  --shopyellow: rgba(226, 186, 56, 0.5);
+  --productyellow: rgba(226, 186, 56, 0.5);
+  --darkModeTransition: color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
   --darkModeTransition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
   --productdetailh3: #121219;
   --textColor: #121219;
-  --backgroundColor: #FFFFFF;
+  --backgroundColor: #ffffff;
   --montmedium: montMedium;
   --montbold: montBold;
   --montlight: montLight;
-  --otherTextColor: #FFFFFF;
-  --otherBackgroundColor: #332D1C;
+  --otherTextColor: #ffffff;
+  --otherBackgroundColor: #332d1c;
   --ralewaymedium: ralewaymedium;
   --ralewaybold: ralewaybold;
   --ralewaylight: ralewaylight;
@@ -4893,15 +4894,16 @@ p {
   color: var(--textColor);
   transition: var(--darkModeTransition);
 }
-.productsecond .all .right h2 {
+.productsecond .all .right .toppart h2 {
   font-family: var(--ralewaybold);
   color: var(--productdetailh3);
   margin: 0;
   padding: 0;
   transition: var(--darkModeTransition);
   width: 100%;
+  margin-bottom: 15px;
 }
-.productsecond .all .right .no {
+.productsecond .all .right .toppart .no {
   margin: 0;
   padding: 0;
   font-family: var(--montmedium);
@@ -5120,10 +5122,10 @@ p {
     font-size: 14px;
     padding-top: 8px;
   }
-  .productsecond .all .right h2 {
+  .productsecond .all .right .toppart h2 {
     margin-bottom: 10px;
   }
-  .productsecond .all .right .no {
+  .productsecond .all .right .toppart .no {
     margin-bottom: 10px;
   }
   .productsecond .all .right .desc {
@@ -5167,10 +5169,10 @@ p {
     padding-left: 0px;
     margin-top: 25px;
   }
-  .productsecond .all .right h2 {
+  .productsecond .all .right .toppart h2 {
     margin-bottom: 15px;
   }
-  .productsecond .all .right .no {
+  .productsecond .all .right .toppart .no {
     margin-bottom: 15px;
   }
   .productsecond .all .right .desc {
@@ -5243,10 +5245,10 @@ p {
     padding-left: 0px;
     margin-top: 30px;
   }
-  .productsecond .all .right h2 {
+  .productsecond .all .right .toppart h2 {
     margin-bottom: 18px;
   }
-  .productsecond .all .right .no {
+  .productsecond .all .right .toppart .no {
     margin-bottom: 18px;
   }
   .productsecond .all .right .desc {
