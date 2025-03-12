@@ -2267,17 +2267,18 @@ p {
   }
 }
 :root {
-  --white: #FFFFFF;
-  --yellow: #E2BA38;
+  --white: #ffffff;
+  --yellow: #e2ba38;
   --black: #121219;
-  --brown: #332D1C;
-  --brownopacity: #E2BA3880;
-  --red: #FF3D00;
-  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --brown: #332d1c;
+  --brownopacity: #e2ba3880;
+  --red: #ff3d00;
+  --darkModeTransition: color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
   --textColor: #121219;
-  --backgroundColor: #FFFFFF;
-  --otherTextColor: #FFFFFF;
-  --otherBackgroundColor: #332D1C;
+  --backgroundColor: #ffffff;
+  --otherTextColor: #ffffff;
+  --otherBackgroundColor: #332d1c;
   --ralewaymedium: ralewaymedium;
   --ralewaybold: ralewaybold;
   --ralewaylight: ralewaylight;
@@ -2339,7 +2340,7 @@ p {
   transition: 0.2s;
 }
 .mainsixth .all .gotocollections:hover {
-  background-color: #A57E02;
+  background-color: #a57e02;
 }
 .mainsixth .all .mainsixthslider {
   margin: 0;
@@ -2378,6 +2379,7 @@ p {
   border-radius: 100%;
   transition: 0.2s;
   cursor: pointer;
+  z-index: 100;
   padding: 15px;
   margin: 0;
   transform: translate(-50%, -50%);
@@ -2548,6 +2550,7 @@ p {
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails {
     padding: 10px;
+    z-index: 100;
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding {
     width: 26px;
@@ -2644,6 +2647,7 @@ p {
     position: relative;
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails {
+    z-index: 100;
     padding: 10px;
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding {
@@ -2742,6 +2746,7 @@ p {
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails {
     padding: 10px;
+    z-index: 100;
   }
   .mainsixth .all .mainsixthslider .slide .hoverfordetails .forpadding {
     width: 26px;
@@ -6980,22 +6985,23 @@ p {
   }
 }
 :root {
-  --white: #FFFFFF;
-  --yellow: #E2BA38;
+  --white: #ffffff;
+  --yellow: #e2ba38;
   --black: #121219;
-  --brown: #332D1C;
-  --brownopacity: #E2BA3880;
-  --red: #FF3D00;
-  --darkyellow: #A57E02;
-  --shopyellow: rgba(226, 186, 56, 0.50);
-  --productyellow: rgba(226, 186, 56, 0.50);
-  --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  --brown: #332d1c;
+  --brownopacity: #e2ba3880;
+  --red: #ff3d00;
+  --darkyellow: #a57e02;
+  --shopyellow: rgba(226, 186, 56, 0.5);
+  --productyellow: rgba(226, 186, 56, 0.5);
+  --darkModeTransition: color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
   --darkModeTransition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
   --productdetailh3: #121219;
   --textColor: #121219;
-  --backgroundColor: #FFFFFF;
-  --otherTextColor: #FFFFFF;
-  --otherBackgroundColor: #332D1C;
+  --backgroundColor: #ffffff;
+  --otherTextColor: #ffffff;
+  --otherBackgroundColor: #332d1c;
   --ralewaymedium: ralewaymedium;
   --ralewaybold: ralewaybold;
   --ralewaylight: ralewaylight;
@@ -7036,6 +7042,7 @@ p {
   padding: 30px;
   margin: 0;
   transform: translate(-50%, -50%);
+  z-index: 100;
 }
 .collectionsecond .all .collection .hoverfordetails:hover .forpadding {
   background-color: rgb(255, 255, 255);
@@ -7179,6 +7186,7 @@ p {
   }
   .collectionsecond .all .collection .hoverfordetails {
     padding: 10px;
+    z-index: 100;
   }
   .collectionsecond .all .collection .hoverfordetails .forpadding {
     width: 26px;
@@ -7251,6 +7259,7 @@ p {
   }
   .collectionsecond .all .collection .hoverfordetails {
     padding: 10px;
+    z-index: 100;
   }
   .collectionsecond .all .collection .hoverfordetails .forpadding {
     width: 26px;
@@ -7323,6 +7332,7 @@ p {
   }
   .collectionsecond .all .collection .hoverfordetails {
     padding: 10px;
+    z-index: 100;
   }
   .collectionsecond .all .collection .hoverfordetails .forpadding {
     width: 26px;
